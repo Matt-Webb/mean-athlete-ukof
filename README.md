@@ -5,6 +5,9 @@ GENERAL
 - hook up email server
 - footer text
 - mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null'
+- spacing and styling of top bar contact details
+- make logo bigger on mobile
+- social icon links in mobile menu not working
 
 INFO REQUIRED FROM PAUL
 - head office address - Paul
