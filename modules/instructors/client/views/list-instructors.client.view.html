@@ -1,13 +1,81 @@
 <section ng-controller="InstructorsController" ng-init="find()">
-  <div class="page-header">
-    <h1>Your Instructors</h1>
-  </div>
-  <div class="list-group">
-    <a ng-repeat="instructor in instructors" ui-sref="instructors.view({instructorId: instructor._id})" class="list-group-item">
-      <h2 class="list-group-item-heading" ng-bind="instructor.name"></h2>
-      <img alt="{{ instructor.name }}" class="img-responsive text-center" src="{{ instructor.image }}" width="250" height="250" />
-      <h4 class="list-group-item-text" ng-bind="instructor.role"></h4>
-      <p class="list-group-item-text" ng-bind="instructor.bio"></p>
-    </a>
+  <!--Banner-->
+  <section class="page-heading">
+    <div class="title-slide">
+      <div class="container">
+        <div class="banner-content slide-container">
+          <div class="page-title">
+            <h3>Our Trainers</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Banner-->
+  <!--End Banner-->
+  <div class="page-content">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <ul>
+              <li class="home"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li><span>//</span></li>
+              <li class="category-1"><a href="#">Page!</a></li>
+              <li><span>//</span></li>
+              <li class="category-2">Our trainner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="container">
+        <div class="row">
+          <section id="our-trainers" class="our-trainers">
+            <div ng-repeat="instructor in instructors" class="our-trainer-box col-md-4 col-sm-6 col-xs-12">
+              <div class="product-image-wrapper">
+                <div class="product-content">
+                  <div class="product-image product-trainer">
+                    <a ui-sref="instructors.view({instructorId: instructor._id})"><img src="{{ instructor.image }}" alt="" /></a>
+                  </div>
+                  <div class="info-products">
+                    <div class="img-trainers">
+                      <img src="images/boxing-icon-1.png" alt="" />
+                    </div>
+                    <div class="product-name">
+                      <a ui-sref="instructors.view({instructorId: instructor._id})" ng-bind="instructor.name"></a>
+                      <div class="product-bottom"></div>
+                    </div>
+                    <div class="product-info">
+                      <p ng-bind="instructor.bio"></p>
+                    </div>
+                    <div class="actions" ng-show="instructor.social">
+                      <ul>
+                        <li ng-show="instructor.social.facebook"><a ng-href="{{ instructor.social.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li ng-show="instructor.social.twitter"><a ng-href="{{ instructor.social.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li ng-show="instructor.social.linkedin"><a ng-href="{{ instructor.social.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content -->
+    <div class="list-group">
+      <a  class="list-group-item">
+        <h2 class="list-group-item-heading" ng-bind="instructor.name"></h2>
+        <img alt="{{ instructor.name }}" class="img-responsive text-center" src="{{ instructor.image }}" width="250" height="250" />
+        <h4 class="list-group-item-text" ng-bind="instructor.role"></h4>
+        <p class="list-group-item-text" ng-bind="instructor.bio"></p>
+      </a>
+    </div>
   </div>
 </section>

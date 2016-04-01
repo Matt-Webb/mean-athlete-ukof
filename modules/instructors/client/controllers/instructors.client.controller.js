@@ -1,8 +1,9 @@
 'use strict';
 
 // Instructors controller
-angular.module('instructors').controller('InstructorsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Instructors',
-  function ($scope, $stateParams, $location, Authentication, Instructors) {
+angular.module('instructors').controller('InstructorsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Instructors', 'HelperService',
+    '$timeout',
+  function ($scope, $stateParams, $location, Authentication, Instructors, HelperService, $timeout) {
     $scope.authentication = Authentication;
 
 
@@ -17,5 +18,14 @@ angular.module('instructors').controller('InstructorsController', ['$scope', '$s
         instructorId: $stateParams.instructorId
       });
     };
+
+    $timeout(function() {
+        HelperService.script();
+        HelperService.template();
+        HelperService.banner();
+        HelperService.theme();
+        HelperService.menu();
+        HelperService.dropdown();
+    }, 3000);
   }
 ]);
