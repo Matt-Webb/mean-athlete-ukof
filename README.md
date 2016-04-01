@@ -4,6 +4,7 @@ GENERAL
 - need to consider what to do about trailing slashes to avoid 404 SEO hell - is this an option? https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes
 - hook up email server
 - footer text
+- mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null'
 
 INFO REQUIRED FROM PAUL
 - head office address - Paul
@@ -58,3 +59,8 @@ CONTACT PAGE
 - stripped out partners logos, could add back in or use on another page if Paul has as list
 - map needs fixing
 - swap out contact form for sticky form on every page? could reuse Olark for this from current site
+
+
+diff controllers
+- header
+- home
