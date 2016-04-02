@@ -1,4 +1,4 @@
-<section ng-controller="VenuesController" ng-init="find()">
+<section ng-controller="VenuesController" ng-init="findVenueByCity()">
   <!--Banner-->
   <section class="page-heading">
     <div class="title-slide">
@@ -21,9 +21,9 @@
             <ul>
               <li class="home"><a href="#"><i class="fa fa-home"></i> Home</a></li>
               <li><span>//</span></li>
-              <li class="category-1"><a href="#">Parks</a></li>
+              <li class="category-1"><a ui-sref="locations">Locations</a></li>
               <li><span>//</span></li>
-              <li class="category-2">{{ Leeds }}</li>
+              <li class="category-2">{{ city | capitalize }}</li>
             </ul>
           </div>
         </div>

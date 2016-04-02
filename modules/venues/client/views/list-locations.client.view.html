@@ -21,8 +21,6 @@
             <ul>
               <li class="home"><a href="#"><i class="fa fa-home"></i> Home</a></li>
               <li><span>//</span></li>
-              <li class="category-1"><a href="#">Page!</a></li>
-              <li><span>//</span></li>
               <li class="category-2">Our locations</li>
             </ul>
           </div>
@@ -47,18 +45,17 @@
                   <section id="our-class-main" class="isotope">
                     <div ng-repeat="city in cities" class="mix sport boxing element-item col-xs-12 col-sm-6 col-md-4" data-category="sport">
                       <div class="box-inner">
-                        <img src="images/onepage/classes-1.jpg" alt="" />
+                        <img src="modules/venues/client/img/cities/{{ city.city | lowercase }}-map.jpg" alt="{{ city.city }}" />
                         <div class="box-content">
                           <div class="table">
                             <div class="box-cell">
                               <div class="title">
-                                <a href="class-details.html">
+                                <a href="/venues/{{city.city | lowercase }}">
                                   <span>{{ city.city }}</span>
                                 </a>
                               </div>
-                              <div class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing...</div>
                               <div class="box-details">
-                                <a href="class-details.html">See Parks</a>
+                                <a href="/venues/{{city.city | lowercase}}">See Parks</a>
                               </div>
                             </div>
                           </div>

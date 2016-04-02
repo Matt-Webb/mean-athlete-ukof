@@ -22,8 +22,6 @@
             <ul>
               <li class="home"><a href="#"><i class="fa fa-home"></i> Home</a></li>
               <li><span>//</span></li>
-              <li class="category-1"><a href="#">Page!</a></li>
-              <li><span>//</span></li>
               <li class="category-2">Our trainner</li>
             </ul>
           </div>
@@ -40,18 +38,23 @@
               <div class="product-image-wrapper">
                 <div class="product-content">
                   <div class="product-image product-trainer">
-                    <a ui-sref="instructors.view({instructorId: instructor._id})"><img src="{{ instructor.image }}" alt="" /></a>
+                    <a ui-sref="instructors.view({instructorId: instructor._id})"><img style="max-height: 250px;" src="{{ instructor.image }}" alt="" /></a>
                   </div>
                   <div class="info-products">
                     <div class="img-trainers">
-                      <img src="images/boxing-icon-1.png" alt="" />
+                      <img width="50" height="60" src="images/icon-8.png" alt="" />
                     </div>
                     <div class="product-name">
                       <a ui-sref="instructors.view({instructorId: instructor._id})" ng-bind="instructor.name"></a>
                       <div class="product-bottom"></div>
                     </div>
                     <div class="product-info">
-                      <p ng-bind="instructor.bio"></p>
+                      <p ng-if="instructor.bio">
+                          {{ instructor.bio | limitTo: 124}}
+                      </p>
+                      <p ng-if="!instructor.bio">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
                     </div>
                     <div class="actions" ng-show="instructor.social">
                       <ul>
