@@ -39,6 +39,12 @@ exports.invokeRolesPolicies = function () {
       resources: '/api/venues/:venueId',
       permissions: ['get']
     }]
+  }, {
+    roles: ['guest'],
+    allows: [{
+      resources: '/api/venues/:city',
+      permissions: ['get']
+    }]
   }]);
 };
 

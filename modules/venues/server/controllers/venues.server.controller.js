@@ -85,6 +85,20 @@ exports.list = function (req, res) {
   });
 };
 
+exports.venueByCity = function (req, res) {
+    var city = req.params.city;
+
+    Venue.find({'address.city': city}).exec(function(err, venues) {
+        if(err) {
+            return res.status(400).send({
+                message: errorHandler.getErrorMessage(err)
+            });
+        } else {
+            res.json(venues);
+        }
+    });
+}
+
 /**
  * Venue middleware
  */

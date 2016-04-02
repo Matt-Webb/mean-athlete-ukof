@@ -23,6 +23,14 @@ angular.module('venues').controller('VenuesController', ['$scope', '$stateParams
       $scope.venues = Venues.query();
     };
 
+    $scope.findVenueByCity = function() {
+        $scope.city = $stateParams.city;
+        console.log($scope.city);
+        $scope.venues = Venues.query({
+            'address.city': $stateParams.city
+        });
+    };
+
     // Find existing Venue
     $scope.findOne = function () {
       $scope.venue = Venues.get({
@@ -30,4 +38,9 @@ angular.module('venues').controller('VenuesController', ['$scope', '$stateParams
       });
     };
   }
-]);
+]).filter('capitalize', function() {
+    return function(input, all) {
+      var reg = (all) ? /([^\W_]+[^\s-]*) */g : /([^\W_]+[^\s-]*)/;
+      return (!!input) ? input.replace(reg, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}) : '';
+  };
+});
