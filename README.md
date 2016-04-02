@@ -34,6 +34,7 @@ ACCOUNT AREA - YOUR INFO
 - registration date
 - attendance
 - fitness tests
+- echo sign iframe and toggle to hide
 
 ACCOUNT AREA - GENERIC LINKS
 - members feedback
