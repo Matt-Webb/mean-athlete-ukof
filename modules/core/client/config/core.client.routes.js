@@ -37,6 +37,14 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
         url: '/prices',
         templateUrl: 'modules/core/client/views/prices.client.view.html'
     })
+    .state('ocr', {
+        url: '/obstacle-races-2016',
+        templateUrl: 'modules/core/client/views/ocr.client.view.html'
+    })
+    .state('corporate', {
+        url: '/corporate-fitness',
+        templateUrl: 'modules/core/client/views/corporate.client.view.html'
+    })
     .state('not-found', {
       url: '/not-found',
       templateUrl: 'modules/core/client/views/404.client.view.html',
