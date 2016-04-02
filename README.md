@@ -8,6 +8,7 @@ GENERAL
 - spacing and styling of top bar contact details
 - make logo bigger on mobile
 - social icon links in mobile menu not working
+- make desktop menu solid on scroll
 
 INFO REQUIRED FROM PAUL
 - head office address - Paul
@@ -53,6 +54,7 @@ FAQS
 
 ABOUT PAGE
 - link up T&Cs, sign up
+- images
 
 PRICES
 - update wording
