@@ -2,6 +2,7 @@
 
 GENERAL
 - need to consider what to do about trailing slashes to avoid 404 SEO hell - is this an option? https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes
+- 302 redirect rules - express?
 - hook up email server
 - footer text
 - mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null'
@@ -9,6 +10,8 @@ GENERAL
 - make logo bigger on mobile
 - social icon links in mobile menu not working
 - make desktop menu solid on scroll
+- Adobe echo sign API integration - anything existing for front end integration?
+- fix google maps api calls
 
 INFO REQUIRED FROM PAUL
 - head office address - Paul

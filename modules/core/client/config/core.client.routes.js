@@ -45,6 +45,19 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
         url: '/corporate-fitness',
         templateUrl: 'modules/core/client/views/corporate.client.view.html'
     })
+    .state('uniofshef', {
+        url: '/corporate-fitness/university-of-sheffield',
+        templateUrl: 'modules/core/client/views/uniofshef.client.view.html'
+    })
+    .state('terms', {
+        url: '/terms-and-conditions',
+        templateUrl: 'modules/core/client/views/terms.client.view.html'
+    })
+    .state('joinnow', {
+        url: '/join-now',
+        templateUrl: 'modules/core/client/views/joinnow.client.view.html'
+    })
+
     .state('not-found', {
       url: '/not-found',
       templateUrl: 'modules/core/client/views/404.client.view.html',
