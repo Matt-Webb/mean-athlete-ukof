@@ -19,7 +19,7 @@
 
         function dropdown() {
             (function() {
-                "use strict";
+
                 var dropdown = document.querySelectorAll('.dropdown');
                 var dropdownArray = Array.prototype.slice.call(dropdown,0);
                 dropdownArray.forEach(function(el){
@@ -43,7 +43,7 @@
                             event.preventDefault();
                         }
                     };
-                })
+                });
 
                 Element.prototype.hasClass = function(className) {
                     return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
@@ -55,7 +55,7 @@
 
         function script() {
             (function ($) {
-                "use strict";
+
                 $(document).ready(function () {
                     $('#parallax-block').btparallaxfix("50%", 0.5);
                     $(window).resize(function(){
@@ -114,7 +114,7 @@
                     loop:true,
                     speed:70
                 });
-                // End jQuery Banner Index 
+                // End jQuery Banner Index
 
 
                 // adds Arrows navigation control to the slider.
@@ -133,7 +133,7 @@
                     autoplay:true
 
                 });
-                // End jQuery Banner Layer  
+                // End jQuery Banner Layer
             })(jQuery);
         }
 
@@ -170,7 +170,7 @@
                     });
 
                     $('.about-con').each(function () {
-                        if ($(this).index() == 1) {
+                        if ($(this).index() === 1) {
                             $(this).addClass('block-item-special');
                         }
                     });
@@ -447,7 +447,7 @@
                     $('.calendar-active.active').removeClass('active');
                     $('#' + id + '-pop').show("slow");
                     $('#' + id).addClass('active');
-                }
+                };
                 $('.calendar-note').mouseleave(function () {
                     $('.calendar-details').hide();
                     $('.calendar-active.active').removeClass('active');
@@ -472,7 +472,7 @@
                         url : 'ajax-trainer.html',
                         cache : false,
                         success : function (transport) {
-                            if (html != transport) {
+                            if (html !== transport) {
                                 html = transport;
                                 var $moreBlocks = $(transport).filter('.our-trainer-box');
                                 $('#our-trainers').append($moreBlocks);
@@ -487,7 +487,7 @@
                         url : 'ajax-listing-grid.html',
                         cache : false,
                         success : function (transport) {
-                            if (html != transport) {
+                            if (html !== transport) {
                                 html = transport;
                                 var $moreBlocks = $(transport).filter('.listing-grid');
                                 $('#our-listing-grid').append($moreBlocks);
@@ -525,7 +525,7 @@
                             height : ($(window).height() + 400) + 'px',
                             width : ($(window).width() + 400) + 'px'
                         });
-                    })
+                    });
                     new Parallax(document.getElementById('scene'));
                 }
 
@@ -536,7 +536,7 @@
 
                 function panelSetting() {
                     $('.color-setting button').each(function () {
-                        if (this.value[0] == '#') {
+                        if (this.value[0] === '#') {
                             $(this).css('background-color', this.value);
                         } else {
                             $(this).css('background', 'url(' + this.value + ')');
@@ -561,7 +561,7 @@
                             $('.panel-content').animate({
                                 'margin-left' : '-240px'
                             }, 400, 'easeInOutExpo', function () {
-                                $('.panel-content').hide()
+                                $('.panel-content').hide();
                             });
                         }
                         clickOutSite = false;
@@ -591,13 +591,13 @@
                         }
                     });
                     $('.background-setting button').click(function () {
-                        if($('.layout-setting button.active').val()=='wide'){
+                        if($('.layout-setting button.active').val() === 'wide'){
                             return;
                         }
                         if (!$(this).hasClass('active')) {
                             $('.background-setting button').removeClass('active');
                             $(this).addClass('active');
-                            if (this.value[0] == '#') {
+                            if (this.value[0] === '#') {
                                 $('body').css('background', this.value);
                             } else {
                                 $('body').css('background', 'url(' + this.value + ')');
@@ -631,7 +631,7 @@
                             $('.icon-cart .carts-store').animate({
                                 'margin-right' : '-301px'
                             }, 400, 'easeInOutExpo', function () {
-                                $('.icon-cart .carts-store').hide()
+                                $('.icon-cart .carts-store').hide();
                             });
                         }
                         clickOutSite = false;
@@ -662,7 +662,7 @@
                             $('.icon-wishlist .wishlists-store').animate({
                                 'margin-right' : '-301px'
                             }, 400, 'easeInOutExpo', function () {
-                                $('.icon-wishlist .wishlists-store').hide()
+                                $('.icon-wishlist .wishlists-store').hide();
                             });
                         }
                         clickOutSite = false;
@@ -699,7 +699,7 @@
                         layout : $('.layout-setting button.active').val(),
                         mainColor : $('.sample-setting button.active').val(),
                         bgColor : $('.background-setting button.active').val()
-                    }
+                    };
                     // apply activated setting
                     var activeSetting = getCookie('layoutsetting');
                     if (activeSetting) {
@@ -709,17 +709,17 @@
                 }
                 function panelApplySetting(setting) {
                     $('.layout-setting button').each(function () {
-                        if (setting.layout == this.value) {
+                        if (setting.layout === this.value) {
                             $(this).trigger('click');
                         }
                     });
                     $('.sample-setting button').each(function () {
-                        if (setting.mainColor == this.value) {
+                        if (setting.mainColor === this.value) {
                             $(this).trigger('click');
                         }
                     });
                     $('.background-setting button').each(function () {
-                        if (setting.bgColor == this.value) {
+                        if (setting.bgColor === this.value) {
                             $(this).trigger('click');
                         }
                     });
@@ -729,7 +729,7 @@
                         layout : $('.layout-setting button.active').val(),
                         mainColor : $('.sample-setting button.active').val(),
                         bgColor : $('.background-setting button.active').val()
-                    }
+                    };
                     setCookie('layoutsetting', JSON.stringify(activeSetting), 0);
                 }
 
@@ -758,7 +758,7 @@
                 $('.main-contact-form input,.main-contact-form textarea').focus(function () {
                     $('.btn-submit').removeClass('btn-error');
                     $('.btn-submit').removeClass('btn-success');
-                })
+                });
                 /** COOKIE FUNCTION */
                 function setCookie(cname, cvalue, exdays) {
                     var expires = "";
@@ -774,9 +774,9 @@
                     var ca = document.cookie.split(';');
                     for (var i = 0; i < ca.length; i++) {
                         var c = ca[i];
-                        while (c.charAt(0) == ' ')
+                        while (c.charAt(0) === ' ')
                             c = c.substring(1);
-                        if (c.indexOf(name) == 0)
+                        if (c.indexOf(name) === 0)
                             return c.substring(name.length, c.length);
                     }
                     return "";
@@ -786,7 +786,7 @@
 
         function theme() {
             (function($){
-                "use strict";
+
 
                 $(function(){
 
@@ -996,7 +996,7 @@
                                     afterAction: false,
                                     startDragging : false,
                                     afterLazyLoad : false
-                                }
+                                };
                                 var config = $.extend({}, defaults, options, slider.data("plugin-options"));
                                 // Initialize Slider
                                 slider.owlCarousel(config).addClass("owl-carousel-init");
@@ -1012,7 +1012,7 @@
                                     slider.trigger('owl.prev');
                                 });
 
-                                if(slider.data('plugin-options') != undefined && slider.data('plugin-options').pagination){
+                                if(slider.data('plugin-options') !== undefined && slider.data('plugin-options').pagination){
                                     if(slider.hasClass('brands')){
                                         slider.find('.owl-controls').addClass('d_inline_b');
                                         return;
@@ -1068,7 +1068,7 @@
                                         var s = $(this);
                                         carousel.children().remove();
 
-                                        if(activeElem == "*"){
+                                        if(activeElem === "*"){
                                             $.each(elements,function(i,v){
                                                 carousel.append(v);
                                             });
@@ -1180,7 +1180,7 @@
                                 $(window).on('scroll',scrollPage);
                             },
                         }
-                    }
+                    };
 
                     Core.initialize();
                 });
@@ -1189,7 +1189,7 @@
 
         function menu() {
             (function() {
-                "use strict";
+
                 var bodyEl = document.body,
                     content = document.querySelector( '.content-wrapper' ),
                     openbtn = document.getElementById( 'open-button' ),

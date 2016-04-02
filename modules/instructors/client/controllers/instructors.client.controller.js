@@ -20,12 +20,12 @@ angular.module('instructors').controller('InstructorsController', ['$scope', '$s
     };
 
     $timeout(function() {
-        HelperService.script();
-        HelperService.template();
-        HelperService.banner();
-        HelperService.theme();
-        HelperService.menu();
-        HelperService.dropdown();
+        // HelperService.script();
+        // HelperService.template();
+        // HelperService.banner();
+        // HelperService.theme();
+        // HelperService.menu();
+        // HelperService.dropdown();
     }, 3000);
   }
 ]);
