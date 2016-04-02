@@ -86,9 +86,10 @@ exports.list = function (req, res) {
 };
 
 exports.venueByCity = function (req, res) {
-    var city = req.params.city;
+    var city = req.params['city'];
+    console.log('city:' + city);
 
-    Venue.find({'address.city': city}).exec(function(err, venues) {
+    Venue.find({'address.city':  { $regex : new RegExp(city, "i") }}).exec(function(err, venues) {
         if(err) {
             return res.status(400).send({
                 message: errorHandler.getErrorMessage(err)

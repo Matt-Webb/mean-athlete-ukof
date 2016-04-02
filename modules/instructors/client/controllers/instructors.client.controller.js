@@ -19,6 +19,8 @@ angular.module('instructors').controller('InstructorsController', ['$scope', '$s
       });
     };
 
+
+
     $timeout(function() {
         // HelperService.script();
         // HelperService.template();

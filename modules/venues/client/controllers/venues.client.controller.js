@@ -1,16 +1,12 @@
 'use strict';
 
 // Venues controller
-angular.module('venues').controller('VenuesController', ['$scope', '$stateParams', '$location', 'Authentication', 'Venues', 'Cities',
-  function ($scope, $stateParams, $location, Authentication, Venues, Cities) {
+angular.module('venues').controller('VenuesController', ['$scope', '$stateParams', '$location', 'Authentication', 'Venues', 'Cities', 'VenuesByCity',
+  function ($scope, $stateParams, $location, Authentication, Venues, Cities, VenuesByCity) {
     $scope.authentication = Authentication;
 
-    // Find a list of Venues by a specific city (with address object);
-    $scope.findByLocation = function() {
-        $scope.venues = Venues.get({
-            'address.city' : $stateParams.city
-        });
-    };
+    $scope.city = $stateParams.city
+
 
     $scope.findCities = function() {
         console.log('called made!');
@@ -19,15 +15,14 @@ angular.module('venues').controller('VenuesController', ['$scope', '$stateParams
     };
 
     // Find a list of Venues
-    $scope.find = function () {
-      $scope.venues = Venues.query();
-    };
+    // $scope.find = function () {
+    //   $scope.venues = Venues.query();
+    // };
 
     $scope.findVenueByCity = function() {
-        $scope.city = $stateParams.city;
-        console.log($scope.city);
-        $scope.venues = Venues.query({
-            'address.city': $stateParams.city
+        VenuesByCity.search({'city': $stateParams.city}, function(venues) {
+            console.log('Logging ' + venues.length + ' venues.');
+            $scope.venues = venues;
         });
     };
 

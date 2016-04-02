@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('core').controller('HomeController', ['$scope', 'Authentication','HelperService', '$timeout',
+angular.module('core').controller('HomeController', ['$scope', 'Authentication','HelperService','$timeout',
   function ($scope,Authentication,HelperService,$timeout) {
     // This provides Authentication context.
     $scope.authentication = Authentication;
