@@ -1,0 +1,79 @@
+<section ng-controller="VenuesController" ng-init="findCities()">
+  <!--Banner-->
+  <section class="page-heading">
+    <div class="title-slide">
+      <div class="container">
+        <div class="banner-content slide-container">
+          <div class="page-title">
+            <h3>Our Locations</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Banner-->
+  <div class="page-content">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <ul>
+              <li class="home"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li><span>//</span></li>
+              <li class="category-1"><a href="#">Page!</a></li>
+              <li><span>//</span></li>
+              <li class="category-2">Our locations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Athlete Class -->
+    <section id="classes" class="classes">
+      <div class="categories">
+        <div id="filters" class="filters button-group container">
+          <button data-filter="*" class="filter button is-checked">Select a Location</button>
+        </div>
+      </div>
+      <div class="our-class-main">
+        <div class="container">
+          <div class="row">
+            <div class="classes-athlete">
+              <div class="classes-inner">
+                <div id="filtering-demo" class="classes-content">
+                  <section id="our-class-main" class="isotope">
+                    <div ng-repeat="city in cities" class="mix sport boxing element-item col-xs-12 col-sm-6 col-md-4" data-category="sport">
+                      <div class="box-inner">
+                        <img src="images/onepage/classes-1.jpg" alt="" />
+                        <div class="box-content">
+                          <div class="table">
+                            <div class="box-cell">
+                              <div class="title">
+                                <a href="class-details.html">
+                                  <span>{{ city.city }}</span>
+                                </a>
+                              </div>
+                              <div class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing...</div>
+                              <div class="box-details">
+                                <a href="class-details.html">See Parks</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Athlete Class -->
+  </div>
+
+  <section>

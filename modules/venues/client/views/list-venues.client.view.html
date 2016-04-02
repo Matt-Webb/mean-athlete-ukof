@@ -1,0 +1,50 @@
+<section ng-controller="VenuesController" ng-init="find()">
+  <!--Banner-->
+  <section class="page-heading">
+    <div class="title-slide">
+      <div class="container">
+        <div class="banner-content slide-container">
+          <div class="page-title">
+            <h3>Parks for {{ city }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Banner-->
+  <div class="page-content">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <ul>
+              <li class="home"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li><span>//</span></li>
+              <li class="category-1"><a href="#">Parks</a></li>
+              <li><span>//</span></li>
+              <li class="category-2">{{ Leeds }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Main Content -->
+    <div class="main-content class-detail">
+      <div class="container">
+        <div class="row">
+            <a ng-repeat="venue in venues" ui-sref="venues.view({venueId: venue._id})" class="list-group-item">
+              <h2 class="list-group-item-heading" ng-bind="venue.name"></h2>
+              <img alt="{{ venue.name }}" class="img-responsive text-center" src="{{ venue.image }}" width="250" height="250" />
+              <h4 class="list-group-item-text" ng-bind="venue.role"></h4>
+              <p class="list-group-item-text" ng-bind="venue.bio"></p>
+            </a>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content -->
+
+  </div>
+</section>
