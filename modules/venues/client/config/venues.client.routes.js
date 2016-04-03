@@ -27,12 +27,11 @@ angular.module('venues').config(['$stateProvider',
 
 angular.module('cities').config(['$stateProvider',
     function($stateProvider) {
-        // Venues state routing
+        // Cities state routing
         $stateProvider
             .state('locations', {
                 url: '/locations',
                 templateUrl: 'modules/venues/client/views/list-locations.client.view.html'
             });
-
     }
 ]);

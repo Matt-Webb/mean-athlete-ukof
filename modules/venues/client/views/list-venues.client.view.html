@@ -3,7 +3,7 @@
   <section class="page-heading">
     <div class="title-slide">
       <div class="container">
-        <div class="banner-content slide-container">
+        <div class="banner-content">
           <div class="page-title">
             <h3>Parks for {{ city }}</h3>
           </div>
@@ -30,21 +30,464 @@
       </div>
     </div>
     <!-- End Breadcrumbs -->
-
-    <!-- Main Content -->
-    <div class="main-content class-detail">
+    <div class="product-list">
       <div class="container">
         <div class="row">
-            <a ng-repeat="venue in venues" ui-sref="venues.view({venueId: venue._id})" class="list-group-item">
-              <h2 class="list-group-item-heading" ng-bind="venue.name"></h2>
-              <img alt="{{ venue.name }}" class="img-responsive text-center" src="{{ venue.image }}" width="250" height="250" />
-              <h4 class="list-group-item-text" ng-bind="venue.role"></h4>
-              <p class="list-group-item-text" ng-bind="venue.bio"></p>
-            </a>
+          <div class="col-md-9">
+            <div class="toolbar">
+              <p class="amount">
+                <strong>SHOWING ALL 9 RESULTS</strong>
+              </p>
+              <div class="sorter">
+                <div class="sort-by">
+                  <select onchange="setLocation(this.value)">
+                    <option selected="selected" value="">Default sorting</option>
+                    <option value="">Position</option>
+                    <option value="">Name</option>
+                    <option value="">Price</option>
+                  </select>
+                </div>
+                <p class="view-mode">
+                  <strong class="grid-active" title="Grid"><i class="fa fa-th-large"></i></strong>
+                  <a class="list" title="List" href="product-listing-row.html"><i class="fa fa-th-list"></i></a>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-image-wrapper">
+                  <div class="product-content">
+                    <div class="product-image">
+                      <a href="#"><img alt="" src="images/newproducts/product-1.jpg"></a>
+                    </div>
+                    <div class="info-products">
+                      <div class="product-name">
+                        <a href="product-detail.html">Horizon Andes</a>
+                        <div class="product-bottom"></div>
+                      </div>
+                      <div class="price-box">
+                        <span class="special-price">$200.60</span>
+                        <span class="old-price">$227.96</span>
+                      </div>
+                      <div class="actions">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-info"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="arrows quickview" href="#quickview"><i class="fa fa-arrows"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-image-wrapper">
+                  <div class="product-content">
+                    <div class="product-image">
+                      <a href="#"><img alt="" src="images/newproducts/product-2.jpg"></a>
+                    </div>
+                    <div class="info-products">
+                      <div class="product-name">
+                        <a href="product-detail.html">Octane Deluxe Console</a>
+                        <div class="product-bottom"></div>
+                      </div>
+                      <div class="price-box">
+                        <span class="special-price">$200.60</span>
+                        <span class="old-price">$227.96</span>
+                      </div>
+                      <div class="actions">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-info"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="arrows quickview" href="#quickview"><i class="fa fa-arrows"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-image-wrapper">
+                  <div class="product-content">
+                    <div class="product-image">
+                      <a href="#"><img alt="" src="images/newproducts/product-3.jpg"></a>
+                    </div>
+                    <div class="info-products">
+                      <div class="product-name">
+                        <a href="product-detail.html">Precor Recumbent Cycle</a>
+                        <div class="product-bottom"></div>
+                      </div>
+                      <div class="price-box">
+                        <span class="special-price">$200.60</span>
+                        <span class="old-price">$227.96</span>
+                      </div>
+                      <div class="actions">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-info"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="arrows quickview" href="#quickview"><i class="fa fa-arrows"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-image-wrapper">
+                  <div class="product-content">
+                    <div class="product-image">
+                      <a href="#"><img alt="" src="images/newproducts/product-5.jpg"></a>
+                    </div>
+                    <div class="info-products">
+                      <div class="product-name">
+                        <a href="product-detail.html">Precor TRM 885 Treadmill</a>
+                        <div class="product-bottom"></div>
+                      </div>
+                      <div class="price-box">
+                        <span class="special-price">$200.60</span>
+                        <span class="old-price">$227.96</span>
+                      </div>
+                      <div class="actions">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-info"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="arrows quickview" href="#quickview"><i class="fa fa-arrows"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-image-wrapper">
+                  <div class="product-content">
+                    <div class="product-image">
+                      <a href="#"><img alt="" src="images/newproducts/product-6.jpg"></a>
+                    </div>
+                    <div class="info-products">
+                      <div class="product-name">
+                        <a href="product-detail.html">24kg xxpeed</a>
+                        <div class="product-bottom"></div>
+                      </div>
+                      <div class="price-box">
+                        <span class="special-price">$200.60</span>
+                        <span class="old-price">$227.96</span>
+                      </div>
+                      <div class="actions">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-info"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="arrows quickview" href="#quickview"><i class="fa fa-arrows"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-image-wrapper">
+                  <div class="product-content">
+                    <div class="product-image">
+                      <a href="#"><img alt="" src="images/newproducts/product-7.jpg"></a>
+                    </div>
+                    <div class="info-products">
+                      <div class="product-name">
+                        <a href="product-detail.html">Life Fitness G7 Home Gym</a>
+                        <div class="product-bottom"></div>
+                      </div>
+                      <div class="price-box">
+                        <span class="special-price">$200.60</span>
+                        <span class="old-price">$227.96</span>
+                      </div>
+                      <div class="actions">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-info"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="arrows quickview" href="#quickview"><i class="fa fa-arrows"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-image-wrapper last-row">
+                  <div class="product-content">
+                    <div class="product-image">
+                      <a href="#"><img alt="" src="images/newproducts/product-4.jpg"></a>
+                    </div>
+                    <div class="info-products">
+                      <div class="product-name">
+                        <a href="product-detail.html">Wilson Girls Tennis</a>
+                        <div class="product-bottom"></div>
+                      </div>
+                      <div class="price-box">
+                        <span class="special-price">$200.60</span>
+                        <span class="old-price">$227.96</span>
+                      </div>
+                      <div class="actions">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-info"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="arrows quickview" href="#quickview"><i class="fa fa-arrows"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-image-wrapper last-row">
+                  <div class="product-content">
+                    <div class="product-image">
+                      <a href="#"><img alt="" src="images/newproducts/product-9.jpg"></a>
+                    </div>
+                    <div class="info-products">
+                      <div class="product-name">
+                        <a href="product-detail.html">SportsArt C580r Bike</a>
+                        <div class="product-bottom"></div>
+                      </div>
+                      <div class="price-box">
+                        <span class="special-price">$200.60</span>
+                        <span class="old-price">$227.96</span>
+                      </div>
+                      <div class="actions">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-info"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="arrows quickview" href="#quickview"><i class="fa fa-arrows"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-image-wrapper last-row">
+                  <div class="product-content">
+                    <div class="product-image">
+                      <a href="#"><img alt="" src="images/newproducts/product-8.jpg"></a>
+                    </div>
+                    <div class="info-products">
+                      <div class="product-name">
+                        <a href="product-detail.html">Bike glovers</a>
+                        <div class="product-bottom"></div>
+                      </div>
+                      <div class="price-box">
+                        <span class="special-price">$200.60</span>
+                        <span class="old-price">$227.96</span>
+                      </div>
+                      <div class="actions">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-info"></i></a></li>
+                          <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="arrows quickview" href="#quickview"><i class="fa fa-arrows"></i></a>
+                </div>
+              </div>
+            </div>
+            <div id="quickview" class="quickview-box container">
+              <div class="row">
+                <div class="quickview-body col-md-9">
+                  <div class="product-essential">
+                    <button type="button" class="quickview-close" onclick="$.fn.custombox('close');">
+                      <i class="fa fa-times"></i>
+                    </button>
+                    <div class="product-img-box col-md-6">
+                      <a href="#"><img alt="" src="images/newproducts/product-detail.jpg"></a>
+                      <div class="more-views">
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                          <div class="item"><img alt="" src="images/newproducts/product-view-more.jpg"></div>
+                          <div class="item"><img alt="" src="images/newproducts/product-view-more.jpg"></div>
+                          <div class="item"><img alt="" src="images/newproducts/product-view-more.jpg"></div>
+                          <div class="item"><img alt="" src="images/newproducts/product-view-more.jpg"></div>
+                          <div class="item"><img alt="" src="images/newproducts/product-view-more.jpg"></div>
+                          <div class="item"><img alt="" src="images/newproducts/product-view-more.jpg"></div>
+                          <div class="item"><img alt="" src="images/newproducts/product-view-more.jpg"></div>
+                          <div class="item"><img alt="" src="images/newproducts/product-view-more.jpg"></div>
+                          <div class="item"><img alt="" src="images/newproducts/product-view-more.jpg"></div>
+                          <div class="item"><img alt="" src="images/newproducts/product-view-more.jpg"></div>
+                        </div>
+                        <div class="customNavigation">
+                          <a class="btn prev"><i class="fa fa-caret-left"></i></a>
+                          <a class="btn next"><i class="fa fa-caret-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-shop col-md-6">
+                      <div class="product-name">
+                        <h1>Horizon Andes</h1>
+                      </div>
+                      <div class="meta-box">
+                        <div class="price-box">
+                          <span class="special-price">$200.60</span>
+                          <span class="old-price">$227.96</span>
+                        </div>
+                        <div class="rating-box">
+                          <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="short-description">
+                        To be in a good shape is very important nowadays because our way of life isn't so healthy and active. Most of us spend endless hours sitting by the computer and it gives negative results very fast. We think that fitness is a pleasant and useful activity.
+                        It helps to be more successful and disciplined.
+                      </div>
+                      <div class="add-to-box">
+                        <div class="add-to-cart">
+                          <input type="text" class="input-text qty-1" title="Qty" value="1" maxlength="12" id="qty" name="qty">
+                          <span class="increase-qty" onclick="increaseQty('1')"><i class="fa fa-sort-up"></i></span>
+                          <span class="decrease-qty" onclick="decreaseQty('1')"><i class="fa fa-sort-down"></i></span>
+                        </div>
+                        <button class="button btn-cart" title="Add to Cart" type="button">
+                          <em class="fa-icon"><i class="fa fa-shopping-cart"></i></em>
+                          <span>Add Cart</span>
+                        </button>
+                        <a class="link-wishlist"><i class="fa fa-heart"></i></a>
+                      </div>
+                      <div class="cat-list">
+                        <label>Categories</label><span>:</span>
+                        <ul>
+                          <li><a href="#">Dress,</a></li>
+                          <li><a href="#">Lorem</a></li>
+                        </ul>
+                      </div>
+                      <div class="tags-list">
+                        <label>Tags</label><span>:</span>
+                        <ul>
+                          <li><a href="#">Fitness</a></li>
+                          <li><a href="#">Lorem</a></li>
+                        </ul>
+                      </div>
+                      <div class="social-icon">
+                        <ul>
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="product-filter">
+              <h3 class="title">product filter</h3>
+              <hr />
+              <div class="widget widget-price-filter">
+                <span class="min-filter">$<span id="price-filter-value-1">100</span></span>
+                <span class="max-filter">$<span id="price-filter-value-2">700</span></span>
+                <div id="price-filter"></div>
+                <a href="#" class="">Filter</a>
+              </div>
+            </div>
+            <div class="product-categories">
+              <h3 class="title">Product categories</h3>
+              <ul>
+                <li><a href="#">Boxing-MMA</a></li>
+                <li><a href="#">Yoga and Pilates</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Indoor-Cycles</a></li>
+                <li><a href="#">Cardio</a></li>
+                <li><a href="#">X-Fit</a></li>
+              </ul>
+            </div>
+            <div class="product-popular">
+              <h3 class="title">Popular products</h3>
+              <ul>
+                <li>
+                  <div class="product-image">
+                    <a href="#"><img alt="" src="images/popular-product.jpg"></a>
+                  </div>
+                  <div class="info-products">
+                    <div class="product-name">Lorem ipsum dolor sit amet consectetur</div>
+                    <div class="price-box">
+                      <span class="regular-price">$200.60</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-image">
+                    <a href="#"><img alt="" src="images/popular-product.jpg"></a>
+                  </div>
+                  <div class="info-products">
+                    <div class="product-name">Lorem ipsum dolor sit amet consectetur</div>
+                    <div class="price-box">
+                      <span class="regular-price">$200.60</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-image">
+                    <a href="#"><img alt="" src="images/popular-product.jpg"></a>
+                  </div>
+                  <div class="info-products">
+                    <div class="product-name">Lorem ipsum dolor sit amet consectetur</div>
+                    <div class="price-box">
+                      <span class="regular-price">$200.60</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-image">
+                    <a href="#"><img alt="" src="images/popular-product.jpg"></a>
+                  </div>
+                  <div class="info-products">
+                    <div class="product-name">Lorem ipsum dolor sit amet consectetur</div>
+                    <div class="price-box">
+                      <span class="regular-price">$200.60</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product-image">
+                    <a href="#"><img alt="" src="images/popular-product.jpg"></a>
+                  </div>
+                  <div class="info-products">
+                    <div class="product-name">Lorem ipsum dolor sit amet consectetur</div>
+                    <div class="price-box">
+                      <span class="regular-price">$200.60</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Main Content -->
+
 
   </div>
 </section>
