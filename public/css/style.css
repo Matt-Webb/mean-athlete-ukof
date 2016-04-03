@@ -181,6 +181,7 @@ div h5, h6{
     animation: reveal-header 1s cubic-bezier(0.005, 0.975, 0.73, 1);
     border:1px solid transparent;
     background:#0f0f0f;
+    opacity: 0.8
 }
 .header{
     position:relative;
@@ -274,7 +275,7 @@ div h5, h6{
     -webkit-transition: opacity 0.5s ease 0s;
     width: 100%;
 }
-.main-menu{position: relative;}
+/* .main-menu{position: relative;} */
 .main-menu h4{
     margin:0;
     text-transform:uppercase;
@@ -303,9 +304,9 @@ div h5, h6{
     border:none;
     color:#fff;
     position:absolute;
-    right:0;
-    top:11px;
-    font-size:18px;
+    right:20px;
+    top:10px;
+    font-size:25px;
 }
 #open-button {
   border: medium none;
@@ -6268,7 +6269,8 @@ img.out-pos {
     font-size: 18px;
 }
 .page-footer-product{
-    background: #1b1b1b;
+  background: #1b1b1b;
+
 }
 .footer-right .line1 a{
     color: #ec3642;
@@ -7023,7 +7025,8 @@ img.out-pos {
 	FOOTER
 ------------------------------------------------------*/
 .page-footer {
-  background: none repeat scroll 0 0 #1b1b1b;
+  /* background: none repeat scroll 0 0 #1b1b1b; */
+  background: url("../images/grass-pattern.jpg") repeat;
   padding-bottom: 25px;
   padding-top: 40px;
   position: relative;
@@ -7087,8 +7090,8 @@ img.out-pos {
 
 /* Copyright*/
 #copyright {
-  background: none repeat scroll 0 0 #1c1c1c;
-  border-top: 1px solid #353535;
+  background: none repeat scroll 0 0 #0071BD;
+  border-top: 1px solid #0071BC;
   position: relative;
 }
 .index-white #copyright {
@@ -8656,9 +8659,9 @@ display:block;
 		transition: none 0s ease 0s ;
     }
 
-    .product-image a img, .price-table-img > img {
+    /* .product-image a img, .price-table-img > img {
         width: 100%;
-    }
+    } */
 
     .discover-link {
         font-size: 20px;
