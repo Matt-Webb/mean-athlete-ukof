@@ -13,7 +13,7 @@ module.exports = {
                 'public/css/ms-fullscreen.css',
                 'public/css/owl.carousel.css',
                 'public/css/owl.transitions.css',
-                'css/jquery.custombox.css',
+                'public/css/jquery.custombox.css',
                 'public/css/color.css'
             ],
             js: [
