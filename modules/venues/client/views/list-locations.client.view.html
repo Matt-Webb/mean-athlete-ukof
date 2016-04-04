@@ -33,7 +33,12 @@
     <section id="classes" class="classes">
       <div class="categories">
         <div id="filters" class="filters button-group container">
-          <button data-filter="*" class="filter button is-checked">Select a Location</button>
+          <button data-filter="*" class="filter button is-checked">All</button>
+          <button  data-filter=".west-yorkshire" class="filter button">West Yorkshire</button>
+          <button  data-filter=".north-yorkshire" class="filter button">North Yorkshire</button>
+          <button  data-filter=".south-yorkshire" class="filter button">South Yorkshire</button>
+          <button  data-filter=".east-yorkshire" class="filter button">East Yorkshire</button>
+          <button  data-filter=".bristol" class="filter button">Bristol</button>
         </div>
       </div>
       <div class="our-class-main">
@@ -41,21 +46,22 @@
           <div class="row">
             <div class="classes-athlete">
               <div class="classes-inner">
-                <div id="filtering-demo" class="classes-content">
+                <div class="classes-content">
                   <section id="our-class-main" class="isotope">
-                    <div ng-repeat="city in cities" class="mix sport boxing element-item col-xs-12 col-sm-6 col-md-4" data-category="sport">
+                    <!-- Repeat items -->
+                    <div ng-repeat="item in cities" class="mix {{ item.county-filter }} sport boxing element-item col-xs-12 col-sm-6 col-md-4" data-category="sport">
                       <div class="box-inner">
-                        <img src="modules/venues/client/img/cities/{{ city.city | lowercase }}-map.jpg" alt="{{ city.city }}" />
+                        <img ng-src="modules/venues/client/img/cities/{{ item.city | lowercase }}-map.jpg" alt="{{ item.city }}" />
                         <div class="box-content">
                           <div class="table">
                             <div class="box-cell">
                               <div class="title">
-                                <a href="/venues/{{city.city | lowercase }}">
-                                  <span>{{ city.city }}</span>
+                                <a href="/venues/{{item.city | lowercase }}">
+                                  <span>{{ item.city }}</span>
                                 </a>
                               </div>
                               <div class="box-details">
-                                <a href="/venues/{{city.city | lowercase}}">See Parks</a>
+                                <a href="/venues/{{item.city | lowercase}}">See Parks</a>
                               </div>
                             </div>
                           </div>

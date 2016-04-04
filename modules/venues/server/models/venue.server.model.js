@@ -13,6 +13,9 @@ var VenueSchema = new Schema({
     name: {
         type: String
     },
+    slug: {
+        type: String
+    },
     address: {
         typeL: Object
     },

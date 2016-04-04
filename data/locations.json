@@ -1,17 +1,25 @@
 [
     {
-        "city": "Leeds"
+        "city": "Leeds",
+        "county-filter": "west-yorkshire",
+        "price-info": "Some price details"
     }, {
-        "city": "Sheffield"
+        "city": "Sheffield",
+        "county-filter": "south-yorkshire"
     }, {
-        "city": "York"
+        "city": "York",
+        "county-filter": "north-yorkshire"
     }, {
-        "city": "Huddersfield"
+        "city": "Huddersfield",
+        "county-filter": "west-yorkshire"
     }, {
-        "city": "Bristol"
+        "city": "Bristol",
+        "county-filter": "bristol"
     }, {
-        "city": "Bradford"
+        "city": "Bradford",
+        "county-filter": "west-yorkshire"
     }, {
-        "city": "Harrogate"
+        "city": "Harrogate",
+        "county-filter": "north-yorkshire"
     }
 ]

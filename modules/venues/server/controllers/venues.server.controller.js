@@ -86,8 +86,7 @@ exports.list = function (req, res) {
 };
 
 exports.venueByCity = function (req, res) {
-    var city = req.params['city'];
-    console.log('city:' + city);
+    var city = req.params.city;
 
     Venue.find({'address.city':  { $regex : new RegExp(city, "i") }}).exec(function(err, venues) {
         if(err) {
@@ -98,7 +97,7 @@ exports.venueByCity = function (req, res) {
             res.json(venues);
         }
     });
-}
+};
 
 /**
  * Venue middleware

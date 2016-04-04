@@ -1,14 +1,16 @@
+<div ng-controller="HeaderController">
+  <div class="menu-wrap">
 
-<div class="menu-wrap">
+    <div class="social_icon">
+      <a href="https://www.facebook.com/bootcampsfitness" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="http://twitter.com/ukoutdoorfitnes" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="http://uk.linkedin.com/pub/paul-smith/18/2a4/904" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="http://www.youtube.com/user/ukoutdoorfitness" target="_blank"><i class="fa fa-youtube"></i></a>
+    </div>
 
-  <div class="social_icon">
-    <a href="https://www.facebook.com/bootcampsfitness" target="_blank"><i class="fa fa-facebook"></i></a>
-    <a href="http://twitter.com/ukoutdoorfitnes" target="_blank"><i class="fa fa-twitter"></i></a>
-    <a href="http://uk.linkedin.com/pub/paul-smith/18/2a4/904" target="_blank"><i class="fa fa-linkedin"></i></a>
-    <a href="http://www.youtube.com/user/ukoutdoorfitness" target="_blank"><i class="fa fa-youtube"></i></a>
-  </div>
-
-    <div class="main-menu"><br><br>
+    <div class="main-menu">
+      <br>
+      <br>
       <h4 class="title-menu">Menu</h4>
       <button class="close-button" id="close-button"><i class="fa fa-times"></i></button>
     </div>
@@ -40,6 +42,36 @@
           <li><a href="/join-now">Join Now</a></li>
         </ul>
       </li>
+      <li ng-hide="authentication.user">
+        <a ui-sref="authentication.signup">Sign Up</a>
+      </li>
+      <li ng-hide="authentication.user">
+        <a ui-sref="authentication.signin">Sign In</a>
+      </li>
+      <li class="dropdown" ng-show="authentication.user">
+        <a href="#" data-toggle="dropdown">
+          <img ng-src="{{authentication.user.profileImageURL}}" alt="{{authentication.user.displayName}}" class="header-profile-image" />
+          <span ng-bind="authentication.user.displayName"></span><i class="icon-arrow"></i>
+        </a>
+        <ul class="child-nav dropdown-nav">
+          <li ui-sref-active="active">
+            <a ui-sref="settings.profile">Edit Profile</a>
+          </li>
+          <li ui-sref-active="active">
+            <a ui-sref="settings.picture">Change Profile Picture</a>
+          </li>
+          <li ui-sref-active="active" ng-show="authentication.user.provider === 'local'">
+            <a ui-sref="settings.password">Change Password</a>
+          </li>
+          <li ui-sref-active="active">
+            <a ui-sref="settings.accounts">Manage Social Accounts</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="/api/auth/signout" target="_self">Signout</a>
+          </li>
+        </ul>
+      </li>
       <li class="dropdown">
         <a href="/contact-us">Contact</a>
       </li>
@@ -63,16 +95,16 @@
     <!--Header-->
     <header id="header" class="header header-container alt reveal">
       <div class="top-links">
-						<div class="container">
-							<div class="row">
-									<div class="col-md-10">
-										<div class="top-link">
-											<span class="call-top"><a href="tel:07964787981"><i class="fa fa-phone"></i>07964787981</a></span>  <span><a href="mailto:info@ukoutdoorfitness.com"><i class="fa fa-envelope"></i>info@ukoutdoorfitness.com</a></span>
-										</div>
-									</div>
-							</div>
-						</div>
-				</div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10">
+              <div class="top-link">
+                <span class="call-top"><a href="tel:07964787981"><i class="fa fa-phone"></i>07964787981</a></span> <span><a href="mailto:info@ukoutdoorfitness.com"><i class="fa fa-envelope"></i>info@ukoutdoorfitness.com</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-2 col-sm-3 col-xs-3 logo">
@@ -116,58 +148,42 @@
                 <li>
                   <a href="/obstacle-races-2016">Events</a>
                 </li>
-                <li class="selected active">
-                  <a href="/join-now">Join Now</a>
+                <li ng-hide="authentication.user" class="selected active">
+                  <a ui-sref="authentication.signup">Join Now</a><!-- href="/join-now" -->
+                </li>
+                <li ng-hide="authentication.user">
+                  <a ui-sref="authentication.signin">Sign In</a>
+                </li>
+                <li ng-show="authentication.user">
+                  <a href="#">
+                    <img ng-src="{{authentication.user.profileImageURL}}" alt="{{authentication.user.displayName}}" class="header-profile-image" />
+                    <span ng-bind="authentication.user.displayName"></span>
+                  </a>
+                  <ul class="child-nav">
+                    <li ui-sref-active="active">
+                      <a ui-sref="settings.profile">Edit Profile</a>
+                    </li>
+                    <li ui-sref-active="active">
+                      <a ui-sref="settings.picture">Change Profile Picture</a>
+                    </li>
+                    <li ui-sref-active="active" ng-show="authentication.user.provider === 'local'">
+                      <a ui-sref="settings.password">Change Password</a>
+                    </li>
+                    <li ui-sref-active="active">
+                      <a ui-sref="settings.accounts">Manage Social Accounts</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a href="/api/auth/signout" target="_self">Signout</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </nav>
           </div>
-          <!-- div class="quick-access col-md-1 col-sm-2 col-xs-3">
-                            <div class="shopping-cart">
-                                <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                                <div class="mini-cart product-popular">
-                                    <h3 class="title">Your Cart</h3>
-                                    <ul>
-                                        <li>
-                                            <div class="product-image">
-                                                <a href="#"><img src="images/popular-product.jpg" alt=""></a>
-                                            </div>
-                                            <div class="info-products">
-                                                <div class="product-name">Lorem ipsum dolor sit amet consectetur</div>
-                                                <div class="price-box">
-                                                    <span class="regular-price">$200.60</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="product-image">
-                                                <a href="#"><img src="images/popular-product.jpg" alt=""></a>
-                                            </div>
-                                            <div class="info-products">
-                                                <div class="product-name">Lorem ipsum dolor sit amet consectetur</div>
-                                                <div class="price-box">
-                                                    <span class="regular-price">$200.60</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <button class="check" title="Check out" type="button">
-                                        <span>Check out</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="search">
-                                <a href="#"><i class="fa fa-search"></i></a>
-                                <form id="search" method="post" name="">
-                                    <div class="search-box">
-                                        <input class="top-search" type="text" placeholder="Enter your keywords" name="search" title="Search">
-                                        <input class="sub-search" type="image" src="images/search.png" alt="Submit">
-                                    </div>
-                                </form>
-                            </div>
-                        </div -->
           <button class="menu-button" id="open-button"></button>
         </div>
       </div>
     </header>
     <!--End Header-->
+  </div>

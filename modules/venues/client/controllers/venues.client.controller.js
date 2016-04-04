@@ -15,9 +15,7 @@ angular.module('venues').controller('VenuesController',
         }
 
         $scope.findCities = function() {
-            console.log('called made!');
             $scope.cities = Cities.query();
-            console.log($scope.cities);
         };
 
         // Find a list of Venues
@@ -31,7 +29,7 @@ angular.module('venues').controller('VenuesController',
             }, function(venues) {
                 // create the images url data:
                 venues.forEach(function(venue) {
-                    venue.image = 'modules/venues/client/img/venues/' + venue.name.toLowerCase().split(' ').join('-') + '-270x288.png';
+                    venue.image = 'modules/venues/client/img/venues/' + venue.slug + '-270x288.png';
                 });
                 $scope.venues = venues;
             });

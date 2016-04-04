@@ -1,5 +1,6 @@
 [{
 	"name": "Kirkstall Abbey",
+	"slug": "kirkstall-abbey",
 	"address": {
 		"venue": "Kirkstall Abbey",
 		"street": "",
@@ -15,6 +16,7 @@
 	"indoor": false
 }, {
 	"name": "Headingley",
+	"slug": "headingley",
 	"address": {
 		"venue": "South Parade Baptish Church",
 		"street": "Kirkstall Lane",
@@ -30,6 +32,7 @@
 	"indoor": false
 }, {
 	"name": "Temple Newsam",
+	"slug": "temple-newsam",
 	"address": {
 		"venue": "Temple Newsam",
 		"street": "",
@@ -45,6 +48,7 @@
 	"indoor": false
 }, {
 	"name": "Farsley",
+	"slug": "farsley",
 	"address": {
 		"venue": "Westroyd Park Farsley",
 		"street": "",
@@ -60,6 +64,7 @@
 	"indoor": false
 }, {
 	"name": "Kippax",
+	"slug": "kippax",
 	"address": {
 		"venue": "Brigshaw High School",
 		"street": "",
@@ -75,6 +80,7 @@
 	"indoor": false
 }, {
 	"name": "Airedale Academy",
+	"slug": "airedale-academy",
 	"address": {
 		"venue": "Airedale Academy",
 		"street": "",
@@ -90,6 +96,7 @@
 	"indoor": false
 }, {
 	"name": "The Knavesmire",
+	"slug": "the-knavesmire",
 	"address": {
 		"venue": "Knavesmire",
 		"street": "Knavesmire Road",
@@ -105,6 +112,7 @@
 	"indoor": false
 }, {
 	"name": "Hillsborough Park",
+	"slug": "hillsborough-park",
 	"address": {
 		"venue": "Hillsborough Park",
 		"street": "",
@@ -118,6 +126,7 @@
 	"indoor": false
 }, {
 	"name": "Millhouses Park",
+	"slug": "millhouses-park",
 	"address": {
 		"venue": "Millhouses Park",
 		"street": "",
@@ -133,6 +142,7 @@
 	"indoor": false
 }, {
 	"name": "All Saints Catholic College",
+	"slug": "all-saints-catholic-college",
 	"address": {
 		"venue": "All Saints Catholic College",
 		"street": "Bradley Road",
@@ -148,6 +158,7 @@
 	"indoor": false
 }, {
 	"name": "Baildon Rugby Club",
+	"slug": "baildon-rugby-club",
 	"address": {
 		"venue": "Baildon Rugby Club",
 		"street": "Jenny Lane, Shipley",
@@ -163,6 +174,7 @@
 	"indoor": false
 }, {
 	"name": "Drighlington Moor",
+	"slug": "drighlington-moor",
 	"address": {
 		"venue": "Drighlington",
 		"street": "Moorland Road ",

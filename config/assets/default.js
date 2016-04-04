@@ -30,6 +30,8 @@ module.exports = {
                 'public/js/masterslider.min.js',
                 'public/js/classie.js',
                 'public/js/waypoints.js',
+                'public/js/isotope.pkgd.min.js',
+                'public/js/filtering.js',
                 'public/js/jquery.custombox.js',
                 'public/js/dropdown.js',
                 'public/js/owl.carousel.min.js',

@@ -52,6 +52,7 @@
               </div>
             </div>
             <div class="row">
+              <!-- Template repeater -->
               <div ng-repeat="venue in venues" class="col-md-4 col-sm-6 col-xs-12 pop">
                 <div class="product-image-wrapper">
                   <div class="product-content">
@@ -60,7 +61,7 @@
                     </div>
                     <div class="info-products">
                       <div class="product-name">
-                        <a ui-sref="venues.view({venueId: venue._id})">{{ venue.name }}</a>
+                        <a ref="/venues/{{ venue.address.city | lowercase }}/{{venue.slug}}">{{ venue.name }}</a>
                         <div class="product-bottom"></div>
                       </div>
                       <div class="price-box">
@@ -75,11 +76,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="arrows quickview" ui-sref="venues.view({venueId: venue._id})"><i class="fa fa-info"></i></a>
+                  <a class="arrows quickview" href="/venues/{{ venue.address.city | lowercase }}/{{venue.slug}}"><i class="fa fa-info"></i></a>
                 </div>
               </div>
 
             </div>
+
+                
 
             <div class="clearfix"></div>
 
