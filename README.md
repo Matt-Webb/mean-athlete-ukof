@@ -12,6 +12,7 @@ GENERAL
 - make desktop menu solid on scroll
 - Adobe echo sign API integration - anything existing for front end integration?
 - fix google maps api calls
+- artificial delay on loading home page? slider loads slowly either way
 
 INFO REQUIRED FROM PAUL
 - head office address - Paul
