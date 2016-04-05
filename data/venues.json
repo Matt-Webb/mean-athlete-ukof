@@ -13,7 +13,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "Headingley",
 	"slug": "headingley",
@@ -29,7 +30,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "Temple Newsam",
 	"slug": "temple-newsam",
@@ -45,7 +47,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "Farsley",
 	"slug": "farsley",
@@ -61,7 +64,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "Kippax",
 	"slug": "kippax",
@@ -77,7 +81,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "Airedale Academy",
 	"slug": "airedale-academy",
@@ -93,7 +98,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "The Knavesmire",
 	"slug": "the-knavesmire",
@@ -109,7 +115,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "Hillsborough Park",
 	"slug": "hillsborough-park",
@@ -123,7 +130,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "Millhouses Park",
 	"slug": "millhouses-park",
@@ -139,7 +147,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "All Saints Catholic College",
 	"slug": "all-saints-catholic-college",
@@ -155,7 +164,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "Baildon Rugby Club",
 	"slug": "baildon-rugby-club",
@@ -171,7 +181,8 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }, {
 	"name": "Drighlington Moor",
 	"slug": "drighlington-moor",
@@ -187,5 +198,6 @@
 	"image": null,
 	"active": true,
 	"outdoor": true,
-	"indoor": false
+	"indoor": false,
+	"instructor": []
 }]
