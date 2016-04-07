@@ -74,3 +74,7 @@ CONTACT PAGE
 diff controllers
 - header
 - home
+
+## Known Bugs (to fix) ##
+- blogs / articles rendering (MW)
+ 
