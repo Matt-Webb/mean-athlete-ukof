@@ -19,7 +19,12 @@ module.exports = function(app) {
     app.route('/api/venues/:venueId').all(venuesPolicy.isAllowed)
         .get(venues.read);
 
+    // Single venue routes
+    app.route('/api/venues/item/:slug').all(venuesPolicy.isAllowed)
+        .get(venues.venueBySlug);
+
     // Finish by binding the venue middleware
     app.param('venueId', venues.venueByID);
     app.param('city', venues.venueByCity);
+    app.param('slug', venues.venueBySlug);
 };

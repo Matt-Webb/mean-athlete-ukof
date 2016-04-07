@@ -2,8 +2,8 @@
 
 // Venues controller
 angular.module('venues').controller('VenuesController',
-['$scope', '$stateParams', '$location', 'Authentication', 'Venues', 'Cities', 'VenuesByCity', 'HelperService',
-    function($scope, $stateParams, $location, Authentication, Venues, Cities, VenuesByCity, HelperService) {
+['$scope', '$stateParams', '$location', 'Authentication', 'Venues', 'Cities', 'VenuesByCity', 'VenueBySlug', 'HelperService',
+    function($scope, $stateParams, $location, Authentication, Venues, Cities, VenuesByCity, VenueBySlug, HelperService) {
         $scope.authentication = Authentication;
 
         $scope.city = $stateParams.city || 'All Locations';
@@ -17,11 +17,6 @@ angular.module('venues').controller('VenuesController',
         $scope.findCities = function() {
             $scope.cities = Cities.query();
         };
-
-        // Find a list of Venues
-        // $scope.find = function () {
-        //   $scope.venues = Venues.query();
-        // };
 
         $scope.findVenueByCity = function() {
             VenuesByCity.search({
@@ -40,8 +35,9 @@ angular.module('venues').controller('VenuesController',
 
         // Find existing Venue
         $scope.findOne = function() {
-            $scope.venue = Venues.get({
-                venueId: $stateParams.venueId
+
+            VenueBySlug.search({slug: $stateParams.name }, function(venue) {
+                $scope.venue = venue[0];
             });
         };
 

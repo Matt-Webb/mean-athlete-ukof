@@ -99,6 +99,20 @@ exports.venueByCity = function (req, res) {
     });
 };
 
+exports.venueBySlug = function (req, res) {
+    var slug = req.params.slug;
+
+    Venue.find({'slug': slug }).exec(function(err, venue) {
+        if(err) {
+            return res.status(400).send({
+                message: errorHandler.getErrorMessage(err)
+            });
+        } else {
+            res.json(venue);
+        }
+    });
+};
+
 /**
  * Venue middleware
  */

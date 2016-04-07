@@ -22,6 +22,21 @@ angular.module('venues').factory('Venues', ['$resource',
             }
         });
     }
+]).factory('VenueBySlug', ['$resource',
+    function($resource) {
+        return $resource('api/venues/item/:slug', {
+            slug: '@slug'
+        }, {
+            search: {
+                method: 'GET',
+                isArray: true,
+                params: {
+                    action: "search",
+                    query: '@slug'
+                }
+            }
+        });
+    }
 ]);
 
 //Cities service used for communicating with the venues REST endpoints

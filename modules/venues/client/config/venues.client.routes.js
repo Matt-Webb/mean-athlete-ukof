@@ -19,7 +19,7 @@ angular.module('venues').config(['$stateProvider',
                 templateUrl: 'modules/venues/client/views/list-venues.client.view.html'
             })
             .state('venues.view', {
-                url: '/:city/:venueId',
+                url: '/:city/:name',
                 templateUrl: 'modules/venues/client/views/view-venue.client.view.html'
             });
     }
