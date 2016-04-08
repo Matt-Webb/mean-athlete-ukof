@@ -31,6 +31,9 @@ var VenueSchema = new Schema({
     indoor: {
         type: Boolean
     },
+    timetable: {
+        type: Object
+    },
     created: {
         type: Date,
         default: Date.now

@@ -14,7 +14,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "Headingley",
 	"slug": "headingley",
@@ -31,7 +39,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "Temple Newsam",
 	"slug": "temple-newsam",
@@ -48,7 +64,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "Farsley",
 	"slug": "farsley",
@@ -65,7 +89,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "Kippax",
 	"slug": "kippax",
@@ -82,7 +114,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "Airedale Academy",
 	"slug": "airedale-academy",
@@ -99,7 +139,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "The Knavesmire",
 	"slug": "the-knavesmire",
@@ -116,7 +164,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "Hillsborough Park",
 	"slug": "hillsborough-park",
@@ -131,7 +187,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "Millhouses Park",
 	"slug": "millhouses-park",
@@ -148,7 +212,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "All Saints Catholic College",
 	"slug": "all-saints-catholic-college",
@@ -165,7 +237,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "Baildon Rugby Club",
 	"slug": "baildon-rugby-club",
@@ -182,7 +262,15 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }, {
 	"name": "Drighlington Moor",
 	"slug": "drighlington-moor",
@@ -199,5 +287,13 @@
 	"active": true,
 	"outdoor": true,
 	"indoor": false,
-	"instructor": []
+	"instructor": [],
+	"timetable": [{ "monday" : { "times": ["18:00", "19:00"]},
+	 				"tuesday" : { "times": []},
+					"wednesday" : { "times": ["19:00", "20:00"]},
+					"thursday" : { "times": ["18:30", "19:30"]},
+					"friday" : { "times": []},
+					"saturday" : { "times": ["06:00", "19:00"]},
+					"sunday" : { "times": ["08:00"]}
+	 }]
 }]
