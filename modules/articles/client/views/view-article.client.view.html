@@ -1,22 +1,55 @@
 <section ng-controller="ArticlesController" ng-init="findOne()">
-  <div class="page-header">
-    <h1 ng-bind="article.title"></h1>
+  <!--Banner-->
+  <section class="page-heading">
+    <div class="title-slide">
+      <div class="container">
+        <div class="banner-content slide-container">
+          <div class="page-title">
+            <h3>Edit your profile</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Banner-->
+  <!-- Page Content -->
+  <div class="page-content">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul>
+          <li class="home"><a ui-sref="home"><i class="fa fa-home"></i> Home</a></li>
+          <li><span>//</span></li>
+          <li class="category-1"><a ui-sref="articles.list">Blog</a></li>
+          <li><span>//</span></li>
+          <li class="category-2">{{ article.title }}</li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="page-header">
+              <h1 ng-bind="article.title"></h1>
+            </div>
+            <small>
+            <em class="text-muted">
+              Posted on
+              <span ng-bind="article.created | date:'mediumDate'"></span>
+              by
+              <span ng-bind="article.user.displayName"></span>
+            </em>
+          </small>
+            <p class="lead" ng-bind="article.content"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Content -->
   </div>
-  <div class="pull-right" ng-show="authentication.user._id == article.user._id">
-    <a class="btn btn-primary" ui-sref="articles.edit({articleId: article._id})">
-      <i class="glyphicon glyphicon-edit"></i>
-    </a>
-    <a class="btn btn-primary" ng-click="remove();">
-      <i class="glyphicon glyphicon-trash"></i>
-    </a>
-  </div>
-  <small>
-    <em class="text-muted">
-      Posted on
-      <span ng-bind="article.created | date:'mediumDate'"></span>
-      by
-      <span ng-bind="article.user.displayName"></span>
-    </em>
-  </small>
-  <p class="lead" ng-bind="article.content"></p>
+  <!-- End Page Content -->
 </section>

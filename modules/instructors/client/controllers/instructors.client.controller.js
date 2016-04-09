@@ -19,6 +19,12 @@ angular.module('instructors').controller('InstructorsController', ['$scope', '$s
       });
     };
 
+    $scope.findBySlug = function() {
+        InstructorBySlug.search({slug: $stateParams.slug }, function(instructor) {
+            $scope.instructor = instructor;
+        });
+    };
+
 
 
     $timeout(function() {

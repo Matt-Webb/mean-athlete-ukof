@@ -17,6 +17,10 @@ angular.module('instructors').config(['$stateProvider',
       .state('instructors.view', {
         url: '/:instructorId',
         templateUrl: 'modules/instructors/client/views/view-instructor.client.view.html'
+      })
+      .state('instructors.slug', {
+        url: '/:slug',
+        templateUrl: 'modules/instructors/client/views/view-instructor.client.view.html'
       });
   }
 ]);

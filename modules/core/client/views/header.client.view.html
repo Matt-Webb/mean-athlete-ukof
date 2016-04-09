@@ -73,13 +73,13 @@
         <a href="/contact-us">Contact</a>
       </li>
       <li class="dropdown">
-        <a href="/articles" data-toggle="dropdown">Blog<i class="icon-arrow"></i></a>
+        <a ui-sref="articles.list" data-toggle="dropdown">Blog<i class="icon-arrow"></i></a>
       </li>
       <li>
         <a href="/obstacle-races-2016">Events</a>
       </li>
-      <li>
-        <a href="/join-now">Join Now</a>
+      <li ng-hide="authentication.user" class="selected active">
+        <a ui-sref="authentication.signup">Join Now</a>
       </li>
     </ul>
   </div>

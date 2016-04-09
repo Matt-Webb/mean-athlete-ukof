@@ -1,0 +1,37 @@
+<!--Banner-->
+<section class="page-heading">
+  <div class="title-slide">
+    <div class="container">
+      <div class="banner-content slide-container">
+        <div class="page-title">
+          <h3>Edit your profile</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Banner-->
+<!-- Page Content -->
+<div class="page-content">
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li class="home"><a ui-sref="home"><i class="fa fa-home"></i> Home</a></li>
+        <li><span>//</span></li>
+        <li class="category-2"><a href="#">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Breadcrumbs -->
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </div>
+  <!-- End Main Content -->
+</div>
+<!-- End Page Content -->

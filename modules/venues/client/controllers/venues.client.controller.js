@@ -35,7 +35,6 @@ angular.module('venues').controller('VenuesController',
 
         // Find existing Venue
         $scope.findOne = function() {
-
             VenueBySlug.search({slug: $stateParams.name }, function(venue) {
                 $scope.venue = venue[0];
             });

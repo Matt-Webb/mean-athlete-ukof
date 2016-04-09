@@ -31,6 +31,9 @@ var VenueSchema = new Schema({
     indoor: {
         type: Boolean
     },
+    instructors: {
+        type: Object
+    },
     timetable: {
         type: Object
     },
@@ -39,6 +42,7 @@ var VenueSchema = new Schema({
         default: Date.now
     }
 });
+
 
 
 mongoose.model('Venue', VenueSchema);

@@ -38,7 +38,7 @@
               <p class="amount">
                 <strong>SHOWING ALL {{ venues.length }} RESULTS</strong>
               </p>
-              <div class="sorter">
+              <!-- <div class="sorter">
                 <div class="sort-by">
                   <select onchange="setLocation(this.value)">
                     <option selected="selected" value="">Default sorting</option>
@@ -49,7 +49,7 @@
                   <strong class="grid-active" title="Grid"><i class="fa fa-th-large"></i></strong>
                   <a class="list" title="List" href="product-listing-row.html"><i class="fa fa-th-list"></i></a>
                 </p>
-              </div>
+              </div> -->
             </div>
             <div class="row">
               <!-- Template repeater -->
@@ -70,8 +70,7 @@
                       </div>
                       <div class="actions">
                         <ul>
-                          <li><a href="#"><i class="fa fa-info"></i></a></li>
-                          <li><a href="#"><i class="fa fa-star"></i></a></li>
+                          <li><a href="/venues/{{ venue.address.city | lowercase }}/{{venue.slug}}"><i class="fa fa-info"></i></a></li>
                         </ul>
                       </div>
                     </div>
@@ -82,7 +81,7 @@
 
             </div>
 
-                
+
 
             <div class="clearfix"></div>
 

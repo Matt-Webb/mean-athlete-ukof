@@ -11,4 +11,19 @@ angular.module('instructors').factory('Instructors', ['$resource',
       }
     });
   }
+]).factory('InstructorBySlug', ['$resource',
+  function ($resource) {
+    return $resource('api/instructors/:slug',  {
+        slug: '@slug'
+    }, {
+        search: {
+            method: 'GET',
+            isArray: true,
+            params: {
+                action: "search",
+                query: '@slug'
+            }
+        }
+    });
+  }
 ]);

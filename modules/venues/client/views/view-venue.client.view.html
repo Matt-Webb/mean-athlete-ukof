@@ -160,7 +160,7 @@
           <!-- End Comments -->
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-          <section class="class-trainer">
+          <section ng-repeat="instructor in venue.instructors" class="class-trainer">
             <div class="class-trainer-title">
               <h4>Class Trainer</h4>
               <div class="img-trainer">
@@ -168,10 +168,10 @@
               </div>
             </div>
             <div class="class-trainer-content">
-              <h4>Lupin Remus</h4>
+              <h4>{{ instructor.name }}</h4>
               <h6>Fitness Trainer</h6>
               <p>Lorem ipsum dolor sit ametcont adipiscing elit. Duis vestibulum turpis eu nunc volutpat vestibulum. scelerisque arcu ac ante tristique iaculis</p>
-              <a class="profile" href="#">Profile</a>
+              <a class="profile" ui-sref="">Profile</a>
             </div>
           </section>
           <section class="class-info">
