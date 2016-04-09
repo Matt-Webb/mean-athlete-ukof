@@ -9,7 +9,6 @@ COLOR DEFINITION
 .box-right .icon .fa,
 .about-bottom-title h4,
 .news-date,
-.parallax-background-overlay,
 .month,
 .our-pricing,
 .content-our-team.our-team-tabs .our-team-pane,
@@ -102,6 +101,14 @@ COLOR DEFINITION
 {
 	background: none repeat scroll 0 0 #da1f5e;
 }
+
+.about,
+.top-links,
+.parallax-background-overlay
+{
+	background: none repeat scroll 0 0 #007bbd;
+}
+
 /*---------- End Background Color ------------*/
 
 /*---------- Text Color ------------*/

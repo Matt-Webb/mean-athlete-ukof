@@ -713,7 +713,7 @@ div h5, h6{
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .top-link {
-    line-height: 4;
+    line-height: 2;
 }
 .address-top {
     margin-right: 15px;
@@ -1249,14 +1249,14 @@ div h5, h6{
 
 /* About */
 .about {
-  background: #da1f5e;
   position: relative;
 }
 .about-top {
     /* background: url("../images/bg-position-3.jpg") repeat-x scroll center top transparent; */
     padding-bottom: 30px;
     position: relative;
-	background-size:100% auto;
+    background-size:100% auto;
+    /* color: #000000; */
 }
 .about-top:before{
     position:absolute;
@@ -1266,10 +1266,10 @@ div h5, h6{
     height:60%;
     bottom:0;
     left:0;
-    background: linear-gradient(90deg, #242424 , transparent);
+    /* background: linear-gradient(90deg, #242424 , transparent);
     background: -o-linear-gradient(90deg, #242424 , transparent);
     background: -moz-linear-gradient(90deg, #242424 , transparent);
-    background: -webkit-linear-gradient(90deg, #242424 , transparent);
+    background: -webkit-linear-gradient(90deg, #242424 , transparent); */
 }
 .title-page {
     padding-bottom: 20px;
@@ -7107,7 +7107,7 @@ img.out-pos {
 
 /* Social icons */
 .social_icon {
-    margin-top: 20px;
+    margin-top: 2px;
 }
 .social_icon a {
   background: none repeat scroll 0 0 #303030;

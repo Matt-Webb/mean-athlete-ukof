@@ -7,6 +7,8 @@ MVP
 - account - echo sign iframe + toggle to hide (MW)
 - 302 redirect rules - express? (MW)
 - need to consider what to do about trailing slashes to avoid 404 SEO hell - is this an option? (MW) https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes
+- social sign up on registration form (MW)
+- complete topbar styling on mobile (JB)
 
 
 - hook up email server (JB)
