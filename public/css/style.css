@@ -1249,11 +1249,11 @@ div h5, h6{
 
 /* About */
 .about {
-  background: #242424;
+  background: #da1f5e;
   position: relative;
 }
 .about-top {
-    background: url("../images/bg-position-3.jpg") repeat-x scroll center top transparent;
+    /* background: url("../images/bg-position-3.jpg") repeat-x scroll center top transparent; */
     padding-bottom: 30px;
     position: relative;
 	background-size:100% auto;
