@@ -1,48 +1,64 @@
 # MEAN JS testing
+MVP
+- signing in after sign up page user still remains on signup and sees form (MW)
+- mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null' (MW)
+- registration date (MW)
+- echo sign iframe and toggle to hide (MW)
+- account - echo sign iframe + toggle to hide (MW)
+- 302 redirect rules - express? (MW)
+- need to consider what to do about trailing slashes to avoid 404 SEO hell - is this an option? (MW) https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes
 
-GENERAL
-- need to consider what to do about trailing slashes to avoid 404 SEO hell - is this an option? https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes
-- 302 redirect rules - express?
-- hook up email server
-- footer text
-- mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null'
+
+- hook up email server (JB)
+- footer text (JB)
+- move slider text into boxes so that background pics can be lighter? (JB)
+- home - sort about section (JB)
+- home - add content to cards or remove? (JB)
+- home - make video more prominent (JB)
+- home - schedule to remain? (JB)
+
+
+- head office address - Paul
+
+SERVER STUFF
+- investigate using NGINX in front of Node (JB)
+- lock down access apart from via Cloudflare (JB)
+- resource monitoring (JB)
+- load test? (JB)
+- monitor https://www.cloudflare.com/ips-v4 for change in CloudFlare IP addresses (JB)
+- backup Mongo off box (JB)
+
+OTHER
 - spacing and styling of top bar contact details
 - make logo bigger on mobile
-- social icon links in mobile menu not working
-- make desktop menu solid on scroll
-- Adobe echo sign API integration - anything existing for front end integration?
+- Adobe echo sign API integration - anything existing for front end integration? https://secure.echosign.com/redirect/latestRestApiMethods
 - fix google maps api calls
 - artificial delay on loading home page? slider loads slowly either way
+- ~social icon links in mobile menu not working~
+- ~make desktop menu solid on scroll~
 
 INFO REQUIRED FROM PAUL
-- head office address - Paul
 - repeating short video for home page slider?
 
-HOME PAGE - JB
-- take top header section from index-header-v3.html
-- move slider text into boxes so that background pics can be lighter?
-- sort about section
-- add content to cards or remove?
-- make video more prominent
-- schedule to remain?
-
+HOME PAGE
+- ~take top header section from index-header-v3.html~
 
 ACCOUNT AREA - YOUR INFO
 - bib colour / standard
 - home park
 - membership status
 - membership number
-- registration date
 - attendance
 - fitness tests
-- echo sign iframe and toggle to hide
+- capture device registered on in back end?
+- capture devices logging in on?
 
 ACCOUNT AREA - GENERIC LINKS
 - members feedback
 - members faq
-- change details
-- change password
-- log out
+- change details (MW)
+- change password (MW)
+- log out (MW)
 
 ACCOUNT AREA - JOIN NOW
 - depends on membership status?
@@ -64,17 +80,14 @@ ABOUT PAGE
 PRICES
 - update wording
 
-
 CONTACT PAGE
 - stripped out partners logos, could add back in or use on another page if Paul has as list
 - map needs fixing
 - swap out contact form for sticky form on every page? could reuse Olark for this from current site
 
+BLOGS
+- rendering (MW)
 
 diff controllers
 - header
 - home
-
-## Known Bugs (to fix) ##
-- blogs / articles rendering (MW)
- 
