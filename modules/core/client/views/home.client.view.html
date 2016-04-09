@@ -126,17 +126,83 @@
             <div class="col-xs-12">
               <div class="container">
                 <div class="content-about">
-                  <p>Bored of the gym? Fed up of not seeing results? Like to get fit & have fun?
-                    UK Outdoor Fitness offers the very best in outdoor/bootcamp training. Get fit, tone up, lose weight and meet new people, whilst having fun in parks across Leeds, Bradford, Wakefield and Sheffield.
-                    Our sessions cater for all levels of fitness, from absolute beginners to advanced fitness fanatics. Regardless of your fitness level we can guarantee you quick results whether you want to lose weight, tone up, get stronger or improve your overall general fitness/health.
-                    For a fraction of the price of gym membership you will have a superior workout session under the instruction of Personal Trainers/Fitness Instructors (all REPs level 3 and above). Our instructors will help you achieve your goals in a motivating, fun and effective manner.
-                    All Levels of fitness welcome and catered for. We guarantee you results whatever fitness stage you are at.</p>
+                  <p>UK Outdoor Fitness offers the very best in outdoor/bootcamp training. Get fit, tone up, lose weight and meet new people, whilst having fun in parks across Leeds, Harrogate, Bradford, Wakefield, Sheffield and Bristol.</p>
+                  <p>Our sessions cater for all levels of fitness, from absolute beginners to advanced fitness fanatics. Regardless of your fitness level we can guarantee you quick results whether you want to lose weight, tone up, get stronger or improve your overall general fitness/health.</p>
+                  <p>For a fraction of the price of gym membership you will have a superior workout session under the instruction of Personal Trainers/Fitness Instructors (all REPs level 3 and above). Our instructors will help you achieve your goals in a motivating, fun and effective manner.</p>
+                  <p>All Levels of fitness welcome and catered for. We guarantee you results whatever fitness stage you are at.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!--End About-->
+
+
+    <!--Our Pricing-->
+    <section class="our-pricing">
+      <div class="our-pricing-title">
+        <div class="ch-item">
+          <div class="ch-info-wrap">
+            <div class="ch-info">
+              <div class="ch-info-front">
+                <h2>New</h2>
+                <h3>Locations</h3>
+              </div>
+              <div class="ch-info-back">
+                <h2>New</h2>
+                <h3>Locations</h3>
+              </div>
+            </div><!-- end ch-info -->
+          </div><!-- end ch-info-wrap -->
+        </div><!-- end ch-item -->
+      </div>
+      <div class="boxing-card">
+        <div class="our-price col-md-6 col-sm-6 col-xs-12">
+          <div class="image-price-right">
+            <img src="images/our-price-1.jpg" alt=""/>
+          </div>
+          <div class="boxing-card-content">
+            <h3>Bristol</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adi
+              sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis</p>
+              <div ng-hide="authentication.user" class="join">
+                  <a ui-sref="authentication.signup">Join Now</a>
+              </div>
+              <div ng-show="authentication.user" class="join">
+                  <a ui-sref="settings.profile">Your Profile</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="yoga-card">
+        <div class="our-price col-md-6 col-sm-6 col-xs-12">
+          <div class="image-price-left">
+            <img src="images/our-price-2.jpg" alt=""/>
+          </div>
+          <div class="yoga-content">
+            <div class="yoga-card-content">
+              <h3>Harrogate</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adi
+                sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis</p>
+                <div ng-hide="authentication.user" class="join">
+                    <a ui-sref="authentication.signup">Join Now</a>
+                </div>
+                <div ng-show="authentication.user" class="join">
+                    <a ui-sref="settings.profile">Your Profile</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Our Pricing-->
+
+
+
+
+    <section>
       <div class="about-bottom">
         <div class="container">
           <div class="row">
@@ -756,57 +822,6 @@
       </div>
     </section>
     <!--End TimeTable-->
-    <!--Our Pricing-->
-    <section class="our-pricing">
-      <div class="our-pricing-title">
-        <div class="ch-item">
-          <div class="ch-info-wrap">
-            <div class="ch-info">
-              <div class="ch-info-front">
-                <h2>New</h2>
-                <h3>Locations</h3>
-              </div>
-              <div class="ch-info-back">
-                <h2>New</h2>
-                <h3>Locations</h3>
-              </div>
-            </div><!-- end ch-info -->
-          </div><!-- end ch-info-wrap -->
-        </div><!-- end ch-item -->
-      </div>
-      <div class="boxing-card">
-        <div class="our-price col-md-6 col-sm-6 col-xs-12">
-          <div class="image-price-right">
-            <img src="images/our-price-1.jpg" alt=""/>
-          </div>
-          <div class="boxing-card-content">
-            <h3>Bristol</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adi
-              sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis</p>
-            <div class="price">
-              <a class="shopping-buy" href="/authentication/signup"><span>Join Now</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="yoga-card">
-        <div class="our-price col-md-6 col-sm-6 col-xs-12">
-          <div class="image-price-left">
-            <img src="images/our-price-2.jpg" alt=""/>
-          </div>
-          <div class="yoga-content">
-            <div class="yoga-card-content">
-              <h3>Harrogate</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adi
-                sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis</p>
-              <div class="price">
-                <a class="shopping-buy" href="/authentication/signup"><span>Join Now</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--End Our Pricing-->
+
   </div>
 </section>
