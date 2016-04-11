@@ -1,9 +1,10 @@
 'use strict';
 
 // Instructors controller
-angular.module('instructors').controller('InstructorsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Instructors', 'HelperService',
+angular.module('instructors').controller('InstructorsController', ['$scope', '$stateParams', '$location', 'Authentication',
+'Instructors','InstructorBySlug', 'HelperService',
     '$timeout',
-  function ($scope, $stateParams, $location, Authentication, Instructors, HelperService, $timeout) {
+  function ($scope, $stateParams, $location, Authentication, Instructors, InstructorBySlug, HelperService, $timeout) {
     $scope.authentication = Authentication;
 
 
