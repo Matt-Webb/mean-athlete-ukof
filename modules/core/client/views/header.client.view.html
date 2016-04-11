@@ -10,7 +10,7 @@
       <h4 class="title-menu">Menu</h4>
       <button class="close-button" id="close-button"><i class="fa fa-times"></i></button>
     </div>
-    <ul class="nav-menu">
+    <ul id="mobile-menu" class="nav-menu">
       <li class="selected active">
         <a href="/">Home</a>
       </li>
@@ -34,13 +34,27 @@
       <li class="dropdown">
         <a href="#" data-toggle="dropdown">Locations<i class="icon-arrow"></i></a>
         <ul class="child-nav dropdown-nav">
-          <li><a ui-sref="locations">Locations</a></li>
-          <li><a ui-sref="venues.city({city: 'Leeds'})">Leeds</a></li>
-          <li><a href="/join-now">Join Now</a></li>
+          <li><a ui-sref="locations">All</a></li>
+          <li><a ui-sref="venues.city({city: 'bradford'})">Bradford</a></li>
+          <li><a ui-sref="venues.city({city: 'bristol'})">Bristol</a></li>
+          <li><a ui-sref="venues.city({city: 'harrogate'})">Harrogate</a></li>
+          <li><a ui-sref="venues.city({city: 'huddersfield'})">Huddersfield</a></li>
+          <li><a ui-sref="venues.city({city: 'leeds'})">Leeds</a></li>
+          <li><a ui-sref="venues.city({city: 'sheffield'})">Sheffield</a></li>
+          <li><a ui-sref="venues.city({city: 'york'})">York</a></li>
         </ul>
       </li>
+      <li>
+        <a href="/obstacle-races-2016">Events</a>
+      </li>
+      <li>
+        <a ui-sref="articles.list">Blog</a>
+      </li>
+      <li>
+        <a href="/contact-us">Contact</a>
+      </li>
       <li ng-hide="authentication.user">
-        <a ui-sref="authentication.signup">Sign Up</a>
+        <a ui-sref="authentication.signup">Join Now</a>
       </li>
       <li ng-hide="authentication.user">
         <a ui-sref="authentication.signin">Sign In</a>
@@ -68,18 +82,6 @@
             <a href="/api/auth/signout" target="_self">Signout</a>
           </li>
         </ul>
-      </li>
-      <li class="dropdown">
-        <a href="/contact-us">Contact</a>
-      </li>
-      <li class="dropdown">
-        <a ui-sref="articles.list" data-toggle="dropdown">Blog<i class="icon-arrow"></i></a>
-      </li>
-      <li>
-        <a href="/obstacle-races-2016">Events</a>
-      </li>
-      <li ng-hide="authentication.user" class="selected active">
-        <a ui-sref="authentication.signup">Join Now</a>
       </li>
     </ul>
   </div>
@@ -127,15 +129,21 @@
                 <li>
                   <a href="#">Locations</a>
                   <ul class="child-nav">
-                    <li><a ui-sref="locations">Locations</a></li>
-                    <li><a ui-sref="venues.city({city: 'leeds'})">Leeds</a></li>
+                      <li><a ui-sref="locations">All</a></li>
+                      <li><a ui-sref="venues.city({city: 'bradford'})">Bradford</a></li>
+                      <li><a ui-sref="venues.city({city: 'bristol'})">Bristol</a></li>
+                      <li><a ui-sref="venues.city({city: 'harrogate'})">Harrogate</a></li>
+                      <li><a ui-sref="venues.city({city: 'huddersfield'})">Huddersfield</a></li>
+                      <li><a ui-sref="venues.city({city: 'leeds'})">Leeds</a></li>
+                      <li><a ui-sref="venues.city({city: 'sheffield'})">Sheffield</a></li>
+                      <li><a ui-sref="venues.city({city: 'york'})">York</a></li>
                   </ul>
                 </li>
                 <li>
                   <a href="/contact-us">Contact</a>
                 </li>
                 <li>
-                  <a href="/articles">Blog</a>
+                  <a ui-sref="articles.list">Blog</a>
                 </li>
                 <li>
                   <a href="/obstacle-races-2016">Events</a>

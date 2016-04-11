@@ -8,44 +8,68 @@
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
-(function() {
-	"use strict";
-	var bodyEl = document.body,
-		content = document.querySelector( '.content-wrapper' ),
-		openbtn = document.getElementById( 'open-button' ),
-		closebtn = document.getElementById( 'close-button' ),
-		isOpen = false;
+(function($) {
+    "use strict";
+    var bodyEl = document.body,
+        content = document.querySelector('.content-wrapper'),
+        openbtn = document.getElementById('open-button'),
+        closebtn = document.getElementById('close-button'),
+        isOpen = false,
+        mobileMenu = $('#mobileMenu li');
 
-	function init() {
-		initEvents();
-	}
+    function init() {
+        setTimeout(function() {
+            bodyEl = document.body;
+            content = document.querySelector('.content-wrapper');
+            openbtn = document.getElementById('open-button');
+            closebtn = document.getElementById('close-button');
+            isOpen = false;
+            mobileMenu = $('#mobileMenu li');
+            initEvents();
+        }, 1000);
+    }
 
-	function initEvents() {
-		openbtn.addEventListener( 'click', toggleMenu );
-		if( closebtn ) {
-			closebtn.addEventListener( 'click', toggleMenu );
-		}
+    function initEvents() {
 
-		// close the menu element if the target it´s not the menu element or one of its descendants..
-		content.addEventListener( 'click', function(ev) {
-			var target = ev.target;
-			if( isOpen && target !== openbtn ) {
-				toggleMenu();
-			}
-		} );
-	}
+        if (openbtn) {
+            openbtn.addEventListener('click', toggleMenu);
+        }
 
-	function toggleMenu() {
-		if( isOpen ) {
-			classie.remove( bodyEl, 'show-menu' );
-		}
-		else {
-			classie.add( bodyEl, 'show-menu' );
-		}
-		isOpen = !isOpen;
-	}
+        if (closebtn) {
+            closebtn.addEventListener('click', toggleMenu);
+        }
 
-	init();
+        if (content) {
+            // close the menu element if the target it´s not the menu element or one of its descendants..
+            content.addEventListener('click', function(ev) {
+                var target = ev.target;
+                console.log('clicked!');
+                if (isOpen && target !== openbtn) {
+                    toggleMenu();
+                }
+            });
+        }
+
+        if (mobileMenu) {
+			console.log('mobile menu loaded!', mobileMenu);
+            mobileMenu.click(function(ev) {
+                var target = ev.target;
+                console.log('menu clicked!');
+            });
+        }
+
+    }
+
+    function toggleMenu() {
+        if (isOpen) {
+            classie.remove(bodyEl, 'show-menu');
+        } else {
+            classie.add(bodyEl, 'show-menu');
+        }
+        isOpen = !isOpen;
+    }
+
+    init();
 
 
-})();
+})(jQuery);

@@ -35,6 +35,7 @@ module.exports = {
                 'public/js/jquery.custombox.js',
                 'public/js/dropdown.js',
                 'public/js/owl.carousel.min.js',
+                'public/js/main.js',
                 //------- mean angular components:
                 'public/lib/angular/angular.js',
                 'public/lib/angular-resource/angular-resource.js',
