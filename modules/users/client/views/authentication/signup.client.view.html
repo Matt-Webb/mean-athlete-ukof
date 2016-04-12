@@ -2,7 +2,6 @@
   <toaster-container></toaster-container>
   <div class="ibox-content signup">
     <div class="row">
-      <h3 class="col-md-12 text-center">Sign up now!</h3>
 
       <div class="col-xs-12 col-md-4 col-md-offset-1">
         <section id="joinnow" class="joinnow">
@@ -38,6 +37,14 @@
       </div>
 
       <div class="col-xs-12 col-md-6">
+        <h3 class="text-center">Sign up now!</h3>
+
+        <div class="text-center">
+            <a class="btn" style="background-color: #48629B;" ng-click="callOauthProvider('/api/auth/facebook')"><i class="fa fa-facebook"></i> Sign in with Facebook</a>
+            <a class="btn" style="background-color: #23B0E6;" ng-click="callOauthProvider('/api/auth/twitter')"></i> Sign in with Twitter</a>
+        </div>
+
+
         <form name="userForm" ng-submit="signup(userForm.$valid)" class="signin" novalidate autocomplete="off">
           <fieldset>
             <div class="form-group" show-errors>
@@ -101,6 +108,12 @@
           </fieldset>
         </form>
       </div>
+
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <h3 class="text-center">Complete your health questionnaire</h3>
+        <iframe src="https://secure.na1.echosign.com/public/esignWidget?wid=2AAABLblqZhA8A4soT8usC6y38euFOTXjuFpKlyDeSfc7IzNUMwPNOqzyL_asVTaM-Q5vo0W1o-w*&amp;hosted=false&amp;token=&amp;firstName=&amp;lastName=&amp;nameEditable=true" width="100%" height="100%"
+            frameborder="0" style="border: 0; overflow: hidden; min-height: 500px; min-width: 600px;">
+        </iframe </div>
+      </div>
     </div>
   </div>
-</div>

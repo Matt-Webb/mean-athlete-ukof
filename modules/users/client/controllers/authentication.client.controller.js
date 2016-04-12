@@ -16,7 +16,7 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$stat
 
       if (!isValid) {
         $scope.$broadcast('show-errors-check-validity', 'userForm');
-
+        console.log('The form is flagged as invalid');
         return false;
       }
 
@@ -25,7 +25,10 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$stat
         $scope.authentication.user = response;
 
         // And redirect to the previous or home page
-        $state.go($state.previous.state.name || 'home', $state.previous.params);
+        console.log($state.previous.state.name);
+
+        $state.go(/*$state.previous.state.name || */ 'home', $state.previous.params);
+
       }).error(function (response) {
         $scope.error = response.message;
       });

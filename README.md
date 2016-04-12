@@ -1,14 +1,19 @@
 # MEAN JS testing
 MVP
-- signing in after sign up page user still remains on signup and sees form (MW)
-- mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null' (MW)
+- ~signing in after sign up page user still remains on signup and sees form~ (MW)
+- ~mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null'~ (MW)
 - registration date (MW)
 - echo sign iframe and toggle to hide (MW)
+    * ~add iframe both to sign up and edit profile in case the don't complete at sign up~ (MW)
+    * add boolean to user profile object for health Q (MW)
+    * update edit profile settings for marking complete
+        * Investigate API for tracking these? Non MVP (MW)
 - account - echo sign iframe + toggle to hide (MW)
 - 302 redirect rules - express? (MW)
-- need to consider what to do about trailing slashes to avoid 404 SEO hell - is this an option? (MW) https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes
-- add social sign up buttons to sign up page - using new flat buttons.
-- social sign up on registration form (MW)
+- need to consider what to do about trailing slashes to avoid 404 SEO hell - is this an option? (MW)
+    * https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes
+- ~add social sign up buttons to sign up page - using new flat buttons~~ (MW)
+- ~social sign up on registration form~ (MW)
 - complete topbar styling on mobile (JB)
 
 
