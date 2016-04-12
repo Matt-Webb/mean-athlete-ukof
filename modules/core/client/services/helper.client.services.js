@@ -1,4 +1,4 @@
-(function() {
+(function($) {
     'use strict';
 
     angular
@@ -18,10 +18,9 @@
         return helper;
 
         function dropdown() {
-            (function() {
 
-                var dropdown = document.querySelectorAll('.dropdown');
-                var dropdownArray = Array.prototype.slice.call(dropdown,0);
+                var _dropdown = document.querySelectorAll('.dropdown');
+                var dropdownArray = Array.prototype.slice.call(_dropdown,0);
                 dropdownArray.forEach(function(el){
                     var button = el.querySelector('a[data-toggle="dropdown"]'),
                         menu = el.querySelector('.dropdown-nav'),
@@ -48,13 +47,11 @@
                 Element.prototype.hasClass = function(className) {
                     return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
                 };
-                // Author code here
-            })();
+
         }
 
 
         function script() {
-            (function ($) {
 
                 $(document).ready(function () {
                     $('#parallax-block').btparallaxfix("50%", 0.5);
@@ -93,11 +90,9 @@
                     };
                     $('#parallax-block-modern').btParallax(options);
                 });
-            })(jQuery);
         }
 
         function banner() {
-            (function($) {
                 // jQuery Banner Index
                 var slider = new MasterSlider();
 
@@ -134,11 +129,10 @@
 
                 });
                 // End jQuery Banner Layer
-            })(jQuery);
         }
 
         function template() {
-            (function ($) {
+
                 var html = '';
                 var widthBox = $('#boxOpenTime').width();
                 $('.img-box-right-border').css('border-left-width', widthBox + 'px');
@@ -781,12 +775,9 @@
                     }
                     return "";
                 }
-            })(jQuery);
         }
 
         function theme() {
-            (function($){
-
 
                 $(function(){
 
@@ -1184,11 +1175,9 @@
 
                     Core.initialize();
                 });
-            })(jQuery);
         }
 
         function menu() {
-            (function() {
 
                 var bodyEl = document.body,
                     content = document.querySelector( '.content-wrapper' ),
@@ -1227,8 +1216,7 @@
 
                 init();
 
-            })();
         }
     }
 
-})();
+})(jQuery);
