@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('core').controller('HeaderController', ['$scope', '$state', 'Authentication', 'Menus',
-  function ($scope, $state, Authentication, Menus) {
+angular.module('core').controller('HeaderController', ['$scope', '$state', 'Authentication', 'Menus', 'HelperService', '$timeout',
+  function ($scope, $state, Authentication, Menus, HelperService, $timeout) {
     // Expose view variables
     $scope.$state = $state;
     $scope.authentication = Authentication;
@@ -19,5 +19,15 @@ angular.module('core').controller('HeaderController', ['$scope', '$state', 'Auth
     $scope.$on('$stateChangeSuccess', function () {
       $scope.isCollapsed = false;
     });
+
+    $timeout(function() {
+        HelperService.script();
+        HelperService.template();
+        HelperService.banner();
+        HelperService.theme();
+        HelperService.menu();
+        HelperService.dropdown();
+    }, 3000);
+
   }
 ]);

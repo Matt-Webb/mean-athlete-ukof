@@ -1,18 +1,8 @@
 'use strict';
 
-angular.module('core').controller('HomeController', ['$scope', 'Authentication','HelperService','$timeout',
-  function ($scope,Authentication,HelperService,$timeout) {
+angular.module('core').controller('HomeController', ['$scope', 'Authentication','HelperService',
+  function ($scope,Authentication,HelperService) {
     // This provides Authentication context.
     $scope.authentication = Authentication;
-      console.log('home Ctrl called');
-      //var vm = this;
-      $timeout(function() {
-          HelperService.script();
-          HelperService.template();
-          HelperService.banner();
-          HelperService.theme();
-          HelperService.menu();
-          HelperService.dropdown();
-      }, 3000);
   }
 ]);
