@@ -72,9 +72,10 @@
 <li>10 Session Block <strong>£60 </strong>(Cash/ Credit Card/ Cheque)</li>
 <li>Yearly Annual Membership <strong>£280 </strong>one off payment – (Cash/ Credit Card/ Cheque)</li>
 </ul>
-<p>Please read our <a title="Terms and Conditions" href="/terms-and-conditions">terms and conditions</a> before <a title="Join Now" href="/join-now">signing up online</a>.</p>
-
-
+  <p>Please read our <a title="Terms and Conditions" href="/terms-and-conditions">terms and conditions</a>
+  <a ng-hide="authentication.user" ui-sref="authentication.signup">before signing up online</a>
+  <a ng-show="authentication.user" ui-sref="settings.profile">ensure you have filled out the Health Questionnaire in your profile</a>
+  .</p>
       </div>
     </section>
   <!--End Price Table-->
