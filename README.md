@@ -10,7 +10,7 @@ MVP
     * update edit profile settings for marking complete
         * Investigate API for tracking these? Non MVP (MW)
 - 302 redirect rules - express? (MW)
-- need to consider what to do about trailing slashes to avoid 404 SEO hell - is this an option? (MW)
+- ~~need to consider what to do about trailing slashes to avoid 404 SEO hell - is this an option?~~ (MW)
     * https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes
 - ~~add social sign up buttons to sign up page - using new flat buttons~~ (MW)
 - ~~social sign up on registration form~~ (MW)
