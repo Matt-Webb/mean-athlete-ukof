@@ -65,7 +65,10 @@
                   Remember whatever your fitness level - absolute beginner to super fitness fanatic, we will push you to the next level to reach your goals.
                 </p>
                 <p>
-                  <a href="/contact-us/">Contact us</a> with any questions you might have or go to <a href="/join-now/">Join Now</a> to get started!
+                  <a href="/contact-us/">Contact us</a> with any questions you might have or go to
+                  <a ng-hide="authentication.user" ui-sref="authentication.signup">Join Now</a>
+                  <a ng-show="authentication.user" ui-sref="settings.profile">Edit Your Profile</a>
+                   to get started!
                 </p>
 
               </div>

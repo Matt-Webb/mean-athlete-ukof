@@ -74,7 +74,7 @@ html body{
     line-height:24px;
     font-weight:normal;
     font-family: 'Montserrat';
-    background: none repeat scroll 0 0 #242424;
+    background: none repeat scroll 0 0 #007bbd;
     color: #fff;
 }
 img{
@@ -709,7 +709,7 @@ div h5, h6{
 
 
 .header-option .top-links {
-    background: none repeat scroll 0 0 #242424;
+    background: none repeat scroll 0 0 #007bbd;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .top-link {
@@ -803,7 +803,7 @@ div h5, h6{
 
 /* Slider banner */
 .contents-main {
-  background: none repeat scroll 0 0 #242424;
+  background: none repeat scroll 0 0 #007bbd;
   margin-top: 608px;
 }
 .to-top {
@@ -1266,10 +1266,10 @@ div h5, h6{
     height:60%;
     bottom:0;
     left:0;
-    /* background: linear-gradient(90deg, #242424 , transparent);
-    background: -o-linear-gradient(90deg, #242424 , transparent);
-    background: -moz-linear-gradient(90deg, #242424 , transparent);
-    background: -webkit-linear-gradient(90deg, #242424 , transparent); */
+    /* background: linear-gradient(90deg, #007bbd , transparent);
+    background: -o-linear-gradient(90deg, #007bbd , transparent);
+    background: -moz-linear-gradient(90deg, #007bbd , transparent);
+    background: -webkit-linear-gradient(90deg, #007bbd , transparent); */
 }
 .title-page {
     padding-bottom: 20px;
@@ -1353,7 +1353,7 @@ div h5, h6{
     -o-transition: -o-transform 0.5s ease;
     transition: transform 0.5s ease;
 }
-.about-bottom {background:#242424;}
+.about-bottom {background:#007bbd;}
 .about-bottom:before {
     background: url("../images/bg-position-2-before.png") repeat-x scroll center bottom transparent;
     bottom: 0;
@@ -1584,7 +1584,7 @@ div h5, h6{
 
 /*--------------------------------- Pricing Table -----------------------------------*/
 .price-table, .our-team-page {
-  background: none repeat scroll 0 0 #242424;
+  background: none repeat scroll 0 0 #007bbd;
   padding-top: 35px;
   position: relative;
   z-index: 1;
@@ -1598,7 +1598,7 @@ div h5, h6{
 .price-table-title h2{font-size:24px; text-transform: uppercase; text-align: center;}
 .price-table-title h3{font-size:14px; text-transform: uppercase; text-align: center;}
 .price-list {
-  background: none repeat scroll 0 0 #1b1b1b;
+  background: none repeat scroll 0 0 #007bbc;
 }
 .border {
     border: 1px solid;
@@ -1616,7 +1616,7 @@ div h5, h6{
 .price-table-content{background:#ec3642;}
 
 .shop .price-table-content {
-  background: none repeat scroll 0 0 #161616;
+  background: none repeat scroll 0 0 #007bbc;
   margin: 50px 0;
 }
 .price-table-content {
@@ -1721,7 +1721,7 @@ div h5, h6{
 
 /*---------------------------------------Training---------------------------------------*/
 .training {
-  background: none repeat scroll 0 0 #242424;
+  background: none repeat scroll 0 0 #007bbd;
   position: relative;
 }
 .background-overlay {
@@ -1857,7 +1857,7 @@ div h5, h6{
 
 /*---------------------------------------Time Table---------------------------------------*/
 .timetable {
-  background: none repeat scroll 0 0 #242424;
+  background: none repeat scroll 0 0 #007bbd;
   padding-bottom: 40px;
   position: relative;
   z-index: 2;
@@ -2325,7 +2325,7 @@ div h5, h6{
 /*--------------------------------------- Athlete Class ---------------------------------------*/
 
 .classes {
-  background: none repeat scroll 0 0 #242424;
+  background: none repeat scroll 0 0 #007bbd;
   position: relative;
   z-index: 1;
 }
@@ -2539,7 +2539,7 @@ div h5, h6{
 
 /*---------------------------------------Our Success ---------------------------------------*/
 .table-success {
-  background: none repeat scroll 0 0 #242424;
+  background: none repeat scroll 0 0 #007bbd;
   z-index: 1;
   position: relative;
 }
@@ -2712,7 +2712,7 @@ div h5, h6{
 .our-team-tabs .our-team-img{padding:0;}
 .our-team-head {
   padding: 15px 15px 30px;
-  background: #242424;
+  background: #007bbd;
   position: relative;
 }
 .headding-title{margin-bottom:20px;}
@@ -3035,13 +3035,13 @@ div h5, h6{
   padding: 60px 0 30px;
 }
 .contact-form {
-  background: none repeat scroll 0 0 #1b1b1b;
+  background: none repeat scroll 0 0 #007bbc;
   padding-bottom: 30px;
   position: relative;
 }
 .main-contact-form{margin-top: 20px;}
 .contact {
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     padding: 10px 16px 0;
     position: absolute;
     right: 0;
@@ -3050,7 +3050,7 @@ div h5, h6{
 }
 .contact-submit .col-md-3{float:right;}
 .control {
-    background: none repeat scroll 0 0 #232323;
+    background: none repeat scroll 0 0 #4bbaf3;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0;
    -moz-border-radius: 0;
@@ -3165,7 +3165,7 @@ div h5, h6{
 
 /*---------------------------------------New Products---------------------------------------*/
 .new-product {
-  background: none repeat scroll 0 0 #242424;
+  background: none repeat scroll 0 0 #007bbd;
   position: relative;
 }
 .title-name {
@@ -3182,7 +3182,7 @@ div h5, h6{
     width: 185px;
 }
 .info-products {
-    background: none repeat scroll 0 0 #161616;
+    background: none repeat scroll 0 0 #007bbc;
     padding: 20px 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.35);
 }
@@ -3479,7 +3479,7 @@ div h5, h6{
 
 /*---------------------------------------News---------------------------------------*/
 .home-v2 .news-page {
-  background: none repeat scroll 0 0 #242424;
+  background: none repeat scroll 0 0 #007bbd;
   padding-top: 0;
   position: relative;
   padding-bottom: 50px;
@@ -3753,7 +3753,7 @@ div h5, h6{
 }
 
 .breadcrumbs ul{
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     display: inline-block;
     line-height: 1;
     position: relative;
@@ -3762,10 +3762,10 @@ div h5, h6{
     padding: 11px 10px;
 }
 .breadcrumbs ul{
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
 }
 .breadcrumbs ul:before {
-    border-color: transparent transparent transparent #1b1b1b;
+    border-color: transparent transparent transparent #007bbc;
     border-style: solid;
     border-width: 14px;
     bottom: -14px;
@@ -3774,7 +3774,7 @@ div h5, h6{
     position: absolute;
 }
 .breadcrumbs ul:before {
-    border-left-color: #1b1b1b;
+    border-left-color: #007bbc;
 }
 .breadcrumbs ul {
   color: #ec3642;
@@ -3803,7 +3803,7 @@ div h5, h6{
   padding: 30px 0;
 }
 .content-page, .comments-content {
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     padding: 15px;
     margin-top: 20px;
     overflow: hidden;
@@ -3840,7 +3840,7 @@ div h5, h6{
     width: 50%;
 }
 .caveats-content {
-  background: url("../images/canvat.png") no-repeat scroll right top #242424;
+  background: url("../images/canvat.png") no-repeat scroll right top #007bbd;
   float: right;
   margin-top: 30px;
   padding: 35px 0;
@@ -3933,7 +3933,7 @@ div h5, h6{
     margin-bottom: 20px;
     padding: 5px 10px;
     width: 93%;
-    background: none repeat scroll 0 0 #232323;
+    background: none repeat scroll 0 0 #4bbaf3;
 }
 .form-validate-right .message .control {
     height: 143px;
@@ -3948,7 +3948,7 @@ div h5, h6{
 	position:relative;
 }
 
-.class-trainer, .class-info{background: none repeat scroll 0 0 #1b1b1b;}
+.class-trainer, .class-info{background: none repeat scroll 0 0 #007bbc;}
 .class-trainer-title {
     background: none repeat scroll 0 0 #ec3642;
     padding-top: 20px;
@@ -4081,7 +4081,7 @@ div h5, h6{
     margin-bottom: 30px;
 }
 .blog-item {
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     margin-bottom: 30px;
     overflow: hidden;
 	padding-bottom: 10px;
@@ -4190,9 +4190,9 @@ div h5, h6{
 	-o-transition:all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 	-webkit-transition:all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 	}
-.popular-event{  background: none repeat scroll 0 0 #1b1b1b;}
+.popular-event{  background: none repeat scroll 0 0 #007bbc;}
 .popular-event-title {
-    border-bottom: 2px solid #232323;
+    border-bottom: 2px solid #4bbaf3;
     color: #666666;
     padding: 10px 15px;
 }
@@ -4204,11 +4204,11 @@ div h5, h6{
     padding: 0;
 }
 .popular-event .latest-news-item {
-    border-bottom: 1px solid #232323;
+    border-bottom: 1px solid #4bbaf3;
     border-left: 2px solid #454545;
 }
 .popular-event .latest-news-item:hover{
-    background:#242424;
+    background:#007bbd;
     border-left:2px solid #ec3642;
 }
 .popular-event .latest-news-item:hover .news-title a{
@@ -4268,7 +4268,7 @@ div h5, h6{
     display: inline-block;
 }
 .tags-blog a {
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #9c9c9c;
     display: inline-block;
@@ -4299,7 +4299,7 @@ div h5, h6{
     margin-right: 1px;
 }
 .icon-blog .icon a {
-  background: none repeat scroll 0 0 #242424;
+  background: none repeat scroll 0 0 #007bbd;
   color: #a3a3a3;
   display: inline-block;
   font-size: 18px;
@@ -4315,7 +4315,7 @@ div h5, h6{
 }
 
 .author, .related-post {
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     overflow: hidden;
     width: 100%;
     margin-bottom: 30px;
@@ -4327,14 +4327,14 @@ div h5, h6{
   padding: 30px 23px;
 }
 .related-post-title {
-    border-bottom: 2px solid #232323;
+    border-bottom: 2px solid #4bbaf3;
     margin-bottom: 10px;
 }
 .related-post-title h5 {
   margin-top: 0;
 }
 .related-post-list {
-  border-bottom: 1px solid #232323;
+  border-bottom: 1px solid #4bbaf3;
   padding: 8px 0;
   position: relative;
 }
@@ -4551,7 +4551,7 @@ div h5, h6{
     padding-left: 10px;
 }
 .experience-details-title {
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     border: medium none;
     color: #fff;
     font-size: 18px;
@@ -4595,7 +4595,7 @@ div h5, h6{
     display: none;
 }
 .experience-details-content {
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     border: medium none;
     color: #fff;
     font-size: 12px;
@@ -4720,11 +4720,11 @@ div h5, h6{
   padding: 0;
 }
 .ask-question {
-    background: none repeat scroll 0 0 #161616;
+    background: none repeat scroll 0 0 #007bbc;
 	padding-top: 25px;
 }
 .question-content {
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     font-size: 18px;
     padding: 7px 20px;
 }
@@ -4955,13 +4955,13 @@ div h5, h6{
     padding-left: 0;
 }
 .event-listing .latest-news-item {
-    background: none repeat scroll 0 0 #161616;
+    background: none repeat scroll 0 0 #007bbc;
     border-bottom: medium none;
     padding: 0;
     margin-bottom: 15px;
 }
 .event-listing .latest-news-item:hover {
-    background: #161616;
+    background: #007bbc;
 }
 .event-listing .news-date {
     background: none repeat scroll 0 0 rgba(0,0,0,0.5);
@@ -5077,7 +5077,7 @@ div h5, h6{
 }
 
 .event-category .popular-event-title {
-    background: none repeat scroll 0 0 #242424;
+    background: none repeat scroll 0 0 #007bbd;
     color: #fff;
 }
 .event-category .news-day, .event-category .news-month{
@@ -5139,7 +5139,7 @@ div h5, h6{
 }
 
 .event-detail{
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     padding-bottom: 25px;
 }
 .event-detail .event-desc {
@@ -5149,7 +5149,7 @@ div h5, h6{
     margin-left:10px
 }
 
-.event-type-details{ background: none repeat scroll 0 0 #1b1b1b;}
+.event-type-details{ background: none repeat scroll 0 0 #007bbc;}
 .event-type .share {
   border: medium none;
   margin: 0;
@@ -5227,7 +5227,7 @@ div h5, h6{
 }
 
 .sort-by {
-  background: none repeat scroll 0 0 #161616;
+  background: none repeat scroll 0 0 #007bbc;
   text-align: center;
   margin-bottom: 50px;
   margin: 0 auto 13px;
@@ -5264,7 +5264,7 @@ div h5, h6{
 }
 .calendar-day > div {
   background: none repeat scroll 0 0 #ec3642;
-  border-right: 3px solid #242424;
+  border-right: 3px solid #007bbd;
   display: inline-block;
   float: left;
   font-size: 16px;
@@ -5282,7 +5282,7 @@ div h5, h6{
 }
 
 .calendar-date ul li {
-  background: none repeat scroll 0 0 #1b1b1b;
+  background: none repeat scroll 0 0 #007bbc;
   cursor: pointer;
   display: inline-block;
   float: left;
@@ -5294,7 +5294,7 @@ div h5, h6{
 }
 
 .calendar-date ul li .calendar-day {
-  border-right: 3px solid #242424;
+  border-right: 3px solid #007bbd;
   color: #666666;
   font-size: 24px;
   font-weight: bold;
@@ -5303,7 +5303,7 @@ div h5, h6{
   color:#ec3642;
 }
 .calendar-date ul li .calendar-last {
-  color:#232323;
+  color:#4bbaf3;
 }
 
 .calendar-date ul li:hover{
@@ -5391,7 +5391,7 @@ div h5, h6{
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background: #242424;
+	background: #007bbd;
 }
 
 .parallax-background {
@@ -5810,7 +5810,7 @@ div h5, h6{
 	-webkit-transform: translateX(-250px);
 	-o-transform: translateX(-250px);
 	-ms-transform: translateX(-250px);
-	background:#242424;
+	background:#007bbd;
 }
 
 .parallax-row.in-pos {
@@ -6006,7 +6006,7 @@ img.out-pos {
     width: 100%;
     height: 33px;
     border: 1px solid rgb(163, 163, 163);
-    background: #242424;
+    background: #007bbd;
 }
 .page-product .toolbar .sort-by select option{
     border: medium none;
@@ -6014,7 +6014,7 @@ img.out-pos {
     width: 100%;
     height: 33px;
     line-height: 33px;
-    background: #232323;
+    background: #4bbaf3;
     color: #a3a3a3;
 }
 .page-product .toolbar .sort-by i{
@@ -6225,7 +6225,7 @@ img.out-pos {
 
 .product-popular{
     margin-top: 20px;
-    background: none repeat scroll 0 0 #232323;
+    background: none repeat scroll 0 0 #4bbaf3;
 }
 .product-popular .title{
     font-size: 18px;
@@ -6237,7 +6237,7 @@ img.out-pos {
     padding: 0 0 0 1px;
 }
 .product-popular ul li{
-    background: #232323;
+    background: #4bbaf3;
     border-left: 2px solid #454545;
     border-top: 1px solid #2a2a2a;
     display: block;
@@ -6248,7 +6248,7 @@ img.out-pos {
     border-bottom: 1px solid #2a2a2a;
 }
 .product-popular ul li:hover{
-    background: #1b1b1b;
+    background: #007bbc;
     border-left: 2px solid #ec3642;
 }
 .product-popular ul li .product-image{
@@ -6269,7 +6269,7 @@ img.out-pos {
     font-size: 18px;
 }
 .page-footer-product{
-  background: #1b1b1b;
+  background: #007bbc;
 
 }
 .footer-right .line1 a{
@@ -6307,7 +6307,7 @@ img.out-pos {
     margin-bottom: 35px;
 }
 .product-list-row .product-content{
-    background: #161616;
+    background: #007bbc;
     overflow: hidden;
 }
 .product-list-row .product-image{
@@ -6351,7 +6351,7 @@ img.out-pos {
     margin-right: 0;
 }
 .product-list-row .actions-box ul li a{
-    background: #232323;
+    background: #4bbaf3;
     display: block;
     height: 35px;
     width: 35px;
@@ -6397,7 +6397,7 @@ img.out-pos {
     margin-bottom: 35px;
     overflow: hidden;
     padding: 0 !important;
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
 }
 .product-essential .product-img-box{
     padding: 0;
@@ -6486,7 +6486,7 @@ img.out-pos {
 	width: 78px;
 }
 .add-to-cart input{
-    background: #232323;
+    background: #4bbaf3;
     border: 1px solid #484848;
     color: #9a9a9a;
     height: 35px;
@@ -6551,7 +6551,7 @@ img.out-pos {
     margin-right: 7px;
 }
 .product-essential .add-to-box .link-wishlist{
-    background: none repeat scroll 0 0 #232323;
+    background: none repeat scroll 0 0 #4bbaf3;
     border: 1px solid #484848;
     display: inline-block;
     height: 35px;
@@ -6604,7 +6604,7 @@ img.out-pos {
     color: #ec3642;
 }
 .product-essential .tags-list ul li a{
-    background: none repeat scroll 0 0 #232323;
+    background: none repeat scroll 0 0 #4bbaf3;
     border: 1px solid #484848;
     color: #9a9a9a;
     display: inline-block;
@@ -6630,7 +6630,7 @@ img.out-pos {
     margin-right: 0;
 }
 .product-essential .social-icon ul a{
-    background: none repeat scroll 0 0 #232323;
+    background: none repeat scroll 0 0 #4bbaf3;
     display: inline-block;
     height: 35px;
     line-height: 35px;
@@ -6652,7 +6652,7 @@ img.out-pos {
     margin-right: 4px;
 }
 .product-detail .product-collateral > ul li a{
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     display: inline-block;
     font-size: 14px;
     height: 44px;
@@ -6665,7 +6665,7 @@ img.out-pos {
     background: #ec3642;
 }
 .product-detail .product-collateral .box-collateral{
-    background: none repeat scroll 0 0 #1b1b1b;
+    background: none repeat scroll 0 0 #007bbc;
     padding: 20px;
 }
 .product-detail .product-collateral .box-collateral p{
@@ -6721,7 +6721,7 @@ img.out-pos {
 	font-size: 14px;
 }
 .product-cart .cart .cart-table .row-item{
-	background: none repeat scroll 0 0 #1b1b1b;
+	background: none repeat scroll 0 0 #007bbc;
     overflow: hidden;
 	border-bottom: 1px solid #343434;
 }
@@ -6766,12 +6766,12 @@ img.out-pos {
 .product-cart .cart .cart-collaterals .box{
 	border: 1px solid #393939;
 	border-top: none;
-	background: #1b1b1b;
+	background: #007bbc;
 	padding: 20px;
 	height: 193px;
 }
 .product-cart .cart .cart-collaterals .calculate-shipping .box select{
-	background: none repeat scroll 0 0 #232323;
+	background: none repeat scroll 0 0 #4bbaf3;
     border: 1px solid #393939;
     color: #9a9a9a;
     height: 33px;
@@ -6835,7 +6835,7 @@ img.out-pos {
 .product-check-out .checkout .checkout-row .box{
 	border: 1px solid #393939;
 	border-top: none;
-	background: #1b1b1b;
+	background: #007bbc;
 	padding: 20px;
 }
 .product-check-out .checkout .checkout-row .billing-address .box,
@@ -6849,7 +6849,7 @@ img.out-pos {
 }
 .product-check-out .checkout .checkout-row .box .input-text,
 .product-check-out .checkout .checkout-row .box select{
-	background: none repeat scroll 0 0 #232323;
+	background: none repeat scroll 0 0 #4bbaf3;
     border: 1px solid #393939;
     color: #9a9a9a;
     height: 33px;
@@ -6879,7 +6879,7 @@ img.out-pos {
     margin: 25px 0 10px;
 }
 .product-check-out .checkout .checkout-row .box .textarea{
-	background: none repeat scroll 0 0 #232323;
+	background: none repeat scroll 0 0 #4bbaf3;
     border: 1px solid #393939;
     clear: both;
     color: #9a9a9a;
@@ -6914,7 +6914,7 @@ img.out-pos {
 	color: #9a9a9a;
 }
 .product-check-out .checkout .checkout-row .payment-method .payment-item{
-	background: none repeat scroll 0 0 #1b1b1b;
+	background: none repeat scroll 0 0 #007bbc;
     border-bottom: 1px solid #2d2d2d;
     padding: 20px;
 	clear: both;
@@ -7025,7 +7025,7 @@ img.out-pos {
 	FOOTER
 ------------------------------------------------------*/
 .page-footer {
-  /* background: none repeat scroll 0 0 #1b1b1b; */
+  /* background: none repeat scroll 0 0 #007bbc; */
   background: url("../images/grass-pattern.jpg") repeat;
   padding-bottom: 25px;
   padding-top: 40px;
@@ -7050,7 +7050,7 @@ img.out-pos {
     padding-bottom: 10px;
 }
 .email  input.inputbox {
-    background: none repeat scroll 0 0 #242424;
+    background: none repeat scroll 0 0 #007bbd;
     border: 1px solid #6f6f6f;
     border-radius: 50px;
    -moz-border-radius: 50px;
@@ -7063,7 +7063,7 @@ img.out-pos {
     padding: 0 4px 0 15px;
 }
 .email input.inputbox {
-    background: none repeat scroll 0 0 #242424;
+    background: none repeat scroll 0 0 #007bbd;
     border: 1px solid #6f6f6f;
 }
 .index-white .email input.inputbox {
@@ -7372,11 +7372,11 @@ img.out-pos {
 }
 
 .bottom-page {
-  background: #242424;
+  background: #007bbd;
   position: relative;
 }
 .features {
-  background: #242424;
+  background: #007bbd;
   position: relative;
 }
 
@@ -8772,13 +8772,13 @@ display:block;
 	  left:0;
 	}
 	.introduction {
-	  background: none repeat scroll 0 0 #242424;
+	  background: none repeat scroll 0 0 #007bbd;
 	}
 	.introduction .intro-content {
 	  padding-bottom: 0px;
 	}
 	.services {
-	  background:#242424;
+	  background:#007bbd;
 	}
 	.sevices-main {
 	  background: none repeat scroll 0 0 transparent;
@@ -8942,7 +8942,7 @@ display:block;
 	  padding: 10px 15px;
 	}
 	.coming-event {
-	  background: none repeat scroll 0 0 #242424;
+	  background: none repeat scroll 0 0 #007bbd;
 	}
 	.sidebar-bottom .title-match {
 	  padding: 45px 0;
@@ -8997,7 +8997,7 @@ display:block;
 	  margin-bottom: 15px;
 	}
 	.fit-strong {
-	  background: #242424;
+	  background: #007bbd;
 	}
 	.sevices-wapper {
 	  margin-bottom: 30px;
@@ -9301,7 +9301,7 @@ display:block;
 	  padding: 25px 0;
 	}
 	.fit-strong {
-	  background: none repeat scroll 0 0 #242424;
+	  background: none repeat scroll 0 0 #007bbd;
 	}
 	.owl-controls.clickable {
 	  right: 88px;

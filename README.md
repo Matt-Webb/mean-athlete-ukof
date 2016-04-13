@@ -15,6 +15,7 @@ MVP
 - ~~add social sign up buttons to sign up page - using new flat buttons~~ (MW)
 - ~~social sign up on registration form~~ (MW)
 - complete topbar styling on mobile (JB)
+- direct user to profile after sign in? (MW)
 
 
 
