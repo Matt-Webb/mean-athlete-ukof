@@ -14,11 +14,12 @@ MVP
     * https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes
 - ~~add social sign up buttons to sign up page - using new flat buttons~~ (MW)
 - ~~social sign up on registration form~~ (MW)
-- complete topbar styling on mobile (JB)
 - direct user to profile after sign in? (MW)
+- fix google maps api calls (MW)
+- artificial delay on loading home page? slider loads slowly either way (MW)
 
-
-
+- complete topbar styling on mobile (JB)
+- second sweep of static pages (JB)
 - hook up email server (JB)
 - footer text (JB)
 - move slider text into boxes so that background pics can be lighter? (JB)
@@ -26,34 +27,30 @@ MVP
 - home - add content to cards or remove? (JB)
 - home - make video more prominent (JB)
 - home - schedule to remain? (JB)
-
-
-- head office address - Paul
-
-SERVER STUFF
 - investigate using NGINX in front of Node (JB)
 - lock down access apart from via Cloudflare (JB)
 - resource monitoring (JB)
-- load test? (JB)
-- monitor https://www.cloudflare.com/ips-v4 for change in CloudFlare IP addresses (JB)
-- backup Mongo off box (JB)
 
-OTHER
-- spacing and styling of top bar contact details
-- make logo bigger on mobile
-- Adobe echo sign API integration - anything existing for front end integration? https://secure.echosign.com/redirect/latestRestApiMethods
-- fix google maps api calls
-- artificial delay on loading home page? slider loads slowly either way
-- ~social icon links in mobile menu not working~
-- ~make desktop menu solid on scroll~
+
 
 INFO REQUIRED FROM PAUL
 - repeating short video for home page slider?
+- head office address - Paul
+
+SERVER STUFF
+- backup Mongo off box (JB)
+- load test? (JB)
+- monitor https://www.cloudflare.com/ips-v4 for change in CloudFlare IP addresses (JB)
 
 HOME PAGE
+- ~make desktop menu solid on scroll (JB)~
+- ~social icon links in mobile menu not working (JB)~
 - ~take top header section from index-header-v3.html~
+- spacing and styling of top bar contact details (JB)
+- make logo bigger on mobile (JB)
 
 ACCOUNT AREA - YOUR INFO
+- Adobe echo sign API integration - anything existing for front end integration? https://secure.echosign.com/redirect/latestRestApiMethods (MW)
 - bib colour / standard
 - home park
 - membership status
