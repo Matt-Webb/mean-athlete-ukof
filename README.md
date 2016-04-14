@@ -1,24 +1,24 @@
 # MEAN JS testing
-MVP
-- ~~signing in after sign up page user still remains on signup and sees form~~ (MW)
-- ~~mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null'~~ (MW)
-- registration date (MW)
+
+# MVP #
+
+## MW ##
+- display registration date on profile page (MW)
+- direct user to profile after sign in? (MW)
 - echo sign iframe and toggle to hide (MW)
     * ~~add iframe both to sign up and edit profile in case the don't complete at sign up~~ (MW)
     * add boolean to user profile object for health Q (MW)
-    * account - echo sign iframe + toggle to hide (MW)
-    * update edit profile settings for marking complete
-        * Investigate API for tracking these? Non MVP (MW)
+        * investigate API for tracking these? Non MVP (MW)
 - 302 redirect rules - express? (MW)
+- ~~signing in after sign up page user still remains on signup and sees form~~ (MW)
+- ~~mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: of null'~~ (MW)
 - ~~need to consider what to do about trailing slashes to avoid 404 SEO hell - is this an option?~~ (MW)
     * https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-make-a-trailing-slash-optional-for-all-routes
 - ~~add social sign up buttons to sign up page - using new flat buttons~~ (MW)
 - ~~social sign up on registration form~~ (MW)
+
+## JB ##
 - complete topbar styling on mobile (JB)
-- direct user to profile after sign in? (MW)
-
-
-
 - hook up email server (JB)
 - footer text (JB)
 - move slider text into boxes so that background pics can be lighter? (JB)
@@ -27,8 +27,10 @@ MVP
 - home - make video more prominent (JB)
 - home - schedule to remain? (JB)
 
-
+## PS ##
 - head office address - Paul
+
+### BY FEATURE / PAGE ###
 
 SERVER STUFF
 - investigate using NGINX in front of Node (JB)
@@ -44,14 +46,14 @@ OTHER
 - Adobe echo sign API integration - anything existing for front end integration? https://secure.echosign.com/redirect/latestRestApiMethods
 - fix google maps api calls
 - artificial delay on loading home page? slider loads slowly either way
-- ~social icon links in mobile menu not working~
-- ~make desktop menu solid on scroll~
+- ~~social icon links in mobile menu not working~~
+- ~~make desktop menu solid on scroll~~
 
 INFO REQUIRED FROM PAUL
 - repeating short video for home page slider?
 
 HOME PAGE
-- ~take top header section from index-header-v3.html~
+- ~~take top header section from index-header-v3.html~~
 
 ACCOUNT AREA - YOUR INFO
 - bib colour / standard
@@ -98,6 +100,5 @@ CONTACT PAGE
 BLOGS
 - rendering (MW)
 
-diff controllers
-- header
-- home
+### BUGS ###
+- ~~HelperService - activating the home page slider~~ (MW)

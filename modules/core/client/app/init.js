@@ -8,21 +8,21 @@ angular.module(ApplicationConfiguration.applicationModuleName).config(['$locatio
     function($locationProvider, $httpProvider, $resourceProvider, $urlRouterProvider) {
 
         // Remove all trailing trailing slashes:
-        $resourceProvider.defaults.stripTrailingSlashes = true;
+        $resourceProvider.defaults.stripTrailingSlashes = false;
 
         $urlRouterProvider.rule(function($injector, $location) {
             var path = $location.url();
 
-            // check to see if the path has a trailing slash
-            if ('/' === path[path.length - 1]) {
-                return path.replace(/\/$/, '');
+            // check to see if the path already has a slash where it should be
+            if (path[path.length - 1] === '/' || path.indexOf('/?') > -1) {
+                return;
             }
 
-            if (path.indexOf('/?') > -1) {
-                return path.replace('/?', '?');
+            if (path.indexOf('?') > -1) {
+                return path.replace('?', '/?');
             }
 
-            return path;
+            return path + '/';
         });
 
         $locationProvider.html5Mode(true).hashPrefix('!');

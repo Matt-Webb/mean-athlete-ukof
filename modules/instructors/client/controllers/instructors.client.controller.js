@@ -2,9 +2,8 @@
 
 // Instructors controller
 angular.module('instructors').controller('InstructorsController', ['$scope', '$stateParams', '$location', 'Authentication',
-'Instructors','InstructorBySlug', 'HelperService',
-    '$timeout',
-  function ($scope, $stateParams, $location, Authentication, Instructors, InstructorBySlug, HelperService, $timeout) {
+'Instructors','InstructorBySlug',
+  function ($scope, $stateParams, $location, Authentication, Instructors, InstructorBySlug) {
     $scope.authentication = Authentication;
 
 
@@ -26,15 +25,5 @@ angular.module('instructors').controller('InstructorsController', ['$scope', '$s
         });
     };
 
-
-
-    $timeout(function() {
-        // HelperService.script();
-        // HelperService.template();
-        // HelperService.banner();
-        // HelperService.theme();
-        // HelperService.menu();
-        // HelperService.dropdown();
-    }, 3000);
   }
 ]);

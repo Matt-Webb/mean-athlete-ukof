@@ -43,7 +43,6 @@
             // close the menu element if the target it´s not the menu element or one of its descendants..
             content.addEventListener('click', function(ev) {
                 var target = ev.target;
-                console.log('clicked!');
                 if (isOpen && target !== openbtn) {
                     toggleMenu();
                 }
@@ -54,7 +53,6 @@
 			console.log('mobile menu loaded!', mobileMenu);
             mobileMenu.click(function(ev) {
                 var target = ev.target;
-                console.log('menu clicked!');
             });
         }
 

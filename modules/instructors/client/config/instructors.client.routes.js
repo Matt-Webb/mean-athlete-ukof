@@ -7,7 +7,7 @@ angular.module('instructors').config(['$stateProvider',
     $stateProvider
       .state('instructors', {
         abstract: true,
-        url: '/instructors',
+        url: '/instructors/',
         template: '<ui-view/>'
       })
       .state('instructors.list', {
@@ -15,11 +15,11 @@ angular.module('instructors').config(['$stateProvider',
         templateUrl: 'modules/instructors/client/views/list-instructors.client.view.html'
       })
       .state('instructors.view', {
-        url: '/:instructorId',
+        url: ':instructorId',
         templateUrl: 'modules/instructors/client/views/view-instructor.client.view.html'
       })
       .state('instructors.slug', {
-        url: '/:slug',
+        url: ':slug',
         templateUrl: 'modules/instructors/client/views/view-instructor.client.view.html'
       });
   }
