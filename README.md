@@ -1,5 +1,5 @@
 # MEAN JS testing
-MVP
+## MVP
 - ~~signing in after sign up page user still remains on signup and sees form~~ (MW)
 - ~~mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null'~~ (MW)
 - registration date (MW)
@@ -32,7 +32,7 @@ MVP
 - resource monitoring (JB)
 
 
-
+## POST MVP
 INFO REQUIRED FROM PAUL
 - repeating short video for home page slider?
 - head office address - Paul
