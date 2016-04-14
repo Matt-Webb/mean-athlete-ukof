@@ -5,19 +5,20 @@
 ### BUGS ###
 - ~~HelperService - activating the home page slider~~ (MW)
 - investigate togglable content areas (MW)
+- look at user profile CSS, the defaults have been removed some how (MW)
 
 ## MW ##
-- display registration date on profile page (MW) | 1.5
-- direct user to profile after sign in? (MW) | .5
-- fix google maps api calls for each park (MW) | 8
-- echo sign iframe and toggle to hide (MW) | .5
-    * add boolean to user profile object for health Q (MW)
-    * ~~add iframe both to sign up and edit profile in case the don't complete at sign up~~ (MW)
-- 302 redirect rules - express? (MW) | 4
-- add pricing wording to both venue / park level (MW)
-    * render out price table for payment options
 - tidy up blog content and side bar rendering (MW)
 - wire up contact form on contact page (MW)
+- 302 redirect rules - express? (MW) | 4
+- fix google maps api calls for each park (MW) | 8
+- add pricing wording to both venue / park level (MW)
+    * render out price table for payment options
+- ~~display registration date on profile page~~ (MW)
+- ~~direct user to profile after sign in? Phantom bug~~ (MW)
+- ~~echo sign iframe and toggle to hide~~ (MW)
+    * ~~add boolean to user profile object for health Q~~ (MW)
+    * ~~add iframe both to sign up and edit profile in case the don't complete at sign up~~ (MW)
 - ~~artificial delay on loading home page? slider loads slowly either way~~ (MW)
 - ~~signing in after sign up page user still remains on signup and sees form~~ (MW)
 - ~~mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: of null'~~ (MW)

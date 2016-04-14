@@ -34,7 +34,6 @@ var UserSchema = new Schema({
     default: '',
     validate: [validateLocalStrategyProperty, 'Please fill in your first name']
   },
-  
   lastName: {
     type: String,
     trim: true,
@@ -52,6 +51,10 @@ var UserSchema = new Schema({
     trim: true,
     default: '',
     validate: [validateLocalStrategyEmail, 'Please fill a valid email address']
+  },
+  questionnaire: {
+      type: Boolean,
+      default: false
   },
   username: {
     type: String,

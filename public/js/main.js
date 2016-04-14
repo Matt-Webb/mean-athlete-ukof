@@ -50,7 +50,6 @@
         }
 
         if (mobileMenu) {
-			console.log('mobile menu loaded!', mobileMenu);
             mobileMenu.click(function(ev) {
                 var target = ev.target;
             });
