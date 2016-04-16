@@ -74,7 +74,7 @@ html body{
     line-height:24px;
     font-weight:normal;
     font-family: 'Montserrat';
-    background: none repeat scroll 0 0 #007bbd;
+    background: none repeat scroll 0 0 #242424;
     color: #fff;
 }
 img{
@@ -709,7 +709,7 @@ div h5, h6{
 
 
 .header-option .top-links {
-    background: none repeat scroll 0 0 #007bbd;
+    background: none repeat scroll 0 0 #242424;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .top-link {
@@ -803,7 +803,7 @@ div h5, h6{
 
 /* Slider banner */
 .contents-main {
-  background: none repeat scroll 0 0 #007bbd;
+  background: none repeat scroll 0 0 #242424;
   margin-top: 608px;
 }
 .to-top {
@@ -1266,10 +1266,10 @@ div h5, h6{
     height:60%;
     bottom:0;
     left:0;
-    /* background: linear-gradient(90deg, #007bbd , transparent);
-    background: -o-linear-gradient(90deg, #007bbd , transparent);
-    background: -moz-linear-gradient(90deg, #007bbd , transparent);
-    background: -webkit-linear-gradient(90deg, #007bbd , transparent); */
+    /* background: linear-gradient(90deg, #242424 , transparent);
+    background: -o-linear-gradient(90deg, #242424 , transparent);
+    background: -moz-linear-gradient(90deg, #242424 , transparent);
+    background: -webkit-linear-gradient(90deg, #242424 , transparent); */
 }
 .title-page {
     padding-bottom: 20px;
@@ -1353,7 +1353,7 @@ div h5, h6{
     -o-transition: -o-transform 0.5s ease;
     transition: transform 0.5s ease;
 }
-.about-bottom {background:#007bbd;}
+.about-bottom {background:#242424;}
 .about-bottom:before {
     background: url("../images/bg-position-2-before.png") repeat-x scroll center bottom transparent;
     bottom: 0;
@@ -1584,7 +1584,7 @@ div h5, h6{
 
 /*--------------------------------- Pricing Table -----------------------------------*/
 .price-table, .our-team-page {
-  background: none repeat scroll 0 0 #007bbd;
+  background: none repeat scroll 0 0 #242424;
   padding-top: 35px;
   position: relative;
   z-index: 1;
@@ -1721,7 +1721,7 @@ div h5, h6{
 
 /*---------------------------------------Training---------------------------------------*/
 .training {
-  background: none repeat scroll 0 0 #007bbd;
+  background: none repeat scroll 0 0 #242424;
   position: relative;
 }
 .background-overlay {
@@ -1857,7 +1857,7 @@ div h5, h6{
 
 /*---------------------------------------Time Table---------------------------------------*/
 .timetable {
-  background: none repeat scroll 0 0 #007bbd;
+  background: none repeat scroll 0 0 #242424;
   padding-bottom: 40px;
   position: relative;
   z-index: 2;
@@ -2325,7 +2325,7 @@ div h5, h6{
 /*--------------------------------------- Athlete Class ---------------------------------------*/
 
 .classes {
-  background: none repeat scroll 0 0 #007bbd;
+  background: none repeat scroll 0 0 #242424;
   position: relative;
   z-index: 1;
 }
@@ -2539,7 +2539,7 @@ div h5, h6{
 
 /*---------------------------------------Our Success ---------------------------------------*/
 .table-success {
-  background: none repeat scroll 0 0 #007bbd;
+  background: none repeat scroll 0 0 #242424;
   z-index: 1;
   position: relative;
 }
@@ -2712,7 +2712,7 @@ div h5, h6{
 .our-team-tabs .our-team-img{padding:0;}
 .our-team-head {
   padding: 15px 15px 30px;
-  background: #007bbd;
+  background: #242424;
   position: relative;
 }
 .headding-title{margin-bottom:20px;}
@@ -3165,7 +3165,7 @@ div h5, h6{
 
 /*---------------------------------------New Products---------------------------------------*/
 .new-product {
-  background: none repeat scroll 0 0 #007bbd;
+  background: none repeat scroll 0 0 #242424;
   position: relative;
 }
 .title-name {
@@ -3479,7 +3479,7 @@ div h5, h6{
 
 /*---------------------------------------News---------------------------------------*/
 .home-v2 .news-page {
-  background: none repeat scroll 0 0 #007bbd;
+  background: none repeat scroll 0 0 #242424;
   padding-top: 0;
   position: relative;
   padding-bottom: 50px;
@@ -3840,7 +3840,7 @@ div h5, h6{
     width: 50%;
 }
 .caveats-content {
-  background: url("../images/canvat.png") no-repeat scroll right top #007bbd;
+  background: url("../images/canvat.png") no-repeat scroll right top #242424;
   float: right;
   margin-top: 30px;
   padding: 35px 0;
@@ -4208,7 +4208,7 @@ div h5, h6{
     border-left: 2px solid #454545;
 }
 .popular-event .latest-news-item:hover{
-    background:#007bbd;
+    background:#242424;
     border-left:2px solid #ec3642;
 }
 .popular-event .latest-news-item:hover .news-title a{
@@ -4299,7 +4299,7 @@ div h5, h6{
     margin-right: 1px;
 }
 .icon-blog .icon a {
-  background: none repeat scroll 0 0 #007bbd;
+  background: none repeat scroll 0 0 #242424;
   color: #a3a3a3;
   display: inline-block;
   font-size: 18px;
@@ -5077,7 +5077,7 @@ div h5, h6{
 }
 
 .event-category .popular-event-title {
-    background: none repeat scroll 0 0 #007bbd;
+    background: none repeat scroll 0 0 #242424;
     color: #fff;
 }
 .event-category .news-day, .event-category .news-month{
@@ -5264,7 +5264,7 @@ div h5, h6{
 }
 .calendar-day > div {
   background: none repeat scroll 0 0 #ec3642;
-  border-right: 3px solid #007bbd;
+  border-right: 3px solid #242424;
   display: inline-block;
   float: left;
   font-size: 16px;
@@ -5294,7 +5294,7 @@ div h5, h6{
 }
 
 .calendar-date ul li .calendar-day {
-  border-right: 3px solid #007bbd;
+  border-right: 3px solid #242424;
   color: #666666;
   font-size: 24px;
   font-weight: bold;
@@ -5391,7 +5391,7 @@ div h5, h6{
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background: #007bbd;
+	background: #242424;
 }
 
 .parallax-background {
@@ -5810,7 +5810,7 @@ div h5, h6{
 	-webkit-transform: translateX(-250px);
 	-o-transform: translateX(-250px);
 	-ms-transform: translateX(-250px);
-	background:#007bbd;
+	background:#242424;
 }
 
 .parallax-row.in-pos {
@@ -6006,7 +6006,7 @@ img.out-pos {
     width: 100%;
     height: 33px;
     border: 1px solid rgb(163, 163, 163);
-    background: #007bbd;
+    background: #242424;
 }
 .page-product .toolbar .sort-by select option{
     border: medium none;
@@ -7050,7 +7050,7 @@ img.out-pos {
     padding-bottom: 10px;
 }
 .email  input.inputbox {
-    background: none repeat scroll 0 0 #007bbd;
+    background: none repeat scroll 0 0 #242424;
     border: 1px solid #6f6f6f;
     border-radius: 50px;
    -moz-border-radius: 50px;
@@ -7063,7 +7063,7 @@ img.out-pos {
     padding: 0 4px 0 15px;
 }
 .email input.inputbox {
-    background: none repeat scroll 0 0 #007bbd;
+    background: none repeat scroll 0 0 #242424;
     border: 1px solid #6f6f6f;
 }
 .index-white .email input.inputbox {
@@ -7372,11 +7372,11 @@ img.out-pos {
 }
 
 .bottom-page {
-  background: #007bbd;
+  background: #242424;
   position: relative;
 }
 .features {
-  background: #007bbd;
+  background: #242424;
   position: relative;
 }
 
@@ -8772,13 +8772,13 @@ display:block;
 	  left:0;
 	}
 	.introduction {
-	  background: none repeat scroll 0 0 #007bbd;
+	  background: none repeat scroll 0 0 #242424;
 	}
 	.introduction .intro-content {
 	  padding-bottom: 0px;
 	}
 	.services {
-	  background:#007bbd;
+	  background:#242424;
 	}
 	.sevices-main {
 	  background: none repeat scroll 0 0 transparent;
@@ -8942,7 +8942,7 @@ display:block;
 	  padding: 10px 15px;
 	}
 	.coming-event {
-	  background: none repeat scroll 0 0 #007bbd;
+	  background: none repeat scroll 0 0 #242424;
 	}
 	.sidebar-bottom .title-match {
 	  padding: 45px 0;
@@ -8997,7 +8997,7 @@ display:block;
 	  margin-bottom: 15px;
 	}
 	.fit-strong {
-	  background: #007bbd;
+	  background: #242424;
 	}
 	.sevices-wapper {
 	  margin-bottom: 30px;
@@ -9301,7 +9301,7 @@ display:block;
 	  padding: 25px 0;
 	}
 	.fit-strong {
-	  background: none repeat scroll 0 0 #007bbd;
+	  background: none repeat scroll 0 0 #242424;
 	}
 	.owl-controls.clickable {
 	  right: 88px;
