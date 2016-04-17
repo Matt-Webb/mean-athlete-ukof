@@ -6,12 +6,11 @@ angular.module('users').controller('EditProfileController', ['$scope', '$http', 
 
     $scope.toggleQuestionnaire = function() {
         $scope.user.questionnaire = !$scope.user.questionnaire;
-        console.log($scope.user.questionnaire);
-    }
+    };
 
     $scope.hideQuestionnaireBtn = function() {
         $scope.questionnaireBtn = false;
-    }
+    };
 
     // Update a user profile
     $scope.updateUserProfile = function (isValid) {

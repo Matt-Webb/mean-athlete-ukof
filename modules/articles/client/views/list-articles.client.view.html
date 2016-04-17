@@ -59,13 +59,13 @@
                                                 <div class="created-by"> By <span>{{ article.createdBy }}</span></div>
                                                 <div class="published"> On {{ artcile.publishedOn }} </div>
                                                 <div class="category-name">
-                                                    in <a href="#">{{ article.category }}</a>
+                                                    in <a ng-repea href="#">{{ article.category }}</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="blog-text">
                                             <p>
-                                                {{ article.content }}
+                                                {{ article.content | limitTo : 200 }}
                                             </p>
                                         </div>
                                     </div>
@@ -73,7 +73,25 @@
                             </section>
                         </section>
                     </div>
-                        <!-- End Blog -->
+                <!-- End Blog -->
+                <div class="clearfix"></div>
+                    <div class="pages">
+                        <ol>
+                            <li>
+                                <a title="Previous" href="#" class="previous i-previous">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="current"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li>
+                                <a title="Next" href="#" class="next i-next">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
                     <div class="sidebar-left">

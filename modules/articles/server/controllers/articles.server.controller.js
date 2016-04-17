@@ -74,7 +74,28 @@ exports.delete = function (req, res) {
  * List of Articles
  */
 exports.list = function (req, res) {
-  Article.find().sort('-created').populate('user', 'displayName').exec(function (err, articles) {
+
+  // defaults:
+  var limit = 10;
+  var skip = 0;
+  var page = 1;
+
+  // check query params:
+  if(req.query.limit) {
+      console.log('limit:', req.query.limit);
+      limit = parseInt(req.query.limit, 10) || 10;
+  }
+  if(req.query.skip) {
+    console.log('skip:', req.query.skip);
+    skip = parseInt(req.query.skip, 10) || 0;
+  }
+  if(req.body.page) {
+    console.log('page:', req.body.page);
+    page = parseInt(req.body.page, 10) || 1;
+  }
+
+  // get list:
+  Article.find().sort('-created').populate('user', 'displayName').limit(limit).skip((page-1) * skip).exec(function (err, articles) {
     if (err) {
       return res.status(400).send({
         message: errorHandler.getErrorMessage(err)
@@ -90,7 +111,6 @@ exports.list = function (req, res) {
  */
 exports.articleByID = function (req, res, next, id) {
 
-    //console.log('looking id: ' + id);
 
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(400).send({

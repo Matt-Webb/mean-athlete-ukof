@@ -14,6 +14,10 @@ angular.module('articles').config(['$stateProvider',
         url: '',
         templateUrl: 'modules/articles/client/views/list-articles.client.view.html'
       })
+      .state('articles.pages', {
+        url: '/page/:page',
+        templateUrl: 'modules/articles/client/views/list-articles.client.view.html' 
+      })
       .state('articles.view', {
         url: '/:articleId',
         templateUrl: 'modules/articles/client/views/view-article.client.view.html'

@@ -11,4 +11,8 @@ angular.module('articles').factory('Articles', ['$resource',
       }
     });
   }
-]);
+]).factory('ArticlesPaging', ['$resource', function($resource) {
+	return $resource('api/articles/page/:page', {
+		page: '@page'
+	});
+}]);
