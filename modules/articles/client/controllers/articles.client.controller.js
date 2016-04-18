@@ -8,7 +8,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 
     // Find a list of Articles
     $scope.find = function () {
-      $scope.articles = Articles.query();
+      $scope.articles = Articles.query({}).skip(10).limit(10);
     };
 
     // Find existing Article
