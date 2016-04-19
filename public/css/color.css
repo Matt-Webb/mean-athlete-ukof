@@ -97,7 +97,8 @@ COLOR DEFINITION
 .header-option .shopping-cart i, .header-option .search i,
 .sevices-wapper:hover,
 .boxing-page .header-container .logo,
-.panel-tools .panel-button,.panel-tools  .layout-setting button.active,.reset-button button
+.panel-tools .panel-button,.panel-tools  .layout-setting button.active,.reset-button button,
+.social-icon-topbar
 {
 	background: none repeat scroll 0 0 #da1f5e;
 }

@@ -713,7 +713,8 @@ div h5, h6{
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .top-link {
-    line-height: 2;
+    /* line-height: 2; */
+    margin-top: 3px;
 }
 .address-top {
     margin-right: 15px;
@@ -1598,7 +1599,7 @@ div h5, h6{
 .price-table-title h2{font-size:24px; text-transform: uppercase; text-align: center;}
 .price-table-title h3{font-size:14px; text-transform: uppercase; text-align: center;}
 .price-list {
-  background: none repeat scroll 0 0 #007bbc;
+  background: none repeat scroll 0 0 #1b1b1b;
 }
 .border {
     border: 1px solid;
@@ -1616,7 +1617,7 @@ div h5, h6{
 .price-table-content{background:#ec3642;}
 
 .shop .price-table-content {
-  background: none repeat scroll 0 0 #007bbc;
+  background: none repeat scroll 0 0 #1b1b1b;
   margin: 50px 0;
 }
 .price-table-content {
@@ -3035,13 +3036,13 @@ div h5, h6{
   padding: 60px 0 30px;
 }
 .contact-form {
-  background: none repeat scroll 0 0 #007bbc;
+  background: none repeat scroll 0 0 #1b1b1b;
   padding-bottom: 30px;
   position: relative;
 }
 .main-contact-form{margin-top: 20px;}
 .contact {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     padding: 10px 16px 0;
     position: absolute;
     right: 0;
@@ -3050,7 +3051,7 @@ div h5, h6{
 }
 .contact-submit .col-md-3{float:right;}
 .control {
-    background: none repeat scroll 0 0 #4bbaf3;
+    background: none repeat scroll 0 0 #232323;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0;
    -moz-border-radius: 0;
@@ -3182,7 +3183,7 @@ div h5, h6{
     width: 185px;
 }
 .info-products {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     padding: 20px 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.35);
 }
@@ -3753,7 +3754,7 @@ div h5, h6{
 }
 
 .breadcrumbs ul{
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     display: inline-block;
     line-height: 1;
     position: relative;
@@ -3762,10 +3763,10 @@ div h5, h6{
     padding: 11px 10px;
 }
 .breadcrumbs ul{
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
 }
 .breadcrumbs ul:before {
-    border-color: transparent transparent transparent #007bbc;
+    border-color: transparent transparent transparent #1b1b1b;
     border-style: solid;
     border-width: 14px;
     bottom: -14px;
@@ -3774,7 +3775,7 @@ div h5, h6{
     position: absolute;
 }
 .breadcrumbs ul:before {
-    border-left-color: #007bbc;
+    border-left-color: #1b1b1b;
 }
 .breadcrumbs ul {
   color: #ec3642;
@@ -3803,7 +3804,7 @@ div h5, h6{
   padding: 30px 0;
 }
 .content-page, .comments-content {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     padding: 15px;
     margin-top: 20px;
     overflow: hidden;
@@ -3933,7 +3934,7 @@ div h5, h6{
     margin-bottom: 20px;
     padding: 5px 10px;
     width: 93%;
-    background: none repeat scroll 0 0 #4bbaf3;
+    background: none repeat scroll 0 0 #232323;
 }
 .form-validate-right .message .control {
     height: 143px;
@@ -3948,7 +3949,7 @@ div h5, h6{
 	position:relative;
 }
 
-.class-trainer, .class-info{background: none repeat scroll 0 0 #007bbc;}
+.class-trainer, .class-info{background: none repeat scroll 0 0 #1b1b1b;}
 .class-trainer-title {
     background: none repeat scroll 0 0 #ec3642;
     padding-top: 20px;
@@ -4081,7 +4082,7 @@ div h5, h6{
     margin-bottom: 30px;
 }
 .blog-item {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     margin-bottom: 30px;
     overflow: hidden;
 	padding-bottom: 10px;
@@ -4190,9 +4191,9 @@ div h5, h6{
 	-o-transition:all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 	-webkit-transition:all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 	}
-.popular-event{  background: none repeat scroll 0 0 #007bbc;}
+.popular-event{  background: none repeat scroll 0 0 #1b1b1b;}
 .popular-event-title {
-    border-bottom: 2px solid #4bbaf3;
+    border-bottom: 2px solid #232323;
     color: #666666;
     padding: 10px 15px;
 }
@@ -4204,7 +4205,7 @@ div h5, h6{
     padding: 0;
 }
 .popular-event .latest-news-item {
-    border-bottom: 1px solid #4bbaf3;
+    border-bottom: 1px solid #232323;
     border-left: 2px solid #454545;
 }
 .popular-event .latest-news-item:hover{
@@ -4268,7 +4269,7 @@ div h5, h6{
     display: inline-block;
 }
 .tags-blog a {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #9c9c9c;
     display: inline-block;
@@ -4315,7 +4316,7 @@ div h5, h6{
 }
 
 .author, .related-post {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     overflow: hidden;
     width: 100%;
     margin-bottom: 30px;
@@ -4327,14 +4328,14 @@ div h5, h6{
   padding: 30px 23px;
 }
 .related-post-title {
-    border-bottom: 2px solid #4bbaf3;
+    border-bottom: 2px solid #232323;
     margin-bottom: 10px;
 }
 .related-post-title h5 {
   margin-top: 0;
 }
 .related-post-list {
-  border-bottom: 1px solid #4bbaf3;
+  border-bottom: 1px solid #232323;
   padding: 8px 0;
   position: relative;
 }
@@ -4551,7 +4552,7 @@ div h5, h6{
     padding-left: 10px;
 }
 .experience-details-title {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     border: medium none;
     color: #fff;
     font-size: 18px;
@@ -4595,7 +4596,7 @@ div h5, h6{
     display: none;
 }
 .experience-details-content {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     border: medium none;
     color: #fff;
     font-size: 12px;
@@ -4720,11 +4721,11 @@ div h5, h6{
   padding: 0;
 }
 .ask-question {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
 	padding-top: 25px;
 }
 .question-content {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     font-size: 18px;
     padding: 7px 20px;
 }
@@ -4955,13 +4956,13 @@ div h5, h6{
     padding-left: 0;
 }
 .event-listing .latest-news-item {
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     border-bottom: medium none;
     padding: 0;
     margin-bottom: 15px;
 }
 .event-listing .latest-news-item:hover {
-    background: #007bbc;
+    background: #1b1b1b;
 }
 .event-listing .news-date {
     background: none repeat scroll 0 0 rgba(0,0,0,0.5);
@@ -5139,7 +5140,7 @@ div h5, h6{
 }
 
 .event-detail{
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     padding-bottom: 25px;
 }
 .event-detail .event-desc {
@@ -5149,7 +5150,7 @@ div h5, h6{
     margin-left:10px
 }
 
-.event-type-details{ background: none repeat scroll 0 0 #007bbc;}
+.event-type-details{ background: none repeat scroll 0 0 #1b1b1b;}
 .event-type .share {
   border: medium none;
   margin: 0;
@@ -5227,7 +5228,7 @@ div h5, h6{
 }
 
 .sort-by {
-  background: none repeat scroll 0 0 #007bbc;
+  background: none repeat scroll 0 0 #1b1b1b;
   text-align: center;
   margin-bottom: 50px;
   margin: 0 auto 13px;
@@ -5282,7 +5283,7 @@ div h5, h6{
 }
 
 .calendar-date ul li {
-  background: none repeat scroll 0 0 #007bbc;
+  background: none repeat scroll 0 0 #1b1b1b;
   cursor: pointer;
   display: inline-block;
   float: left;
@@ -5303,7 +5304,7 @@ div h5, h6{
   color:#ec3642;
 }
 .calendar-date ul li .calendar-last {
-  color:#4bbaf3;
+  color:#232323;
 }
 
 .calendar-date ul li:hover{
@@ -6014,7 +6015,7 @@ img.out-pos {
     width: 100%;
     height: 33px;
     line-height: 33px;
-    background: #4bbaf3;
+    background: #232323;
     color: #a3a3a3;
 }
 .page-product .toolbar .sort-by i{
@@ -6225,7 +6226,7 @@ img.out-pos {
 
 .product-popular{
     margin-top: 20px;
-    background: none repeat scroll 0 0 #4bbaf3;
+    background: none repeat scroll 0 0 #232323;
 }
 .product-popular .title{
     font-size: 18px;
@@ -6237,7 +6238,7 @@ img.out-pos {
     padding: 0 0 0 1px;
 }
 .product-popular ul li{
-    background: #4bbaf3;
+    background: #232323;
     border-left: 2px solid #454545;
     border-top: 1px solid #2a2a2a;
     display: block;
@@ -6248,7 +6249,7 @@ img.out-pos {
     border-bottom: 1px solid #2a2a2a;
 }
 .product-popular ul li:hover{
-    background: #007bbc;
+    background: #1b1b1b;
     border-left: 2px solid #ec3642;
 }
 .product-popular ul li .product-image{
@@ -6269,7 +6270,7 @@ img.out-pos {
     font-size: 18px;
 }
 .page-footer-product{
-  background: #007bbc;
+  background: #1b1b1b;
 
 }
 .footer-right .line1 a{
@@ -6307,7 +6308,7 @@ img.out-pos {
     margin-bottom: 35px;
 }
 .product-list-row .product-content{
-    background: #007bbc;
+    background: #1b1b1b;
     overflow: hidden;
 }
 .product-list-row .product-image{
@@ -6351,7 +6352,7 @@ img.out-pos {
     margin-right: 0;
 }
 .product-list-row .actions-box ul li a{
-    background: #4bbaf3;
+    background: #232323;
     display: block;
     height: 35px;
     width: 35px;
@@ -6397,7 +6398,7 @@ img.out-pos {
     margin-bottom: 35px;
     overflow: hidden;
     padding: 0 !important;
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
 }
 .product-essential .product-img-box{
     padding: 0;
@@ -6486,7 +6487,7 @@ img.out-pos {
 	width: 78px;
 }
 .add-to-cart input{
-    background: #4bbaf3;
+    background: #232323;
     border: 1px solid #484848;
     color: #9a9a9a;
     height: 35px;
@@ -6551,7 +6552,7 @@ img.out-pos {
     margin-right: 7px;
 }
 .product-essential .add-to-box .link-wishlist{
-    background: none repeat scroll 0 0 #4bbaf3;
+    background: none repeat scroll 0 0 #232323;
     border: 1px solid #484848;
     display: inline-block;
     height: 35px;
@@ -6604,7 +6605,7 @@ img.out-pos {
     color: #ec3642;
 }
 .product-essential .tags-list ul li a{
-    background: none repeat scroll 0 0 #4bbaf3;
+    background: none repeat scroll 0 0 #232323;
     border: 1px solid #484848;
     color: #9a9a9a;
     display: inline-block;
@@ -6630,7 +6631,7 @@ img.out-pos {
     margin-right: 0;
 }
 .product-essential .social-icon ul a{
-    background: none repeat scroll 0 0 #4bbaf3;
+    background: none repeat scroll 0 0 #232323;
     display: inline-block;
     height: 35px;
     line-height: 35px;
@@ -6652,7 +6653,7 @@ img.out-pos {
     margin-right: 4px;
 }
 .product-detail .product-collateral > ul li a{
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     display: inline-block;
     font-size: 14px;
     height: 44px;
@@ -6665,7 +6666,7 @@ img.out-pos {
     background: #ec3642;
 }
 .product-detail .product-collateral .box-collateral{
-    background: none repeat scroll 0 0 #007bbc;
+    background: none repeat scroll 0 0 #1b1b1b;
     padding: 20px;
 }
 .product-detail .product-collateral .box-collateral p{
@@ -6721,7 +6722,7 @@ img.out-pos {
 	font-size: 14px;
 }
 .product-cart .cart .cart-table .row-item{
-	background: none repeat scroll 0 0 #007bbc;
+	background: none repeat scroll 0 0 #1b1b1b;
     overflow: hidden;
 	border-bottom: 1px solid #343434;
 }
@@ -6766,12 +6767,12 @@ img.out-pos {
 .product-cart .cart .cart-collaterals .box{
 	border: 1px solid #393939;
 	border-top: none;
-	background: #007bbc;
+	background: #1b1b1b;
 	padding: 20px;
 	height: 193px;
 }
 .product-cart .cart .cart-collaterals .calculate-shipping .box select{
-	background: none repeat scroll 0 0 #4bbaf3;
+	background: none repeat scroll 0 0 #232323;
     border: 1px solid #393939;
     color: #9a9a9a;
     height: 33px;
@@ -6835,7 +6836,7 @@ img.out-pos {
 .product-check-out .checkout .checkout-row .box{
 	border: 1px solid #393939;
 	border-top: none;
-	background: #007bbc;
+	background: #1b1b1b;
 	padding: 20px;
 }
 .product-check-out .checkout .checkout-row .billing-address .box,
@@ -6849,7 +6850,7 @@ img.out-pos {
 }
 .product-check-out .checkout .checkout-row .box .input-text,
 .product-check-out .checkout .checkout-row .box select{
-	background: none repeat scroll 0 0 #4bbaf3;
+	background: none repeat scroll 0 0 #232323;
     border: 1px solid #393939;
     color: #9a9a9a;
     height: 33px;
@@ -6879,7 +6880,7 @@ img.out-pos {
     margin: 25px 0 10px;
 }
 .product-check-out .checkout .checkout-row .box .textarea{
-	background: none repeat scroll 0 0 #4bbaf3;
+	background: none repeat scroll 0 0 #232323;
     border: 1px solid #393939;
     clear: both;
     color: #9a9a9a;
@@ -6914,7 +6915,7 @@ img.out-pos {
 	color: #9a9a9a;
 }
 .product-check-out .checkout .checkout-row .payment-method .payment-item{
-	background: none repeat scroll 0 0 #007bbc;
+	background: none repeat scroll 0 0 #1b1b1b;
     border-bottom: 1px solid #2d2d2d;
     padding: 20px;
 	clear: both;
@@ -7025,7 +7026,7 @@ img.out-pos {
 	FOOTER
 ------------------------------------------------------*/
 .page-footer {
-  /* background: none repeat scroll 0 0 #007bbc; */
+  /* background: none repeat scroll 0 0 #1b1b1b; */
   background: url("../images/grass-pattern.jpg") repeat;
   padding-bottom: 25px;
   padding-top: 40px;
@@ -7143,6 +7144,45 @@ img.out-pos {
 	-moz-animation:0.35s ease 0s normal none 1 icon-social-hover;
 	-webkit-animation:0.35s ease 0s normal none 1 icon-social-hover;
 	-ms-animation:0.35s ease 0s normal none 1 icon-social-hover;
+}
+/* Social icons Topbar */
+.social-icon-topbar {
+    margin-top: 2px;
+}
+.social-icon-topbar a {
+  background: none repeat scroll 0 0 #da1f5e;
+  border: 1px solid #595959;
+  border-radius: 50%;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  text-align: center;
+  width: 30px;
+}
+.social-icon-topbar a:hover {
+    background: none repeat scroll 0 0 #ec3642;
+}
+.social-icon-topbar a i.fa {
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+}
+.social-icon-topbar a:hover .fa {
+ animation:0.35s ease 0s normal none 1 icon-social-hover;
+ -o-animation:0.35s ease 0s normal none 1 icon-social-hover;
+ -moz-animation:0.35s ease 0s normal none 1 icon-social-hover;
+ -webkit-animation:0.35s ease 0s normal none 1 icon-social-hover;
+ -ms-animation:0.35s ease 0s normal none 1 icon-social-hover;
 }
 
 /* Back to top */
