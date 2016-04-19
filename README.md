@@ -31,6 +31,7 @@
 - complete topbar styling on mobile (JB)
 - second sweep of static pages (JB)
 - hook up email server (JB)
+- css tweaks for paging results on blog list (JB)
 - footer text (JB)
 - move slider text into boxes so that background pics can be lighter? (JB)
 - home - sort about section (JB)

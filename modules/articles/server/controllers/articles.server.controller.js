@@ -89,9 +89,9 @@ exports.list = function (req, res) {
     console.log('skip:', req.query.skip);
     skip = parseInt(req.query.skip, 10) || 0;
   }
-  if(req.body.page) {
-    console.log('page:', req.body.page);
-    page = parseInt(req.body.page, 10) || 1;
+  if(req.query.page) {
+    console.log('page:', req.query.page);
+    page = parseInt(req.query.page, 10) || 1;
   }
 
   // get list:
