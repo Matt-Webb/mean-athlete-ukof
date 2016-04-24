@@ -8,7 +8,13 @@
 - look at user profile CSS, the defaults have been removed some how (MW)
 
 ## MW ##
+- update venue template
+    * 2 columns for weekly times and meeting point
+    * map full width section
+    * remove comments
+    * hook up trainer from data
 - tidy up blog content and side bar rendering (MW)
+- fix Olark contact overlay placeholder text - or potentially replace with similar sticky contact form? (MW)
 - wire up contact form on contact page (MW)
 - 302 redirect rules - express? (MW) | 4
 - fix google maps api calls for each park (MW) | 8
@@ -29,6 +35,8 @@
 
 ## JB ##
 - complete topbar styling on mobile (JB)
+    * iPad landscape social icons show in topbar as well as mobile menu (JB)
+    * spacing underneath social icons and MENU on mobile menu
 - second sweep of static pages (JB)
 - hook up email server (JB)
 - footer text (JB)
