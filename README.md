@@ -13,6 +13,7 @@
     * map full width section
     * remove comments
     * hook up trainer from data
+- slide in menu to slide out on click
 - tidy up blog content and side bar rendering (MW)
 - fix Olark contact overlay placeholder text - or potentially replace with similar sticky contact form? (MW)
 - wire up contact form on contact page (MW)
