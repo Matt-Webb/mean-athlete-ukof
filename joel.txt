@@ -1,0 +1,40 @@
+The website is not generating what it use to - ?
+Communication
+- report or Basecamp updates enough?
+Blogs
+- design in certain way and format?
+Time
+- ..7/8 months - 5 months paid, security/stability issues, support and backup. Mentioned pictures on phone call not just day before
+- full time developers recruited, starting soon
+- reducing contacts/efficiency of the site - primary aim of new site
+
+SEO plan
+- URLs remain same where relevant, rest will redirect to most appropriate
+
+key user journeys/navigation
+- speed/efficiency
+- timetable
+- locations/meeting points
+- prices
+- sign up
+
+future
+- integrate Echo Sign for smoother PAR Q
+- payments - Stripe - notify when customer changes subscription/cancels?
+- contact for questions - collect info/conversion opportunity - Intercom?
+- tracking
+
+business view
+- customer data
+-
+
+CMS update
+- our cost, priority
+- options
+- timescale
+
+Paul responsibilities
+- review site, all content
+- colours decision - will involve a designer
+
+Mark responsibilities
