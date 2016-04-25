@@ -2,30 +2,170 @@
     {
         "city": "Leeds",
         "county-filter": "west-yorkshire",
-        "price-info": ""
+        "price-info": {
+            "pay-as-you-go": {
+                "options": {
+                    "ten-classes" : 145
+                }
+            },
+            "monthly" : {
+                "options" : {
+                    "one-per-week" : {
+                        "six-month" : 33,
+                        "three-month" : 37,
+                        "no-min" : 41
+                    },
+                    "unlimited" : {
+                        "six-month" : 43,
+                        "three-month" : 48,
+                        "no-min" : 52
+                    }
+                }
+            }
+        }
     }, {
         "city": "Sheffield",
         "county-filter": "south-yorkshire",
-        "price-info": ""
+        "price-info": {
+            "pay-as-you-go": {
+                "options": {
+                    "ten-classes" : 145
+                }
+            },
+            "monthly" : {
+                "options" : {
+                    "one-per-week" : {
+                        "six-month" : 33,
+                        "three-month" : 37,
+                        "no-min" : 41
+                    },
+                    "unlimited" : {
+                        "six-month" : 43,
+                        "three-month" : 48,
+                        "no-min" : 52
+                    }
+                }
+            }
+        }
     }, {
         "city": "York",
         "county-filter": "north-yorkshire",
-        "price-info": ""
+        "price-info": {
+            "pay-as-you-go": {
+                "options": {
+                    "ten-classes" : 145
+                }
+            },
+            "monthly" : {
+                "options" : {
+                    "one-per-week" : {
+                        "six-month" : 33,
+                        "three-month" : 37,
+                        "no-min" : 41
+                    },
+                    "unlimited" : {
+                        "six-month" : 43,
+                        "three-month" : 48,
+                        "no-min" : 52
+                    }
+                }
+            }
+        }
     }, {
         "city": "Huddersfield",
         "county-filter": "west-yorkshire",
-        "price-info": ""
+        "price-info": {
+            "pay-as-you-go": {
+                "options": {
+                    "ten-classes" : 145
+                }
+            },
+            "monthly" : {
+                "options" : {
+                    "one-per-week" : {
+                        "six-month" : 33,
+                        "three-month" : 37,
+                        "no-min" : 41
+                    },
+                    "unlimited" : {
+                        "six-month" : 43,
+                        "three-month" : 48,
+                        "no-min" : 52
+                    }
+                }
+            }
+        }
     }, {
         "city": "Bristol",
         "county-filter": "bristol",
-        "price-info": ""
+        "price-info": {
+            "pay-as-you-go": {
+                "options": {
+                    "ten-classes" : 145
+                }
+            },
+            "monthly" : {
+                "options" : {
+                    "one-per-week" : {
+                        "six-month" : 33,
+                        "three-month" : 37,
+                        "no-min" : 41
+                    },
+                    "unlimited" : {
+                        "six-month" : 43,
+                        "three-month" : 48,
+                        "no-min" : 52
+                    }
+                }
+            }
+        }
     }, {
         "city": "Bradford",
         "county-filter": "west-yorkshire",
-        "price-info": ""
+        "price-info": {
+            "pay-as-you-go": {
+                "options": {
+                    "ten-classes" : 145
+                }
+            },
+            "monthly" : {
+                "options" : {
+                    "one-per-week" : {
+                        "six-month" : 33,
+                        "three-month" : 37,
+                        "no-min" : 41
+                    },
+                    "unlimited" : {
+                        "six-month" : 43,
+                        "three-month" : 48,
+                        "no-min" : 52
+                    }
+                }
+            }
+        }
     }, {
         "city": "Harrogate",
         "county-filter": "north-yorkshire",
-        "price-info": ""
+        "price-info": {
+            "pay-as-you-go": {
+                "options": {
+                    "ten-classes" : 145
+                }
+            },
+            "monthly" : {
+                "options" : {
+                    "one-per-week" : {
+                        "six-month" : 33,
+                        "three-month" : 37,
+                        "no-min" : 41
+                    },
+                    "unlimited" : {
+                        "six-month" : 43,
+                        "three-month" : 48,
+                        "no-min" : 52
+                    }
+                }
+            }
+        }
     }
 ]

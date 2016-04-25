@@ -2,8 +2,8 @@
 
 // Venues controller
 angular.module('venues').controller('VenuesController', ['$scope', '$stateParams', '$location', 'Authentication',
-    'Venues', 'Cities', 'VenuesByCity', 'VenueBySlug', 'HelperService', 'uiGmapGoogleMapApi',
-    function($scope, $stateParams, $location, Authentication, Venues, Cities, VenuesByCity, VenueBySlug, HelperService, uiGmapGoogleMapApi) {
+    'Venues', 'Cities', 'CityByName', 'VenuesByCity', 'VenueBySlug', 'HelperService', 'uiGmapGoogleMapApi',
+    function($scope, $stateParams, $location, Authentication, Venues, Cities, CityByName, VenuesByCity, VenueBySlug, HelperService, uiGmapGoogleMapApi) {
         $scope.authentication = Authentication;
 
         $scope.city = $stateParams.city || 'All Locations';
@@ -79,6 +79,16 @@ angular.module('venues').controller('VenuesController', ['$scope', '$stateParams
                     });
                 }
             });
+
+            // Grab the related location object to render prices (these are stored at a location (cities) level);
+            var paths = window.location.pathname.split('/');
+            if(paths[2]) {
+                console.log(paths[2]);
+                CityByName.search({'name': 'bradford'}, function(city) {
+                    $scope.city = city;
+                    console.log('wtf', $scope.city);
+                });
+            }
 
         };
 

@@ -46,4 +46,19 @@ angular.module('cities').factory('Cities', ['$resource',
             cityId: '@_id'
         });
     }
+]).factory('CityByName', ['$resource',
+    function($resource) {
+        return $resource('api/city/:name', {
+            name: '@name'
+        }, {
+            search: {
+                method: 'GET',
+                isArray: false,
+                params: {
+                    action: "search",
+                    query: '@name'
+                }
+            }
+        });
+    }
 ]);

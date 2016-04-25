@@ -1,18 +1,11 @@
 # MEAN JS testing
 
-## MVP
-- ~~signing in after sign up page user still remains on signup and sees form~~ (MW)
-- ~~mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null'~~ (MW)
-- ~~registration date (MW)
-- echo sign iframe and toggle to hide~~ (MW)
-
-
-# MVP
-
-### BUGS ###
+### BUGS
 - ~~HelperService - activating the home page slider~~ (MW)
 - investigate togglable content areas (MW)
 - look at user profile CSS, the defaults have been removed some how (MW)
+
+# MVP
 
 ## MW ##
 - update venue template
@@ -25,7 +18,7 @@
 - fix Olark contact overlay placeholder text - or potentially replace with similar sticky contact form? (MW)
 - wire up contact form on contact page (MW)
 - 302 redirect rules - express? (MW) | 4
-- fix google maps api calls for each park (MW) | 8
+- ~~fix google maps api calls for each park (MW) ~~
 - add pricing wording to both venue / park level (MW)
     * render out price table for payment options
 - ~~display registration date on profile page~~ (MW)

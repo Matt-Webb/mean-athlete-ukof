@@ -10,16 +10,17 @@ var path = require('path'),
 
 
 /**
- * Show the current venue
+ * Show the current city
  */
 exports.read = function (req, res) {
   res.json(req.city);
 };
 
 /**
- * List of Venues
+ * List of Cities
  */
 exports.list = function (req, res) {
+
   City.find().sort('-created').populate('user', 'displayName').exec(function (err, cities) {
     if (err) {
       return res.status(400).send({
@@ -32,7 +33,25 @@ exports.list = function (req, res) {
 };
 
 /**
- * Venue middleware
+* City by name
+*/
+exports.cityByName = function(req, res) {
+
+    var cityParam = req.params.name || '';
+
+    City.findOne({city: { $regex: new RegExp('^' + cityParam, 'i')}}).exec(function (err, city) {
+      if (err) {
+        return res.status(400).send({
+          message: errorHandler.getErrorMessage(err)
+        });
+      } else {
+        res.json(city);
+      }
+    });
+};
+
+/**
+ * City middleware
  */
 exports.cityByID = function (req, res, next, id) {
 
