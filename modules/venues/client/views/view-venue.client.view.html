@@ -34,50 +34,50 @@
                           <ul>
                             <li class="icon">Mon</li>
                             <li>
-                                <span ng-show="venue.timetable[0].monday.times.length === 0">-</span>
-                                <span ng-show="venue.timetable[0].monday.times !== 0" ng-repeat="time in venue.timetable[0].monday.times">{{ time }} </span>
+                              <span ng-show="venue.timetable[0].monday.times.length === 0">-</span>
+                              <span ng-show="venue.timetable[0].monday.times !== 0" ng-repeat="time in venue.timetable[0].monday.times">{{ time }} </span>
                             </li>
                           </ul>
                           <ul>
                             <li class="icon">Tue</li>
                             <li>
-                                <span ng-show="venue.timetable[0].tuesday.times.length === 0">-</span>
-                                <span ng-show="venue.timetable[0].tuesday.times.length !== 0" ng-repeat="time in venue.timetable[0].tuesday.times">{{ time }} </span>
+                              <span ng-show="venue.timetable[0].tuesday.times.length === 0">-</span>
+                              <span ng-show="venue.timetable[0].tuesday.times.length !== 0" ng-repeat="time in venue.timetable[0].tuesday.times">{{ time }} </span>
                             </li>
                           </ul>
                           <ul>
                             <li class="icon">Wed</li>
                             <li>
-                                <span ng-show="venue.timetable[0].wednesday.times.length === 0">-</span>
-                                <span ng-show="venue.timetable[0].wednesday.times.length !== 0" ng-repeat="time in venue.timetable[0].wednesday.times">{{ time }} </span>
+                              <span ng-show="venue.timetable[0].wednesday.times.length === 0">-</span>
+                              <span ng-show="venue.timetable[0].wednesday.times.length !== 0" ng-repeat="time in venue.timetable[0].wednesday.times">{{ time }} </span>
                             </li>
                           </ul>
                           <ul>
                             <li class="icon">Thu</li>
                             <li>
-                                <span ng-show="venue.timetable[0].thrusday.times.length === 0">-</span>
-                                <span ng-show="venue.timetable[0].thrusday.times.length !== 0" ng-repeat="time in venue.timetable[0].thursday.times">{{ time }} </span>
+                              <span ng-show="venue.timetable[0].thrusday.times.length === 0">-</span>
+                              <span ng-show="venue.timetable[0].thrusday.times.length !== 0" ng-repeat="time in venue.timetable[0].thursday.times">{{ time }} </span>
                             </li>
                           </ul>
                           <ul>
                             <li class="icon">Fri</li>
                             <li>
-                                <span ng-show="venue.timetable[0].friday.times.length === 0">-</span>
-                                <span ng-show="venue.timetable[0].friday.times.length !== 0" ng-repeat="time in venue.timetable[0].friday.times">{{ time }} </span>
+                              <span ng-show="venue.timetable[0].friday.times.length === 0">-</span>
+                              <span ng-show="venue.timetable[0].friday.times.length !== 0" ng-repeat="time in venue.timetable[0].friday.times">{{ time }} </span>
                             </li>
                           </ul>
                           <ul>
                             <li class="icon">Sat</li>
                             <li>
-                                <span ng-show="venue.timetable[0].saturday.times.length === 0">-</span>
-                                <span ng-show="venue.timetable[0].saturday.times.length !== 0" ng-show="venue.timetable" ng-repeat="time in venue.timetable[0].saturday.times">{{ time }} </span>
+                              <span ng-show="venue.timetable[0].saturday.times.length === 0">-</span>
+                              <span ng-show="venue.timetable[0].saturday.times.length !== 0" ng-show="venue.timetable" ng-repeat="time in venue.timetable[0].saturday.times">{{ time }} </span>
                             </li>
                           </ul>
                           <ul>
                             <li class="icon">Sun</li>
                             <li>
-                                <span ng-show="venue.timetable[0].sunday.times.length === 0">-</span>
-                                <span ng-show="venue.timetable[0].sunday.times.length !== 0" ng-repeat="time in venue.timetable[0].sunday.times">{{ time }} </span>
+                              <span ng-show="venue.timetable[0].sunday.times.length === 0">-</span>
+                              <span ng-show="venue.timetable[0].sunday.times.length !== 0" ng-repeat="time in venue.timetable[0].sunday.times">{{ time }} </span>
                             </li>
                           </ul>
                         </div>
@@ -85,32 +85,35 @@
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-12 col-xs-12">
-                      <div class="details-desc-title">
-                        <h5>Meeting Point</h5>
-                        <p ng-bing="venue.meetingPointDesc"></p>
-                      </div>
-                      <div class="details-desc-title">
-                        <h5>Address</h5>
-                        <p ng-bind="venue.address.venue"></p>
-                        <p ng-bind="venue.address.street"></p>
-                        <p ng-bind="venue.address.city"></p>
-                        <p ng-bind="venue.address.county"></p>
-                        <p ng-bind="venue.address.postcode"></p>
-                      </div>
+                    <div class="details-desc-title">
+                      <h5>Meeting Point</h5>
+                      <p ng-bing="venue.meetingPointDesc"></p>
+                    </div>
+                    <div class="details-desc-title">
+                      <h5>Address</h5>
+                      <p ng-bind="venue.address.venue"></p>
+                      <p ng-bind="venue.address.street"></p>
+                      <p ng-bind="venue.address.city"></p>
+                      <p ng-bind="venue.address.county"></p>
+                      <p ng-bind="venue.address.postcode"></p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="caveats">
-                <div class="caveats-title">
-                  <h5>Map</h5>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="caveats">
+                  <div class="caveats-title">
+                    <h5>Map</h5>
+                  </div>
+                  <div class="caveats-full">
+                      <!-- <a ng-show="venue.googleMap" href="{{ venue.googleMap }}">View on google Map</a> -->
+                      <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+                        <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+                        </ui-gmap-marker>
+                      </ui-gmap-google-map>
+                  </div>
                 </div>
-                <div class="caveats-full">
-                  <p>
-                    <a ng-show="venue.googleMap" href="{{ venue.googleMap }}">View Google Map</a>
-
-                    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true"></ui-gmap-google-map>
-                  </p>
-                </div>
+                <br/>
               </div>
               <div class="share">
                 <div class="share-title">
@@ -125,14 +128,9 @@
                 </div>
               </div>
             </section>
-            <!-- Banner Content -->
-            <section class="banner-details">
 
-            </section>
-            <!-- End Banner Content -->
           </div>
           <!-- End Desc -->
-
 
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
@@ -140,14 +138,14 @@
             <div class="class-trainer-title">
               <h4>Class Trainer</h4>
               <div class="img-trainer">
-                <img width="80px" height="80px" ng-src="{{ instructor.image }}" alt="{{ instructor.name }}" />
+                <img width="100px" height="100px" ng-src="{{ instructor.image }}" alt="{{ instructor.name }}" />
               </div>
             </div>
             <div class="class-trainer-content">
               <h4>{{ instructor.name }}</h4>
               <h6>Skilled In</h6>
               <ui ng-repeat="skills in instructor.specialities">
-                 <li>{{ skills }}</li>
+                <li>{{ skills }}</li>
               </ui>
               <br />
               <a class="profile" ui-sref="instructors.view({instructorId: instructor._id})">Profile</a>

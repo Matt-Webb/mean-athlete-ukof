@@ -40,16 +40,42 @@ angular.module('venues').controller('VenuesController', ['$scope', '$stateParams
             }, function(venue) {
                 $scope.venue = venue[0];
                 if (venue[0].address.latitude || venue[0].address.longditude) {
+
+                    // create click through link:
                     $scope.venue.googleMap = '//www.google.co.uk/maps/place/' + venue[0].slug.split('-').join('+') + '/@' + venue[0].address.latitude + ',' + venue[0].address.longditude;
 
+                    // define Google map object params (after api promise is resolved):
                     uiGmapGoogleMapApi.then(function(maps) {
-                            $scope.map = {
-                                centre: {
-                                    latitude: venue[0].address.latitude,
-                                    longitude: venue[0].address.longditude
-                                },
-                                zoom: 9
-                            };
+                        $scope.map = {
+                            center: {
+                                latitude: venue[0].address.latitude,
+                                longitude: venue[0].address.longditude
+                            },
+                            zoom: 14
+                        };
+                        $scope.options = {
+                            scrollwheel: false
+                        };
+                        $scope.marker = {
+                            id: 0,
+                            coords: {
+                                latitude: venue[0].address.latitude,
+                                longitude: venue[0].address.longditude
+                            },
+                            options: {
+                                draggable: true
+                            },
+                            events: {
+                                dragend: function(marker, eventName, args) {
+                                    $scope.marker.options = {
+                                        draggable: true,
+                                        labelContent: "",
+                                        labelAnchor: "100 0",
+                                        labelClass: "marker-labels"
+                                    };
+                                }
+                            }
+                        };
                     });
                 }
             });
