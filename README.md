@@ -2,8 +2,8 @@
 ## MVP
 - ~~signing in after sign up page user still remains on signup and sees form~~ (MW)
 - ~~mobile menu console error when clicking Home 'helper.client.services.js:34 Uncaught TypeError: Cannot read property 'classList' of null'~~ (MW)
-- registration date (MW)
-- echo sign iframe and toggle to hide (MW)
+- ~~registration date (MW)
+- echo sign iframe and toggle to hide~~ (MW)
     * ~~add iframe both to sign up and edit profile in case the don't complete at sign up~~ (MW)
     * add boolean to user profile object for health Q (MW)
     * account - echo sign iframe + toggle to hide (MW)
@@ -60,7 +60,6 @@ ACCOUNT AREA - YOUR INFO
 - fitness tests
 - capture device registered on in back end?
 - capture devices logging in on?
-
 ACCOUNT AREA - GENERIC LINKS
 - members feedback
 - members faq
@@ -100,3 +99,7 @@ BLOGS
 diff controllers
 - header
 - home
+
+# NEW
+
+- add search functionality to location / venues etc.

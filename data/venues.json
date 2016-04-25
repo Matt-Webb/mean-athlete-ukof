@@ -1,6 +1,7 @@
 [{
     "name": "Kirkstall Abbey",
     "slug": "kirkstall-abbey",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "Kirkstall Abbey",
         "street": "",
@@ -59,6 +60,7 @@
 }, {
     "name": "Headingley",
     "slug": "headingley",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "South Parade Baptish Church",
         "street": "Kirkstall Lane",
@@ -117,6 +119,7 @@
 }, {
     "name": "Temple Newsam",
     "slug": "temple-newsam",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "Temple Newsam",
         "street": "",
@@ -175,6 +178,7 @@
 }, {
     "name": "Farsley",
     "slug": "farsley",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "Westroyd Park Farsley",
         "street": "",
@@ -233,6 +237,7 @@
 }, {
     "name": "Kippax",
     "slug": "kippax",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "Brigshaw High School",
         "street": "",
@@ -291,6 +296,7 @@
 }, {
     "name": "Airedale Academy",
     "slug": "airedale-academy",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "Airedale Academy",
         "street": "",
@@ -349,6 +355,7 @@
 }, {
     "name": "The Knavesmire",
     "slug": "the-knavesmire",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "Knavesmire",
         "street": "Knavesmire Road",
@@ -407,6 +414,7 @@
 }, {
     "name": "Hillsborough Park",
     "slug": "hillsborough-park",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "Hillsborough Park",
         "street": "",
@@ -463,6 +471,7 @@
 }, {
     "name": "Millhouses Park",
     "slug": "millhouses-park",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "Millhouses Park",
         "street": "",
@@ -521,6 +530,7 @@
 }, {
     "name": "All Saints Catholic College",
     "slug": "all-saints-catholic-college",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "All Saints Catholic College",
         "street": "Bradley Road",
@@ -579,6 +589,7 @@
 }, {
     "name": "Baildon Rugby Club",
     "slug": "baildon-rugby-club",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "Baildon Rugby Club",
         "street": "Jenny Lane, Shipley",
@@ -637,6 +648,7 @@
 }, {
     "name": "Drighlington Moor",
     "slug": "drighlington-moor",
+    "meetingPointDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.",
     "address": {
         "venue": "Drighlington",
         "street": "Moorland Road ",

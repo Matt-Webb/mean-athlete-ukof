@@ -38,6 +38,12 @@ module.exports = {
                 'public/js/main.js',
                 //------- mean angular components:
                 'public/lib/angular/angular.js',
+                // TODO: tidy up these Google Maps references:
+                '//rawgit.com/angular-ui/angular-google-maps/2.1.5/dist/angular-google-maps.min.js',
+                '//maps.googleapis.com/maps/api/js?key=AIzaSyCTmP4AmXmyZYKC1QtZgjyek_TVkhxMFsU',
+                '//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js',
+                // -- end todo --
+                'public/lib/angular-simple-logger/dist/angular-simple-logger.min.js',
                 'public/lib/angular-resource/angular-resource.js',
                 'public/lib/angular-animate/angular-animate.js',
                 'public/lib/angular-messages/angular-messages.js',

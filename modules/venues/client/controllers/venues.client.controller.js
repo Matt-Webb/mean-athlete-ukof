@@ -1,14 +1,14 @@
 'use strict';
 
 // Venues controller
-angular.module('venues').controller('VenuesController',
-['$scope', '$stateParams', '$location', 'Authentication', 'Venues', 'Cities', 'VenuesByCity', 'VenueBySlug', 'HelperService',
-    function($scope, $stateParams, $location, Authentication, Venues, Cities, VenuesByCity, VenueBySlug, HelperService) {
+angular.module('venues').controller('VenuesController', ['$scope', '$stateParams', '$location', 'Authentication',
+    'Venues', 'Cities', 'VenuesByCity', 'VenueBySlug', 'HelperService', 'uiGmapGoogleMapApi',
+    function($scope, $stateParams, $location, Authentication, Venues, Cities, VenuesByCity, VenueBySlug, HelperService, uiGmapGoogleMapApi) {
         $scope.authentication = Authentication;
 
         $scope.city = $stateParams.city || 'All Locations';
 
-        if($stateParams.city) {
+        if ($stateParams.city) {
             $scope.locationTitle = 'Other Locations';
         } else {
             $scope.locationTitle = 'Filter by Location';
@@ -35,9 +35,25 @@ angular.module('venues').controller('VenuesController',
 
         // Find existing Venue
         $scope.findOne = function() {
-            VenueBySlug.search({slug: $stateParams.name }, function(venue) {
+            VenueBySlug.search({
+                slug: $stateParams.name
+            }, function(venue) {
                 $scope.venue = venue[0];
+                if (venue[0].address.latitude || venue[0].address.longditude) {
+                    $scope.venue.googleMap = '//www.google.co.uk/maps/place/' + venue[0].slug.split('-').join('+') + '/@' + venue[0].address.latitude + ',' + venue[0].address.longditude;
+
+                    uiGmapGoogleMapApi.then(function(maps) {
+                            $scope.map = {
+                                centre: {
+                                    latitude: venue[0].address.latitude,
+                                    longitude: venue[0].address.longditude
+                                },
+                                zoom: 9
+                            };
+                    });
+                }
             });
+
         };
 
     }

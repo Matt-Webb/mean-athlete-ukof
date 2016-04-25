@@ -17,60 +17,98 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
-          <!-- Banner Content -->
-          <section class="banner-details">
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="images/bg-blog-2.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- End Banner Content -->
-
           <!--  Desc -->
           <div class="content-page">
             <section class="class-details">
               <div class="details-desc">
-                <div class="details-desc-title">
-                  <h5>Class details</h5>
-                  <div class="rating">
-                    <span><i class="fa fa-star"></i></span>
-                    <span><i class="fa fa-star"></i></span>
-                    <span><i class="fa fa-star"></i></span>
-                    <span><i class="fa fa-star"></i></span>
-                    <span><i class="fa fa-star-half-o"></i></span>
-                    <span class="votes">234 votes</span>
-                  </div>
-                </div>
                 <div class="details-desc-full">
-                  <p ng-show="venue.details">
-                    {{ venue.details }}
-                  </p>
-                  <p ng-hide="venue.details">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est. Sed molestie quis augue ac pulvinar. Pellentesque egoists sed tortor egestas pretium.
-                      Nam eget fermentum tellus, et fermentum diam. Mauris hendrerit, diam non commodo laoreet. Mauris hendrerit, diam non commodo laoreet, est elit
-                  </p>
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="details-desc-title">
+                      <h5>Class Times</h5>
+                    </div>
+                    <div class="price-tb">
+                      <div class="col-md-12 price-table-content">
+                      </div>
+                      <div class="col-md-12  price-list">
+                        <div class="price-table-1">
+                          <ul>
+                            <li class="icon">Mon</li>
+                            <li>
+                                <span ng-show="venue.timetable[0].monday.times.length === 0">-</span>
+                                <span ng-show="venue.timetable[0].monday.times !== 0" ng-repeat="time in venue.timetable[0].monday.times">{{ time }} </span>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li class="icon">Tue</li>
+                            <li>
+                                <span ng-show="venue.timetable[0].tuesday.times.length === 0">-</span>
+                                <span ng-show="venue.timetable[0].tuesday.times.length !== 0" ng-repeat="time in venue.timetable[0].tuesday.times">{{ time }} </span>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li class="icon">Wed</li>
+                            <li>
+                                <span ng-show="venue.timetable[0].wednesday.times.length === 0">-</span>
+                                <span ng-show="venue.timetable[0].wednesday.times.length !== 0" ng-repeat="time in venue.timetable[0].wednesday.times">{{ time }} </span>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li class="icon">Thu</li>
+                            <li>
+                                <span ng-show="venue.timetable[0].thrusday.times.length === 0">-</span>
+                                <span ng-show="venue.timetable[0].thrusday.times.length !== 0" ng-repeat="time in venue.timetable[0].thursday.times">{{ time }} </span>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li class="icon">Fri</li>
+                            <li>
+                                <span ng-show="venue.timetable[0].friday.times.length === 0">-</span>
+                                <span ng-show="venue.timetable[0].friday.times.length !== 0" ng-repeat="time in venue.timetable[0].friday.times">{{ time }} </span>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li class="icon">Sat</li>
+                            <li>
+                                <span ng-show="venue.timetable[0].saturday.times.length === 0">-</span>
+                                <span ng-show="venue.timetable[0].saturday.times.length !== 0" ng-show="venue.timetable" ng-repeat="time in venue.timetable[0].saturday.times">{{ time }} </span>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li class="icon">Sun</li>
+                            <li>
+                                <span ng-show="venue.timetable[0].sunday.times.length === 0">-</span>
+                                <span ng-show="venue.timetable[0].sunday.times.length !== 0" ng-repeat="time in venue.timetable[0].sunday.times">{{ time }} </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                      <div class="details-desc-title">
+                        <h5>Meeting Point</h5>
+                        <p ng-bing="venue.meetingPointDesc"></p>
+                      </div>
+                      <div class="details-desc-title">
+                        <h5>Address</h5>
+                        <p ng-bind="venue.address.venue"></p>
+                        <p ng-bind="venue.address.street"></p>
+                        <p ng-bind="venue.address.city"></p>
+                        <p ng-bind="venue.address.county"></p>
+                        <p ng-bind="venue.address.postcode"></p>
+                      </div>
+                  </div>
                 </div>
               </div>
               <div class="caveats">
                 <div class="caveats-title">
-                  <h5>Caveats Worth Mentioning</h5>
+                  <h5>Map</h5>
                 </div>
                 <div class="caveats-full">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est. Sed molestie quis augue ac pulvinar. Pellentesque egoists sed tortor egestas pretium.
-                    Nam eget fermentum tellus, et fermentum diam. Mauris hendrerit, diam non commodo laoreet. Mauris hendrerit, diam non commodo laoreet, est elit
-                  </p>
-                  <p>
-                    volutpat mauris, vel vehicula nisl orci id nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ante eget nisl convallis tempus. Phasellus ante lectus, tincidunt tincidunt dui a, rhoncus interdum est.
-                  </p>
-                </div>
-                <div class="caveats-content">
-                  <p>
-                    "You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality."
+                    <a ng-show="venue.googleMap" href="{{ venue.googleMap }}">View Google Map</a>
+
+                    <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true"></ui-gmap-google-map>
                   </p>
                 </div>
               </div>
@@ -87,108 +125,37 @@
                 </div>
               </div>
             </section>
+            <!-- Banner Content -->
+            <section class="banner-details">
+
+            </section>
+            <!-- End Banner Content -->
           </div>
           <!-- End Desc -->
 
-          <!--  Comments -->
-          <section class="comments">
-            <div class="comments-title">
-              <h5>Comments</h5>
-            </div>
-            <div class="comments-content">
-              <div class="answer">
-                <div class="col-md-2 col-sm-2">
-                  <img class="img-comments" src="images/img-protile.png" alt="" />
-                </div>
-                <div class="col-md-10">
-                  <div class="content-cmt">
-                    <span class="name-cmt">Joel Beasley</span>
-                    <span class="date-cmt">September 04, 2016</span>
-                    <span><a href="#">Reply</a></span>
-                    <p class="content-reply">
-                      Do you have to pay for this class upfront or can you pay on the day?
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="reply">
-                <div class="col-md-3 col-sm-3">
-                  <img class="img-comments" src="images/img-protile.png" alt="" />
-                </div>
-                <div class="col-md-9">
-                  <div class="content-cmt">
-                    <span class="name-cmt">Paul Smith</span>
-                    <span class="date-cmt">September 04, 2016</span>
-                    <span><a href="#">Reply</a></span>
-                    <p class="content-reply">
-                      Hi Joel, you can do either. See our <a href="/prices">Prices</a> which gives full details. See you soon!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <section class="form-comment">
-                <div class="form-comment-title">
-                  <h5>Leave a Comments</h5>
-                </div>
-                <form id="form-comment" class="form-validate" method="post">
-                  <div class="form-validate-left">
-                    <div class="name">
-                      <input type="text" placeholder="Your Name" name="name">
-                    </div>
-                    <div class="mail">
-                      <input type="email" placeholder="Your Email" name="email">
-                    </div>
-                    <div class="website">
-                      <input type="text" placeholder="Your Website" name="website">
-                    </div>
-                    <div class="title">
-                      <input type="text" placeholder="Title" name="title">
-                    </div>
-                  </div>
-                  <div class="form-validate-right">
-                    <div class="message">
-                      <textarea placeholder="Your Message" rows="8" class="control" id="message" name="message"></textarea>
-                    </div>
-                    <div class="form-submit">
-                      <input type="submit" value="Submit Comment" class="btn-submit" name="submit">
-                    </div>
-                  </div>
-                </form>
-              </section>
-            </div>
-          </section>
-          <!-- End Comments -->
+
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
           <section ng-repeat="instructor in venue.instructors" class="class-trainer">
             <div class="class-trainer-title">
               <h4>Class Trainer</h4>
               <div class="img-trainer">
-                <img src="images/img-protile.png" alt="" />
+                <img width="80px" height="80px" ng-src="{{ instructor.image }}" alt="{{ instructor.name }}" />
               </div>
             </div>
             <div class="class-trainer-content">
               <h4>{{ instructor.name }}</h4>
-              <h6>Fitness Trainer</h6>
-              <p>Lorem ipsum dolor sit ametcont adipiscing elit. Duis vestibulum turpis eu nunc volutpat vestibulum. scelerisque arcu ac ante tristique iaculis</p>
-              <a class="profile" ui-sref="">Profile</a>
+              <h6>Skilled In</h6>
+              <ui ng-repeat="skills in instructor.specialities">
+                 <li>{{ skills }}</li>
+              </ui>
+              <br />
+              <a class="profile" ui-sref="instructors.view({instructorId: instructor._id})">Profile</a>
             </div>
           </section>
           <section class="class-info">
             <div class="class-info-title">
               <h4>Class Information</h4>
-            </div>
-            <div class="class-info-content">
-              <div class="info-content">
-                <span><i class="fa fa-clock-o"></i> Time:</span>
-                <span>6:30 pm</span>
-              </div>
-            </div>
-            <div class="class-info-content">
-              <div class="info-content">
-                <span><i class="fa fa-calendar-o"></i> Day(s):</span>
-                <span>Monday, Friday</span>
-              </div>
             </div>
             <div class="class-info-content">
               <div class="info-content">
@@ -199,60 +166,6 @@
             <div class="course">
               <a href="#">Sign up</a>
             </div>
-          </section>
-          <section class="class-related">
-            <div class="class-related-title">
-              <h4>Class Related</h4>
-            </div>
-            <div class="classes-content">
-              <div class="related-product related-product-1">
-                <div class="box-inner">
-                  <img src="images/onepage/classes-1.jpg" alt="" />
-                  <div class="box-content">
-                    <div class="table">
-                      <div class="box-cell">
-                        <div class="title">
-                          <a href="our-class-details.html">
-                            <span>Leeds</span>
-                          </a>
-                        </div>
-                        <div class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing...</div>
-                        <div class="box-details">
-                          <a href="our-class-details.html">Details</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="name-product">
-                  <a class="name-product-details" href="#">Leeds</a>
-                </div>
-              </div>
-              <div class="related-product related-product-2">
-                <div class="box-inner">
-                  <img src="images/onepage/classes-2.jpg" alt="" />
-                  <div class="box-content">
-                    <div class="table">
-                      <div class="box-cell">
-                        <div class="title">
-                          <a href="our-class-details.html">
-                            <span>Huddersfield</span>
-                          </a>
-                        </div>
-                        <div class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing...</div>
-                        <div class="box-details">
-                          <a href="our-class-details.html">Details</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="name-product">
-                  <a class="name-product-details" href="#">Huddersfield</a>
-                </div>
-              </div>
-            </div>
-
           </section>
         </div>
       </div>
