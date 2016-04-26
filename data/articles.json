@@ -3,7 +3,7 @@
 	"title": "Phillipa Clark's Testimonial",
 	"published": false,
 	"imageUrl": "default-image-5245",
-	"category": "fitness",
+	"category": ["fitness"],
 	"content": "\"I've lost 22lbs this year 17lbs in 3 months since joining bootcamp. It great fun and would highly recommend it\"",
 	"publishedDate": "2014-04-20T13:13:21.000Z"
 }, {

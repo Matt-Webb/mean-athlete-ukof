@@ -57,7 +57,7 @@
                             <li class="icon">
                               <span ng-show="venue.timetable[0].wednesday.times.length === 0">-</span>
                               <span ng-show="venue.timetable[0].wednesday.times.length !== 0" ng-repeat="time in venue.timetable[0].wednesday.times">{{ time }} </span>
-                            </li class="icon">
+                            </li>
                             <li>{{ venue.timetable[0].wednesday.instructor }}</li>
                           </ul>
                           <ul>
@@ -65,7 +65,7 @@
                             <li class="icon">
                               <span ng-show="venue.timetable[0].thrusday.times.length === 0">-</span>
                               <span ng-show="venue.timetable[0].thrusday.times.length !== 0" ng-repeat="time in venue.timetable[0].thursday.times">{{ time }} </span>
-                            </li class="icon">
+                            </li>
                             <li>{{ venue.timetable[0].thursday.instructor }}</li>
                           </ul>
                           <ul>
@@ -169,8 +169,6 @@
                 </div>
               </div>
             </section>
-
-
           </div>
           <!-- End Desc -->
         </div>
@@ -203,7 +201,7 @@
               </div>
             </div>
             <div class="course">
-              <a href="#">Sign up</a>
+              <a ui-sref="authentication.signup">Sign up</a>
             </div>
           </section>
         </div>

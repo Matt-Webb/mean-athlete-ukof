@@ -1,7 +1,7 @@
 {
-  "name": "mean",
-  "description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js",
-  "homepage": "http://meanjs.org/",
+  "name": "Uk Outdoor Fitness",
+  "description": "Mean Stack OutdoorFitness Application",
+  "homepage": "http://www.ukoutdoorfitness.com/",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "~3",
